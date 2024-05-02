@@ -19,13 +19,10 @@ The devtools live inside your browser in a subwindow that looks roughly like thi
 How do you pull it up? Three ways:
 
 - **_Keyboard:_**
-
   - **Windows:** _<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>_ or <kbd>F12</kbd>
-
   - **macOS:** _<kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>I</kbd>_
 
 - **_Menu bar:_**
-
   - **Firefox:** Menu ![Firefox hamburger menu icon that has more options to customize and control Firefox.](2014-01-10-13-08-08-f52b8c.png) _➤ Web Developer ➤ Toggle Tools,_ or _Tools ➤_ _Web Developer ➤ Toggle Tools_
   - **Chrome:** _More tools ➤ Developer tools_
   - **Safari:** _Develop ➤ Show Web Inspector._ If you can't see the _Develop_ menu, go to _Safari ➤ Preferences ➤ Advanced_, and check the _Show Develop menu in menu bar_ checkbox.
@@ -80,7 +77,6 @@ You'll notice a number of clickable tabs at the top of the CSS Viewer:
 
 - _Computed_: This shows the computed styles for the currently selected element (the final, normalized values that the browser applies).
 - _Layout_: In Firefox, this area includes two sections:
-
   - _Box Model_: represents visually the current element's box model, so you can see at a glance what padding, border and margin is applied to it, and how big its content is.
   - _Grid_: If the page you are inspecting uses CSS Grid, this section allows you to view the grid details.
 

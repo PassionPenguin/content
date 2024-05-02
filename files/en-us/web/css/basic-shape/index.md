@@ -26,7 +26,6 @@ The default reference box is the `margin-box`, as demonstrated in the below imag
 The following shapes are supported. All `<basic-shape>` values use functional notation and are defined here using the [value definition syntax](/en-US/docs/Web/CSS/Value_definition_syntax).
 
 - `{{cssxref("basic-shape/inset","inset()")}}`
-
   - : Defines an inset rectangle.
 
     ```css
@@ -40,7 +39,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     A pair of insets in either dimension that add up to more than the used dimension (such as left and right insets of 75% apiece) define a shape enclosing no area. For this specification, this results in an empty float area.
 
 - `{{cssxref("basic-shape/rect","rect()")}}`
-
   - : Defines a rectangle using the specified distances from the top and left edges of the reference box.
 
     ```css
@@ -52,7 +50,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     The optional `round <'border-radius'>` parameter defines rounded corners for the inset rectangle using the same syntax as the CSS [`border-radius`](/en-US/docs/Web/CSS/border-radius) shorthand property.
 
 - `{{cssxref("basic-shape/xywh","xywh()")}}`
-
   - : Defines a rectangle using the specified distances from the top and left edges of the reference box and the specified width and height of the rectangle.
 
     ```css
@@ -62,7 +59,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     The optional `round <'border-radius'>` parameter defines rounded corners for the inset rectangle using the [`border-radius`](/en-US/docs/Web/CSS/border-radius) shorthand syntax.
 
 - `{{cssxref("basic-shape/circle","circle()")}}`
-
   - : Defines a circle using a radius and a position.
 
     ```css
@@ -74,7 +70,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     The {{cssxref("&lt;position&gt;")}} argument defines the center of the circle. This defaults to center if omitted.
 
 - `{{cssxref("basic-shape/ellipse","ellipse()")}}`
-
   - : Defines an ellipse using two radii and a position.
 
     ```css
@@ -86,7 +81,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     The position argument defines the center of the ellipse. This defaults to center if omitted.
 
 - `{{cssxref("basic-shape/polygon","polygon()")}}`
-
   - : Defines a polygon using an SVG {{SVGAttr("fill-rule")}} and a set of vertices.
 
     ```css
@@ -98,7 +92,6 @@ The following shapes are supported. All `<basic-shape>` values use functional no
     Each pair argument in the list represents _xi_ and _yi_ - the x and y axis coordinates of the vertex of the polygon at position i.
 
 - `{{cssxref("path","path()")}}`
-
   - : Defines a shape using an SVG {{SVGAttr("fill-rule")}} and an SVG [path definition](/en-US/docs/Web/SVG/Attribute/d).
 
     ```css

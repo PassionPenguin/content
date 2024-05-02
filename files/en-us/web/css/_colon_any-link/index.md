@@ -61,6 +61,5 @@ a:-webkit-any-link {
 - [Creating hyperlinks](/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
 - Matches HTML elements: [`<a>`](/en-US/docs/Web/HTML/Element/a) and [`<area>`](/en-US/docs/Web/HTML/Element/area) with an [`href`](/en-US/docs/Web/HTML/Element/a#href) attribute
 - Related CSS selectors:
-
   - [`:visited`](/en-US/docs/Web/CSS/:visited)
   - [`:link`](/en-US/docs/Web/CSS/:link)

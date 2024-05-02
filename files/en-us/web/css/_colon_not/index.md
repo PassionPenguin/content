@@ -153,7 +153,6 @@ If `:invalid-pseudo-class` was a valid selector, the first two rules above would
 - [Pseudo-classes](/en-US/docs/Web/CSS/Pseudo-classes)
 - [Pseudo-classes and pseudo-elements](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
 - Other functional CSS pseudo-classes:
-
   - {{cssxref(":has", ":has()")}}
   - {{cssxref(":is", ":is()")}}
   - {{cssxref(":where", ":where()")}}

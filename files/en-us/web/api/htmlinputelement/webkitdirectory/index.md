@@ -30,26 +30,18 @@ the selected directory at which the file is located. For example, consider this 
 system:
 
 - PhotoAlbums
-
   - Birthdays
-
     - Jamie's 1st birthday
-
       - PIC1000.jpg
       - PIC1004.jpg
       - PIC1044.jpg
-
     - Don's 40th birthday
-
       - PIC2343.jpg
       - PIC2344.jpg
       - PIC2355.jpg
       - PIC2356.jpg
-
   - Vacations
-
     - Mars
-
       - PIC5533.jpg
       - PIC5534.jpg
       - PIC5556.jpg

@@ -19,7 +19,6 @@ This interface is accessible through the {{domxref("Gamepad.hapticActuators")}} 
 ## Instance methods
 
 - {{domxref("GamepadHapticActuator.pulse()")}} {{ReadOnlyInline}}
-
   - : Makes the hardware pulse at a certain intensity for a specified duration.
 
 - {{domxref("GamepadHapticActuator.playEffect()")}} {{ReadOnlyInline}} {{Non-standard_Inline}}

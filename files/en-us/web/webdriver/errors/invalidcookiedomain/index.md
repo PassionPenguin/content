@@ -66,7 +66,6 @@ InvalidCookieDomainException: Document is cookie-averse
 
 - [List of WebDriver errors](/en-US/docs/Web/WebDriver/Errors)
 - Relevant WebDriver commands:
-
   - [Add Cookie](/en-US/docs/Web/WebDriver/Commands/AddCookie)
   - [Delete Cookie](/en-US/docs/Web/WebDriver/Commands/DeleteCookie)
   - [Delete All Cookies](/en-US/docs/Web/WebDriver/Commands/DeleteAllCookies)

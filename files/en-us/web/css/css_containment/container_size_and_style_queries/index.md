@@ -20,7 +20,6 @@ Container queries are similar to [media queries](/en-US/docs/Web/CSS/CSS_media_q
 There are two types of container queries: _container size queries_ and _container style queries_:
 
 - **Container size queries**
-
   - : Size queries enable applying styles to elements based on the current [size](/en-US/docs/Web/CSS/@container#descriptors) of a containing element, including the orientation and {{glossary("aspect ratio")}}. The containing elements need to be explicitly declared as _size query containers_.
 
 - **Container style queries**

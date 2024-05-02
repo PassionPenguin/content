@@ -48,7 +48,6 @@ Here are some specific points included by the authors in the [proposal](https://
 These properties are defined on `WeakRef.prototype` and shared by all `WeakRef` instances.
 
 - {{jsxref("Object/constructor", "WeakRef.prototype.constructor")}} {{optional_inline}}
-
   - : The constructor function that created the instance object. For `WeakRef` instances, the initial value is the {{jsxref("WeakRef/WeakRef", "WeakRef")}} constructor.
 
     > **Note:** This property is marked as "normative optional" in the specification, which means a conforming implementation may not expose the `constructor` property. This prevents arbitrary code from obtaining the `WeakRef` constructor and being able to observe garbage collection. However, all major engines do expose it by default.

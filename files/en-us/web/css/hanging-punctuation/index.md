@@ -42,12 +42,10 @@ The `hanging-punctuation` property may be specified with one, two, or three spac
 
 - **One-value** syntax uses any one of the keyword values in the list below.
 - **Two-value** syntax uses one of the following:
-
   - `first` together with any one of `last`, `allow-end`, or `force-end`
   - `last` together with any one of `first`, `allow-end`, or `force-end`
 
 - **Three-value** syntax uses one of the following:
-
   - `first`, `allow-end`, and `last`
   - `first`, `force-end`, and `last`
 
@@ -56,9 +54,7 @@ The `hanging-punctuation` property may be specified with one, two, or three spac
 - `none`
   - : No character hangs.
 - `first`
-
   - : An opening bracket or quote at the start of the first formatted line of an element hangs. This applies to:
-
     - all characters in the Unicode categories [Ps](https://unicodeplus.com/category/Ps), [Pf](https://unicodeplus.com/category/Pf), [Pi](https://unicodeplus.com/category/Pi)
     - the quote marks `U+0027` APOSTROPHE (`'`) and `U+0022` QUOTATION MARK (`"`).
 

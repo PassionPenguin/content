@@ -50,7 +50,6 @@ One or more `<repeat-style>` values, separated by commas.
 ### Values
 
 - `<repeat-style>`
-
   - : The one-value syntax is a shorthand for the full two-value syntax:
 
     <table class="standard-table">

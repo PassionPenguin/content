@@ -28,7 +28,6 @@ Our [CSS Learning Area](/en-US/docs/Learn/CSS) features multiple modules that te
 - [CSS first steps](/en-US/docs/Learn/CSS/First_steps)
   - : CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
 - [CSS building blocks](/en-US/docs/Learn/CSS/Building_blocks)
-
   - : This module carries on where [CSS first steps](/en-US/docs/Learn/CSS/First_steps) left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.
 
     The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like [text styling](/en-US/docs/Learn/CSS/Styling_text) and [CSS layout](/en-US/docs/Learn/CSS/CSS_layout).
@@ -44,7 +43,6 @@ Our [CSS Learning Area](/en-US/docs/Learn/CSS) features multiple modules that te
 
 - [CSS reference](/en-US/docs/Web/CSS/Reference): This exhaustive reference for seasoned Web developers describes every property and concept of CSS.
 - CSS key concepts:
-
   - The [syntax and forms of the language](/en-US/docs/Web/CSS/Syntax)
   - [Specificity](/en-US/docs/Web/CSS/Specificity), [inheritance](/en-US/docs/Web/CSS/Inheritance), and [the Cascade](/en-US/docs/Web/CSS/Cascade)
   - [CSS units and values](/en-US/docs/Web/CSS/CSS_Values_and_Units) and [functional notations](/en-US/docs/Web/CSS/CSS_Functions)

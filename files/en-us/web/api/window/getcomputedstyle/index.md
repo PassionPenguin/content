@@ -39,7 +39,6 @@ object, which updates automatically when the element's styles are changed.
 ### Exceptions
 
 - {{JSxRef("TypeError")}}
-
   - : If the passed object is not an {{DOMxRef("Element")}} or the
     `pseudoElt` is not a valid pseudo-element selector or is
     {{CSSxRef("::part", "::part()")}} or {{CSSxRef("::slotted", "::slotted()")}}.

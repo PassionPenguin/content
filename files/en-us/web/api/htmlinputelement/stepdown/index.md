@@ -88,11 +88,9 @@ support the `step` attribute (see the list of supported input types above), or i
 `InvalidStateError` exception is thrown.
 
 - {{domxref("HTMLInputElement.stepDown()")}}
-
   - : Decrements the [`value`](/en-US/docs/Web/HTML/Element/input#value) by
     ([`step`](/en-US/docs/Web/HTML/Element/input#step) \* n), where n defaults to 1 if not specified. Throws
     an `InvalidStateError` exception:
-
     - if the method is not applicable to for the current
       [`type`](/en-US/docs/Web/HTML/Element/input#type) value,
     - if the element has no [`step`](/en-US/docs/Web/HTML/Element/input#step) value,
@@ -110,7 +108,6 @@ stepDown(stepDecrement)
 ### Parameters
 
 - `stepDecrement` {{optional_inline}}
-
   - : A numeric value. If no parameter is passed, _stepDecrement_ defaults to 1.
 
     If the value is a float, the value will decrement as if

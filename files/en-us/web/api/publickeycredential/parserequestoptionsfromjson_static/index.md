@@ -23,7 +23,6 @@ PublicKeyCredential.parseRequestOptionsFromJSON(options)
 ### Parameters
 
 - `options`
-
   - : An object with the same structure as the Web Authentication API [`publicKey` request credentials options object](/en-US/docs/Web/API/CredentialsContainer/get#publickey_object_structure), but with [base64url](/en-US/docs/Glossary/Base64)-encoded strings used in place of buffer properties.
 
 ### Return value

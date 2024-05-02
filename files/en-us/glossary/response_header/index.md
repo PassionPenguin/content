@@ -36,7 +36,6 @@ x-frame-options: DENY
 
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - [Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("Representation header")}}
   - {{Glossary("HTTP header")}}
   - {{Glossary("Response header")}}

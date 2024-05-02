@@ -270,7 +270,6 @@ There are four `itemscope` attributes in the following example. Each `itemscope`
 
 - [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
 - Other microdata related global attributes:
-
   - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
   - [`itemprop`](/en-US/docs/Web/HTML/Global_attributes/itemprop)
   - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)

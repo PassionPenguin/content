@@ -127,16 +127,13 @@ page-type: firefox-release-notes
 ### Files and directories
 
 - A subset of the [File and Directory Entries API](/en-US/docs/Web/API/File_and_Directory_Entries_API) has been implemented, to improve compatibility with sites that were previously only compatible with Google Chrome ([Firefox bug 1265767](https://bugzil.la/1265767)).
-
   - The asynchronous API interfaces have been implemented, with the caveat that only reading of files is supported; for example, the {{domxref("FileSystemFileEntry.createWriter()")}} method is a no-op.
   - These interfaces have been implemented:
-
     - {{domxref("FileSystem")}}
     - {{domxref("FileSystemEntry")}} (properties only; the methods have not been implemented)
     - {{domxref("FileSystemFileEntry")}} (except for {{domxref("FileSystemFileEntry.createWriter", "createWriter()")}})
     - {{domxref("FileSystemDirectoryEntry")}} (except for {{domxref("FileSystemDirectoryEntry.removeRecursively", "removeRecursively()")}})
     - {{domxref("FileSystemDirectoryReader")}}
-
   - {{domxref("HTMLInputElement.webkitdirectory")}} as well as the [`webkitdirectory`](/en-US/docs/Web/HTML/Element/input#webkitdirectory) attribute of the {{HTMLElement("input")}} element have been implemented; this lets you configure a file input to accept directories instead of files ([Firefox bug 1258489](https://bugzil.la/1258489)).
   - {{domxref("HTMLInputElement.webkitEntries")}} has been implemented; this returns an array of {{domxref("FileSystemEntry")}}-based objects representing the selected items.
   - {{domxref("File.webkitRelativePath")}} has been implemented; this contains the path of the file relative to the root of the containing {{domxref("FileSystemDirectoryEntry")}} that was among the items in the list returned by {{domxref("HTMLInputElement.webkitGetEntries()")}}.

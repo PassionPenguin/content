@@ -106,7 +106,6 @@ setFillColor(c, m, y, k, a);
 - [Canvas API](/en-US/docs/Web/API/Canvas_API)
 - The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - Values used by this property:
-
   - {{cssxref("&lt;color&gt;")}} CSS data type
   - {{domxref("CanvasGradient")}} object
   - {{domxref("CanvasPattern")}} object

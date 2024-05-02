@@ -291,35 +291,27 @@ A property is an unordered set of unique tokens that are case-sensitive and repr
 The property value of a name-value pair is as given for the first matching case in the following list:
 
 - If the element has an `itemscope` attribute
-
   - The value is the **item** created by the element
 
 - If the element is a `meta` element
-
   - The value is the value of the element's `content` attribute
 
 - If the element is an `audio`, `embed`, `iframe`, `img`, `source`, `track`, or `video` element
-
   - The value is the resulting URL string that results from parsing the value of the element's src attribute relative to the node document (part of the [Microdata DOM API](/en-US/docs/Web/HTML/Microdata)) of the element at the time the attribute is set
 
 - If the element is an `a`, `area`, or `link` element
-
   - The value is the resulting URL string that results from parsing the value of the element's href attribute relative to the node document of the element at the time the attribute is set
 
 - If the element is an `object` element
-
   - The value is the resulting URL string that results from parsing the value of the element's data attribute relative to the node document of the element at the time the attribute is set
 
 - If the element is a `data` element
-
   - The value is the value of the element's value attribute
 
 - If the element is a `meter` element
-
   - The value is the value of the element's `value` attribute
 
 - If the element is a `time` element
-
   - The value is the element's `datetime` value
 
 Otherwise
@@ -429,7 +421,6 @@ This example uses microdata attributes to represent the following structured dat
 
 - [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
 - Other microdata related global attributes:
-
   - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
   - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)
   - [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope)

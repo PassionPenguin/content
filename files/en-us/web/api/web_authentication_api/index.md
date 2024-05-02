@@ -142,7 +142,6 @@ Permissions-Policy: publickey-credentials-create=("https://subdomain.example.com
 If you wish to authenticate with `get()` or `create()` in an `<iframe>`, there are a couple of steps to follow:
 
 1. The site embedding the relying party site must provide permission via an `allow` attribute:
-
    - If using `get()`:
 
      ```html
@@ -151,7 +150,6 @@ If you wish to authenticate with `get()` or `create()` in an `<iframe>`, there a
        allow="publickey-credentials-get *">
      </iframe>
      ```
-
    - If using `create()`:
 
      ```html

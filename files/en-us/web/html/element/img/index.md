@@ -58,7 +58,6 @@ If an error occurs while loading or rendering an image, and an `onerror` event h
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - [`alt`](/en-US/docs/Web/API/HTMLImageElement/alt#usage_notes)
-
   - : Defines text that can replace the image in the page.
 
     > **Note:** Browsers do not always display images. There are a number of situations in which a browser might not display images, such as:
@@ -74,7 +73,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     This attribute is also used when copying and pasting the image to text, or saving a linked image to a bookmark.
 
 - `crossorigin`
-
   - : Indicates if the fetching of the image must be done using a {{glossary("CORS")}} request. Image data from a [CORS-enabled image](/en-US/docs/Web/HTML/CORS_enabled_image) returned from a CORS request can be reused in the {{HTMLElement("canvas")}} element without being marked "[tainted](/en-US/docs/Web/HTML/CORS_enabled_image#what_is_a_tainted_canvas)".
 
     If the `crossorigin` attribute is _not_ specified, then a non-CORS request is sent (without the {{httpheader("Origin")}} request header), and the browser marks the image as tainted and restricts access to its image data, preventing its usage in {{HTMLElement("canvas")}} elements.
@@ -82,7 +80,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     If the `crossorigin` attribute _is_ specified, then a CORS request is sent (with the {{httpheader("Origin")}} request header); but if the server does not opt into allowing cross-origin access to the image data by the origin site (by not sending any {{httpheader("Access-Control-Allow-Origin")}} response header, or by not including the site's origin in any {{httpheader("Access-Control-Allow-Origin")}} response header it does send), then the browser blocks the image from loading, and logs a CORS error to the devtools console.
 
     Allowed values:
-
     - `anonymous`
       - : A CORS request is sent with credentials omitted (that is, no {{glossary("cookie", "cookies")}}, [X.509 certificates](https://datatracker.ietf.org/doc/html/rfc5280), or {{httpheader("Authorization")}} request header).
     - `use-credentials`
@@ -91,7 +88,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     If the attribute has an invalid value, browsers handle it as if the `anonymous` value was used. See [CORS settings attributes](/en-US/docs/Web/HTML/Attributes/crossorigin) for additional information.
 
 - `decoding`
-
   - : This attribute provides a hint to the browser as to whether it should perform image decoding along with rendering the other DOM content in a single presentation step that looks more "correct" (`sync`), or render and present the other DOM content first and then decode the image and present it later (`async`). In practice, `async` means that the next paint does not wait for the image to decode.
 
     It is often difficult to perceive any noticeable effect when using `decoding` on static `<img>` elements. They'll likely be initially rendered as empty images while the image files are fetched (either from the network or from the cache) and then handled independently anyway, so the "syncing" of content updates is less apparent. However, the blocking of rendering while decoding happens, while often quite small, _can_ be measured — even if it is difficult to observe with the human eye. See [What does the image decoding attribute actually do?](https://www.tunetheweb.com/blog/what-does-the-image-decoding-attribute-actually-do/) for a more detailed analysis (tunetheweb.com, 2023).
@@ -99,7 +95,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     Using different `decoding` types can result in more noticeable differences when dynamically inserting `<img>` elements into the DOM via JavaScript — see {{domxref("HTMLImageElement.decoding")}} for more details.
 
     Allowed values:
-
     - `sync`
       - : Decode the image synchronously along with rendering the other DOM content, and present everything together.
     - `async`
@@ -108,13 +103,10 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
       - : No preference for the decoding mode; the browser decides what is best for the user. This is the default value.
 
 - `elementtiming`
-
   - : Marks the image for observation by the {{domxref("PerformanceElementTiming")}} API. The value given becomes an identifier for the observed image element. See also the [`elementtiming`](/en-US/docs/Web/HTML/Attributes/elementtiming) attribute page.
 
 - `fetchpriority`
-
   - : Provides a hint of the relative priority to use when fetching the image. Allowed values:
-
     - `high`
       - : Signals a high-priority fetch relative to other images.
     - `low`
@@ -123,21 +115,17 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
       - : Default: Signals automatic determination of fetch priority relative to other images.
 
 - `height`
-
   - : The intrinsic height of the image, in pixels. Must be an integer without a unit.
 
     > **Note:** Including `height` and [`width`](#width) enables the {{glossary("aspect ratio")}} of the image to be calculated by the browser prior to the image being loaded. This aspect ratio is used to reserve the space needed to display the image, reducing or even preventing a layout shift when the image is downloaded and painted to the screen. Reducing layout shift is a major component of good user experience and web performance.
 
 - `ismap`
-
   - : This Boolean attribute indicates that the image is part of a [server-side map](https://en.wikipedia.org/wiki/Image_map#Server-side). If so, the coordinates where the user clicked on the image are sent to the server.
 
     > **Note:** This attribute is allowed only if the `<img>` element is a descendant of an {{htmlelement("a")}} element with a valid [`href`](/en-US/docs/Web/HTML/Element/a#href) attribute. This gives users without pointing devices a fallback destination.
 
 - `loading`
-
   - : Indicates how the browser should load the image:
-
     - `eager`
       - : Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (this is the default value).
     - `lazy`
@@ -147,9 +135,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     > **Note:** Images with `loading` set to `lazy` will never be loaded if they do not intersect a visible part of an element, even if loading them would change that as unloaded images have a `width` and `height` of `0`. Putting `width` and `height` on lazyloaded images fixes this issue and is a best practice, [recommended by the specification](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element). Doing so also helps prevent layout shifts.
 
 - `referrerpolicy`
-
   - : A string indicating which referrer to use when fetching the resource:
-
     - `no-referrer`: The {{HTTPHeader("Referer")}} header will not be sent.
     - `no-referrer-when-downgrade`: The {{HTTPHeader("Referer")}} header will not be sent to {{Glossary("origin")}}s without {{Glossary("TLS")}} ({{Glossary("HTTPS")}}).
     - `origin`: The sent referrer will be limited to the origin of the referring page: its [scheme](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL), {{Glossary("host")}}, and {{Glossary("port")}}.
@@ -160,7 +146,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     - `unsafe-url`: The referrer will include the origin _and_ the path (but not the [fragment](/en-US/docs/Web/API/HTMLAnchorElement/hash), [password](/en-US/docs/Web/API/HTMLAnchorElement/password), or [username](/en-US/docs/Web/API/HTMLAnchorElement/username)). **This value is unsafe**, because it leaks origins and paths from TLS-protected resources to insecure origins.
 
 - `sizes`
-
   - : One or more strings separated by commas, indicating a set of source sizes. Each source size consists of:
 
     1. A [media condition](/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#syntax). This must be omitted for the last item in the list.
@@ -173,12 +158,10 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `src`
   - : The image {{glossary("URL")}}. Mandatory for the `<img>` element. On {{glossary("Browser", "browsers")}} supporting `srcset`, `src` is treated like a candidate image with a pixel density descriptor `1x`, unless an image with this pixel density descriptor is already defined in `srcset`, or unless `srcset` contains `w` descriptors.
 - `srcset`
-
   - : One or more strings separated by commas, indicating possible image sources for the {{glossary("user agent")}} to use. Each string is composed of:
 
     1. A {{glossary("URL")}} to an image
     2. Optionally, whitespace followed by one of:
-
        - A width descriptor (a positive integer directly followed by `w`). The width descriptor is divided by the source size given in the `sizes` attribute to calculate the effective pixel density.
        - A pixel density descriptor (a positive floating point number directly followed by `x`).
 
@@ -193,7 +176,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `width`
   - : The intrinsic width of the image in pixels. Must be an integer without a unit.
 - `usemap`
-
   - : The partial {{glossary("URL")}} (starting with `#`) of an [image map](/en-US/docs/Web/HTML/Element/map) associated with the element.
 
     > **Note:** You cannot use this attribute if the `<img>` element is inside an {{htmlelement("a")}} or {{HTMLElement("button")}} element.
@@ -201,9 +183,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 ### Deprecated attributes
 
 - `align` {{deprecated_inline}}
-
   - : Aligns the image with its surrounding context. Use the {{cssxref('float')}} and/or {{cssxref('vertical-align')}} {{glossary("CSS")}} properties instead of this attribute. Allowed values:
-
     - `top`
       - : Equivalent to `vertical-align: top` or `vertical-align: text-top`
     - `middle`
@@ -220,7 +200,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `hspace` {{deprecated_inline}}
   - : The number of pixels of white space on the left and right of the image. Use the {{cssxref('margin')}} CSS property instead.
 - `longdesc` {{deprecated_inline}}
-
   - : A link to a more detailed description of the image. Possible values are a {{glossary("URL")}} or an element [`id`](/en-US/docs/Web/HTML/Global_attributes#id).
 
     > **Note:** This attribute is mentioned in the latest {{glossary("W3C")}} version, [HTML 5.2](https://html.spec.whatwg.org/multipage/obsolete.html#element-attrdef-img-longdesc), but has been removed from the {{glossary("WHATWG")}}'s [HTML Living Standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element). It has an uncertain future; authors should use a {{glossary("WAI")}}-{{glossary("ARIA")}} alternative such as [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby) or [`aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details).

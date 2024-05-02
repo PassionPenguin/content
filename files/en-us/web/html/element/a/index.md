@@ -18,15 +18,11 @@ Content within each `<a>` _should_ indicate the link's destination. If the `href
 This element's attributes include the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `download`
-
   - : Causes the browser to treat the linked URL as a download. Can be used with or without a `filename` value:
-
     - Without a value, the browser will suggest a filename/extension, generated from various sources:
-
       - The {{HTTPHeader("Content-Disposition")}} HTTP header
       - The final segment in the URL [path](/en-US/docs/Web/API/URL/pathname)
       - The {{Glossary("MIME_type", "media type")}} (from the {{HTTPHeader("Content-Type")}} header, the start of a [`data:` URL](/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs), or {{domxref("Blob.type")}} for a [`blob:` URL](/en-US/docs/Web/API/URL/createObjectURL_static))
-
     - `filename`: defining a value suggests it as the filename. `/` and `\` characters are converted to underscores (`_`). Filesystems may forbid other characters in filenames, so browsers will adjust the suggested name if necessary.
 
     > **Note:**
@@ -39,9 +35,7 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
     >   - If the header specifies a disposition of `inline`, Chrome and Firefox prioritize the attribute and treat it as a download. Old Firefox versions (before 82) prioritize the header and will display the content inline.
 
 - `href`
-
   - : The URL that the hyperlink points to. Links are not restricted to HTTP-based URLs — they can use any URL scheme supported by browsers:
-
     - Sections of a page with document fragments
     - Specific text portions with [text fragments](/en-US/docs/Web/Text_fragments)
     - Pieces of media files with media fragments
@@ -55,9 +49,7 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 - `ping`
   - : A space-separated list of URLs. When the link is followed, the browser will send {{HTTPMethod("POST")}} requests with the body `PING` to the URLs. Typically for tracking.
 - `referrerpolicy`
-
   - : How much of the [referrer](/en-US/docs/Web/HTTP/Headers/Referer) to send when following the link.
-
     - `no-referrer`: The {{HTTPHeader("Referer")}} header will not be sent.
     - `no-referrer-when-downgrade`: The {{HTTPHeader("Referer")}} header will not be sent to {{Glossary("origin")}}s without {{Glossary("TLS")}} ({{Glossary("HTTPS")}}).
     - `origin`: The sent referrer will be limited to the origin of the referring page: its [scheme](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL), {{Glossary("host")}}, and {{Glossary("port")}}.
@@ -70,9 +62,7 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 - `rel`
   - : The relationship of the linked URL as space-separated link types.
 - `target`
-
   - : Where to display the linked URL, as the name for a _browsing context_ (a tab, window, or {{HTMLElement("iframe")}}). The following keywords have special meanings for where to load the URL:
-
     - `_self`: The current browsing context. (Default)
     - `_blank`: Usually a new tab, but users can configure browsers to open a new window instead.
     - `_parent`: The parent browsing context of the current one. If no parent, behaves as `_self`.
@@ -87,7 +77,6 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 ### Deprecated attributes
 
 - `charset` {{Deprecated_Inline}}
-
   - : Hinted at the {{Glossary("character encoding")}} of the linked URL.
 
     > **Note:** This attribute is deprecated and **should not be used by authors**. Use the HTTP {{HTTPHeader("Content-Type")}} header on the linked URL.
@@ -95,7 +84,6 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 - `coords` {{Deprecated_Inline}}
   - : Used with [the `shape` attribute](#shape). A comma-separated list of coordinates.
 - `name` {{Deprecated_Inline}}
-
   - : Was required to define a possible target location in a page. In HTML 4.01, `id` and `name` could both be used on `<a>`, as long as they had identical values.
 
     > **Note:** Use the global attribute [`id`](/en-US/docs/Web/HTML/Global_attributes#id) instead.
@@ -103,7 +91,6 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 - `rev` {{Deprecated_Inline}}
   - : Specified a reverse link; the opposite of [the `rel` attribute](#rel). Deprecated for being very confusing.
 - `shape` {{Deprecated_Inline}}
-
   - : The shape of the hyperlink's region in an image map.
 
     > **Note:** Use the {{HTMLElement("area")}} element for image maps instead.

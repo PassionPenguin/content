@@ -17,6 +17,5 @@ HTTP/2 does not modify the application semantics of HTTP in any way. All the cor
 - [HTTP on MDN](/en-US/docs/Web/HTTP)
 - [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
-
   - {{glossary("HTTP")}}
   - {{glossary("Latency")}}

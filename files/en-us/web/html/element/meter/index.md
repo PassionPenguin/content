@@ -16,7 +16,6 @@ The **`<meter>`** [HTML](/en-US/docs/Web/HTML) element represents either a scala
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `value`
-
   - : The current numeric value. This must be between the minimum and maximum values (`min` attribute and `max` attribute) if they are specified. If unspecified or malformed, the value is `0`. If specified, but not within the range given by the `min` attribute and `max` attribute, the value is equal to the nearest end of the range.
 
     > **Note:** Unless the `value` attribute is between `0` and `1` (inclusive), the `min` and `max` attributes should define the range so that the `value` attribute's value is within it.

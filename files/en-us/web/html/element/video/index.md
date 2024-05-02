@@ -20,7 +20,6 @@ The content inside the opening and closing `<video></video>` tags is shown as a 
 Like all other HTML elements, this element supports the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `autoplay`
-
   - : A Boolean attribute; if specified, the video automatically begins to play back as soon as it can do so without stopping to finish loading the data.
 
     > **Note:** Sites that automatically play audio (or videos with an audio track) can be an unpleasant experience for users, so should be avoided when possible. If you must offer autoplay functionality, you should make it opt-in (requiring a user to specifically enable it). However, this can be useful when creating media elements whose source will be set at a later time, under user control. See our [autoplay guide](/en-US/docs/Web/Media/Autoplay_guide) for additional information about how to properly use autoplay.
@@ -32,7 +31,6 @@ Like all other HTML elements, this element supports the [global attributes](/en-
 - `controls`
   - : If this attribute is present, the browser will offer controls to allow the user to control video playback, including volume, seeking, and pause/resume playback.
 - `controlslist`
-
   - : The [`controlslist`](https://wicg.github.io/controls-list/explainer.html) attribute, when specified, helps the browser select what controls to show for the `video` element whenever the browser shows its own set of controls (that is, when the `controls` attribute is specified).
 
     The allowed values are `nodownload`, `nofullscreen` and `noremoteplayback`.
@@ -40,9 +38,7 @@ Like all other HTML elements, this element supports the [global attributes](/en-
     Use the [`disablepictureinpicture`](#disablepictureinpicture) attribute if you want to disable the Picture-In-Picture mode (and the control).
 
 - `crossorigin`
-
   - : This [enumerated](/en-US/docs/Glossary/Enumerated) attribute indicates whether to use CORS to fetch the related video. [CORS-enabled resources](/en-US/docs/Web/HTML/CORS_enabled_image) can be reused in the {{HTMLElement("canvas")}} element without being _tainted_. The allowed values are:
-
     - `anonymous`
       - : Sends a cross-origin request without a credential. In other words, it sends the `Origin:` HTTP header without a cookie, X.509 certificate, or performing HTTP Basic authentication. If the server does not give credentials to the origin site (by not setting the `Access-Control-Allow-Origin:` HTTP header), the resource will be _tainted_, and its usage restricted.
     - `use-credentials`
@@ -53,7 +49,6 @@ Like all other HTML elements, this element supports the [global attributes](/en-
 - `disablepictureinpicture`
   - : Prevents the browser from suggesting a Picture-in-Picture context menu or to request Picture-in-Picture automatically in some cases.
 - `disableremoteplayback`
-
   - : A Boolean attribute used to disable the capability of remote playback in devices that are attached using wired (HDMI, DVI, etc.) and wireless technologies (Miracast, Chromecast, DLNA, AirPlay, etc.).
 
     In Safari, you can use [`x-webkit-airplay="deny"`](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AirPlayGuide/OptingInorOutofAirPlay/OptingInorOutofAirPlay.html) as a fallback.
@@ -69,9 +64,7 @@ Like all other HTML elements, this element supports the [global attributes](/en-
 - `poster`
   - : A URL for an image to be shown while the video is downloading. If this attribute isn't specified, nothing is displayed until the first frame is available, then the first frame is shown as the poster frame.
 - `preload`
-
   - : This enumerated attribute is intended to provide a hint to the browser about what the author thinks will lead to the best user experience regarding what content is loaded before the video is played. It may have one of the following values:
-
     - `none`: Indicates that the video should not be preloaded.
     - `metadata`: Indicates that only video metadata (e.g. length) is fetched.
     - `auto`: Indicates that the whole video file can be downloaded, even if the user is not expected to use it.
@@ -536,7 +529,6 @@ Captions should not obstruct the main subject of the video. They can be position
 ## See also
 
 - [Guide to media types and formats on the web](/en-US/docs/Web/Media/Formats)
-
   - [Media container formats (file types)](/en-US/docs/Web/Media/Formats/Containers)
   - [Web video codec guide](/en-US/docs/Web/Media/Formats/Video_codecs)
   - [Web audio codec guide](/en-US/docs/Web/Media/Formats/Audio_codecs)

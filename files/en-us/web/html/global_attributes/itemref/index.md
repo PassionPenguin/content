@@ -57,7 +57,6 @@ This example uses microdata attributes to represent the following structured dat
 
 - [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
 - Other microdata related global attributes:
-
   - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
   - [`itemprop`](/en-US/docs/Web/HTML/Global_attributes/itemprop)
   - [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope)

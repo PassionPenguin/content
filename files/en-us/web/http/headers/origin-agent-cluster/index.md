@@ -63,7 +63,6 @@ Origin-Agent-Cluster: <boolean>
 ### Directives
 
 - `<boolean>`
-
   - : `?1` indicates that the associated {{domxref("Document")}} should be placed in an origin-keyed agent cluster.
     Values other than `?1` are ignored (e.g., the `?0` structured field for false).
 

@@ -49,21 +49,17 @@ These resources are created by forward-thinking companies and web developers who
 - [CSS first steps](/en-US/docs/Learn/CSS/First_steps)
   - : CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path toward CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
 - [CSS building blocks](/en-US/docs/Learn/CSS/Building_blocks)
-
   - : This module carries on where [CSS first steps](/en-US/docs/Learn/CSS/First_steps) left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.
 
     The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like [text styling](/en-US/docs/Learn/CSS/Styling_text) and [CSS layout](/en-US/docs/Learn/CSS/CSS_layout).
 
 - [Selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors)
-
   - : Target HTML elements, including based on element state, with CSS.
 
 - [Specificity](/en-US/docs/Web/CSS/Specificity)
-
   - : Understanding the browser algorithm to determine which CSS declarations get applied to an element when there are competing declarations, with a [specificity quiz](https://estelle.github.io/CSS/selectors/exercises/specificity.html)
 
 - [Cascade & Inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-
   - : The cascade, specificity, and inheritance control how CSS is applied to HTML and how conflicts between style declarations are resolved.
 
 - [Styling text](/en-US/docs/Learn/CSS/Styling_text)

@@ -27,31 +27,21 @@ get(options)
 ### Parameters
 
 - `options` {{optional_inline}}
-
   - : An object that contains options for the request. The options include criteria that the credentials are required or allowed to have, and options for interacting with the user. It can contain the following properties:
-
     - `mediation` {{optional_inline}}
-
       - : A string indicating whether the user will be required to login for every visit to a client app. The value can be one of the following:
-
         - `"conditional"`: Discovered credentials are presented to the user in a non-modal dialog box along with an indication of the origin requesting credentials. In practice, this means autofilling available credentials; see [Sign in with a passkey through form autofill](https://web.dev/articles/passkey-form-autofill) for more details of how this is used; {{domxref("PublicKeyCredential.isConditionalMediationAvailable()")}} also provides some useful information.
-
         - `"optional"`: If credentials can be handed over for a given operation without user mediation, they will be, enabling automatic reauthentication without user mediation. If user mediation is required, then the user agent will ask the user to authenticate. This value is intended for situations where you have reasonable confidence that a user won't be surprised or confused at seeing a login dialog box — for example on a site that doesn't automatically log users in, when a user has just clicked a "Login/Signup" button.
-
         - `"required"`: The user will always be asked to authenticate, even if prevent silent access (see {{domxref("CredentialsContainer.preventSilentAccess()")}}) is set to `false`. This value is intended for situations where you want to force user authentication — for example if you want a user to reauthenticate when a sensitive operation is being performed (like confirming a credit card payment), or when switching users.
-
         - `"silent"`: The user will not be asked to authenticate. The user agent will automatically reauthenticate the user and log them in if possible. If consent is required, the promise will fulfill with `null`. This value is intended for situations where you would want to automatically sign a user in upon visiting a web app if possible, but if not, you don't want to present them with a confusing login dialog box. Instead, you'd want to wait for them to explicitly click a "Login/Signup" button.
 
         If `mediation` is omitted, it will default to `"optional"`.
 
         > **Note:** In the case of a federated authentication (FedCM API) request, a `mediation` value of `optional` or `silent` may result in attempted [auto-reauthentication](/en-US/docs/Web/API/FedCM_API/RP_sign-in#auto-reauthentication). Whether this occurred is communicated to the IdP (via the [`is_auto_selected`](/en-US/docs/Web/API/FedCM_API/IDP_integration#is_auto_selected) parameter sent to the IdP's `id_assertion_endpoint` during validation) and the RP (via the {{domxref("IdentityCredential.isAutoSelected")}} property). This is useful for performance evaluation, security requirements (the IdP may wish to reject automatic reauthentication requests and always require user mediation), and general UX (an IdP or RP may wish to present different UX for auto and non-auto login experiences).
-
     - `signal` {{optional_inline}}
-
       - : An {{domxref("AbortSignal")}} object instance that allows an ongoing `get()` operation to be aborted. An aborted operation may complete normally (generally if the abort was received after the operation finished) or reject with an "`AbortError`" {{domxref("DOMException")}}.
 
     Each of the following properties represents a _credential type_ being requested:
-
     - `federated` {{optional_inline}}
       - : An object containing requirements for a requested credential from a federated identify provider. Bear in mind that the Federated Credential Management API (the `identity` credential type) supersedes this credential type. See the [Credential Management API](#credential_management_api) section below for more details.
     - `password` {{optional_inline}}
@@ -123,9 +113,7 @@ Relying parties (RPs) can call `get()` with an `identity` option to request that
     - `signup`: An option for situations where the user is signing in to the origin with a new IdP account they've not used here before. Browsers will provide a text string similar to "Sign up to \<page-origin\> with \<IdP\>".
     - `use`: Suitable for situations where a different action, such as validating a payment, is being performed. Browsers will provide a text string similar to "Use \<page-origin\> with \<IdP\>".
 - `providers`
-
   - : An array containing a single object specifying details of an IdP to be used to sign in. This object can contain the following properties:
-
     - `configURL`
       - : A string specifying the URL of the IdP's config file. See [Provide a config file](/en-US/docs/Web/API/FedCM_API/IDP_integration#provide_a_config_file_and_endpoints) for more information.
     - `clientId`
@@ -154,7 +142,6 @@ If the `get()` method's promise rejects, the RP can direct the user to the IdP l
 - `IdentityCredentialError` {{domxref("DOMException")}}
   - : The request to the [ID assertion endpoint](/en-US/docs/Web/API/FedCM_API/IDP_integration#the_id_assertion_endpoint) is unable to validate the authentication, and rejects with an error response containing information about why. See the [Error API example](#example_including_error_api_information) below for more information on how it can be used.
 - `NetworkError` {{domxref("DOMException")}}
-
   - : The IdP did not respond within 60 seconds, the provided credentials were not valid/found, or the browser's login status for the IdP is set to `"logged-out"` (see [Update login status using the Login Status API](/en-US/docs/Web/API/FedCM_API/IDP_integration#update_login_status_using_the_login_status_api) for more information about FedCM login status). In the latter case, there may be some delay in the rejection to avoid leaking the IdP login status to the RP.
 
 - `NotAllowedError` {{domxref("DOMException")}}
@@ -291,81 +278,59 @@ The [Web Authentication API](/en-US/docs/Web/API/Web_Authentication_API) enables
 `publicKey` can contain the following properties:
 
 - `allowCredentials` {{optional_inline}}
-
   - : An array of objects defining a restricted list of the acceptable credentials for retrieval. Each object will contain the following properties:
-
     - `id`
-
       - : An {{jsxref("ArrayBuffer")}}, {{jsxref("TypedArray")}}, or {{jsxref("DataView")}} representing the ID of the public key credential to retrieve. This value is mirrored by the {{domxref("PublicKeyCredential.rawId", "rawId")}} property of the {{domxref("PublicKeyCredential")}} object returned by a successful `get()` call.
-
     - `transports`
-
       - : An array of strings providing hints as to the methods the client could use to communicate with the relevant authenticator of the public key credential to retrieve. Possible transports are: `"ble"`, `"hybrid"`, `"internal"`, `"nfc"`, and `"usb"`.
 
         > **Note:** This value is mirrored by the return value of the {{domxref("AuthenticatorAttestationResponse.getTransports", "PublicKeyCredential.response.getTransports()")}} method of the {{domxref("PublicKeyCredential")}} object returned by the `create()` call that originally created the credential.
         > At that point, it should be stored by the app for later use.
-
     - `type`
       - : A string defining the type of the public key credential to retrieve. This can currently take a single value, `"public-key"`, but more values may be added in the future. This value is mirrored by the {{domxref("Credential.type", "type")}} property of the {{domxref("PublicKeyCredential")}} object returned by a successful `get()` call.
 
     If `allowCredentials` is omitted, it will default to an empty array, meaning that any credential is potentially acceptable for retrieval without the relying party first providing an ID.
 
 - `attestation` {{optional_inline}}
-
   - : A string specifying the relying party's preference for how the attestation statement (i.e., provision of verifiable evidence of the authenticity of the authenticator and its data) is conveyed during authentication. The value can be one of the following:
-
     - `"none"`
-
       - : Specifies that the relying party is not interested in authenticator attestation. This might be to avoid additional user consent for round trips to the relying party server to relay identifying information, or round trips to an attestation certificate authority (CA), with the aim of making the authentication process smoother. If `"none"` is chosen as the `attestation` value, and the authenticator signals that it uses a CA to generate its attestation statement, the client app will replace it with a "None" attestation statement, indicating that no attestation statement is available.
-
     - `"direct"`
-
       - : Specifies that the relying party wants to receive the attestation statement as generated by the authenticator.
-
     - `"enterprise"`
-
       - : Specifies that the relying party wants to receive an attestation statement that may include uniquely identifying information. This is intended for controlled deployments within an enterprise where the organization wishes to tie registrations to specific authenticators.
-
     - `"indirect"`
       - : Specifies that the relying party wants to receive a verifiable attestation statement, but it will allow the client to decide how to receive it. For example, the client could choose to replace the authenticator's assertion statement with one generated by an anonymization CA to protect user privacy.
 
     If `attestation` is omitted, it will default to `"none"`.
 
 - `attestationFormats` {{optional_inline}}
-
   - : An array of strings specifying the relying party's preference for the attestation statement format used by the authenticator. Values should be ordered from highest to lowest preference, and should be considered hints — the authenticator may choose to issue an attestation statement in a different format. For a list of valid formats, see [WebAuthn Attestation Statement Format Identifiers](https://www.iana.org/assignments/webauthn/webauthn.xhtml#webauthn-attestation-statement-format-ids).
 
     If omitted, `attestationFormats` defaults to an empty array.
 
 - `challenge`
-
   - : An {{jsxref("ArrayBuffer")}}, {{jsxref("TypedArray")}}, or {{jsxref("DataView")}} originating from the relying party's server and used as a [cryptographic challenge](https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication). This value will be signed by the authenticator and the signature will be sent back as part of the {{domxref("AuthenticatorAssertionResponse.signature")}} (available in the {{domxref("PublicKeyCredential.response", "response")}} property of the {{domxref("PublicKeyCredential")}} object returned by a successful `get()` call).
 
 - `extensions` {{optional_inline}}
-
   - : An object containing properties representing the input values for any requested extensions. These extensions are used to specific additional processing by the client or authenticator during the authentication process. Examples include dealing with legacy FIDO API credentials, and evaluating outputs from a pseudo-random function (PRF) associated with a credential.
 
     Extensions are optional and different browsers may recognize different extensions. Processing extensions is always optional for the client: if a browser does not recognize a given extension, it will just ignore it. For information on using extensions, and which ones are supported by which browsers, see [Web Authentication extensions](/en-US/docs/Web/API/Web_Authentication_API/WebAuthn_extensions).
 
 - `rpId` {{optional_inline}}
-
   - : A string that specifies the relying party's identifier (for example `"login.example.org"`). For security purposes:
-
     - The calling web app verifies that `rpId` matches the relying party's origin.
     - The authenticator verifies that `rpId` matches the `rpId` of the credential used for the authentication ceremony.
 
     If `rpId` is omitted, it will default to the current origin's domain.
 
 - `timeout` {{optional_inline}}
-
   - : A numerical hint, in milliseconds, indicating the time the relying party is willing to wait for the retrieval operation to complete. This hint may be overridden by the browser.
 
 - `userVerification` {{optional_inline}}
-
   - : A string specifying the relying party's requirements for user verification of the authentication process. This verification is initiated by the authenticator, which will request the user to provide an available factor (for example a PIN or a biometric input of some kind).
 
     The value can be one of the following:
-
     - `"required"`
       - : The relying party requires user verification, and the operation will fail if it does not occur.
     - `"preferred"`
@@ -376,11 +341,9 @@ The [Web Authentication API](/en-US/docs/Web/API/Web_Authentication_API) enables
     If `userVerification` is omitted, it will default to `"preferred"`.
 
 - `hints` {{optional_inline}}
-
   - : An array of strings providing hints as to what authentication UI the user-agent should provide for the user.
 
     The values can be any of the following:
-
     - `"security-key"`
       - : Authentication requires a separate dedicated physical device to provide the key.
     - `"client-device"`

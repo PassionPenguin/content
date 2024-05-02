@@ -18,7 +18,6 @@ The **`RsaHashedKeyGenParams`** dictionary of the [Web Crypto API](/en-US/docs/W
 - `publicExponent`
   - : A {{jsxref("Uint8Array")}}. The public exponent. Unless you have a good reason to use something else, specify 65537 here (`[0x01, 0x00, 0x01]`).
 - `hash`
-
   - : A string representing the name of the [digest function](/en-US/docs/Web/API/SubtleCrypto/digest) to use. You can pass any of `SHA-256`, `SHA-384`, or `SHA-512` here.
 
     > **Warning:** Although you can technically pass `SHA-1` as a value here, this is strongly discouraged as SHA-1 is considered vulnerable.

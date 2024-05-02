@@ -91,7 +91,6 @@ Content-Security-Policy: connect-src 'self';
 
 - {{HTTPHeader("Content-Security-Policy")}}
 - CSP directives (<https://www.w3.org/TR/CSP/#csp-directives>):
-
   - {{Glossary("Fetch directive")}}
   - {{Glossary("Document directive")}}
   - {{Glossary("Navigation directive")}}

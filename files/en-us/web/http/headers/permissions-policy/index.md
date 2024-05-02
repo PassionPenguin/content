@@ -33,9 +33,7 @@ Permissions-Policy: <directive>=<allowlist>
 - `<directive>`
   - : The Permissions Policy directive to apply the `allowlist` to. See [Directives](#directives) below for a list of the permitted directive names.
 - `<allowlist>`
-
   - : An allowlist is a list of origins that takes one or more of the following values contained in parentheses, separated by spaces:
-
     - `*`: The feature will be allowed in this document, and all nested browsing contexts (`<iframe>`s) regardless of their origin.
     - `()` (empty allowlist): The feature is disabled in top-level and nested browsing contexts. The equivalent for `<iframe>` `allow` attributes is `'none'`.
     - `self`: The feature will be allowed in this document, and in all nested browsing contexts (`<iframe>`s) in the same origin only. The feature is not allowed in cross-origin documents in nested browsing contexts. `self` can be considered shorthand for `https://your-site.example.com`. The equivalent for `<iframe>` `allow` attributes is `self`.
@@ -65,144 +63,109 @@ You can specify
 ## Directives
 
 - {{httpheader('Permissions-Policy/accelerometer','accelerometer')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to gather information about the acceleration of the device through the {{DOMxRef("Accelerometer")}} interface.
 
 - {{httpheader('Permissions-Policy/ambient-light-sensor','ambient-light-sensor')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to gather information about the amount of light in the environment around the device through the {{DOMxRef("AmbientLightSensor")}} interface.
 
 - {{httpheader('Permissions-Policy/autoplay','autoplay')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to autoplay media requested through the {{domxref("HTMLMediaElement")}} interface. When this policy is disabled and there were no user gestures, the {{jsxref("Promise")}} returned by {{domxref("HTMLMediaElement.play()")}} will reject with a `NotAllowedError` {{domxref("DOMException")}}. The autoplay attribute on {{HTMLElement("audio")}} and {{HTMLElement("video")}} elements will be ignored.
 
 - {{httpheader('Permissions-Policy/battery','battery')}} {{Experimental_Inline}}
-
   - : Controls whether the use of the [Battery Status API](/en-US/docs/Web/API/Battery_Status_API) is allowed. When this policy is disabled, the {{JSxRef("Promise")}} returned by {{DOMxRef("Navigator.getBattery","Navigator.getBattery()")}} will reject with a `NotAllowedError` {{DOMxRef("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/bluetooth','bluetooth')}} {{Experimental_Inline}}
-
   - : Controls whether the use of the [Web Bluetooth API](/en-US/docs/Web/API/Web_Bluetooth_API) is allowed. When this policy is disabled, the methods of the {{DOMxRef("Bluetooth")}} object returned by {{DOMxRef("Navigator.bluetooth")}} will either return `false` or reject the returned {{JSxRef("Promise")}} with a `SecurityError` {{DOMxRef("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/browsing-topics','browsing-topics')}} {{Experimental_Inline}} {{non-standard_inline}}
-
   - : Controls access to the [Topics API](/en-US/docs/Web/API/Topics_API). Where a policy specifically disallows the use of the Topics API, any attempts to call the {{domxref("Document.browsingTopics()")}} method or send a request with a {{httpheader("Sec-Browsing-Topics")}} header will fail with a `NotAllowedError` {{domxref("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/camera', 'camera')}}
-
   - : Controls whether the current document is allowed to use video input devices. When this policy is disabled, the {{jsxref("Promise")}} returned by {{domxref("MediaDevices.getUserMedia", "getUserMedia()")}} will reject with a `NotAllowedError` {{DOMxRef("DOMException")}}.
 
 - {{HTTPHeader('Permissions-Policy/display-capture', 'display-capture')}}
-
   - : Controls whether or not the current document is permitted to use the {{domxref("MediaDevices.getDisplayMedia", "getDisplayMedia()")}} method to capture screen contents. When this policy is disabled, the promise returned by `getDisplayMedia()` will reject with a `NotAllowedError` {{DOMxRef("DOMException")}} if permission is not obtained to capture the display's contents.
 
 - {{httpheader('Permissions-Policy/document-domain','document-domain')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to set {{domxref("document.domain")}}. When this policy is disabled, attempting to set {{domxref("document.domain")}} will fail and cause a `SecurityError` {{domxref("DOMException")}} to be thrown.
 
 - {{httpheader('Permissions-Policy/encrypted-media', 'encrypted-media')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Encrypted Media Extensions API](/en-US/docs/Web/API/Encrypted_Media_Extensions_API) (EME). When this policy is disabled, the {{jsxref("Promise")}} returned by {{domxref("Navigator.requestMediaKeySystemAccess()")}} will reject with a `SecurityError` {{domxref("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/execution-while-not-rendered', 'execution-while-not-rendered')}} {{Experimental_Inline}}
-
   - : Controls whether tasks should execute in frames while they're not being rendered (e.g. if an iframe is [`hidden`](/en-US/docs/Web/HTML/Global_attributes/hidden) or has `display: none` set).
 
 - {{httpheader('Permissions-Policy/execution-while-out-of-viewport', 'execution-while-out-of-viewport')}} {{Experimental_Inline}}
-
   - : Controls whether tasks should execute in frames while they're outside of the visible viewport.
 
 - {{httpheader('Permissions-Policy/fullscreen','fullscreen')}}
-
   - : Controls whether the current document is allowed to use {{DOMxRef("Element.requestFullscreen()")}}. When this policy is disabled, the returned {{JSxRef("Promise")}} rejects with a {{JSxRef("TypeError")}}.
 
 - {{httpheader('Permissions-Policy/gamepad','gamepad')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Gamepad API](/en-US/docs/Web/API/Gamepad_API).
     When this policy is disabled, calls to {{domxref('Navigator.getGamepads()')}} will throw a `SecurityError` {{domxref('DOMException')}}, and the {{domxref("Window.gamepadconnected_event", "gamepadconnected")}} and {{domxref("Window.gamepaddisconnected_event", "gamepaddisconnected")}} events will not fire.
 
 - {{httpheader('Permissions-Policy/geolocation','geolocation')}}
-
   - : Controls whether the current document is allowed to use the {{domxref('Geolocation')}} Interface. When this policy is disabled, calls to {{domxref('Geolocation.getCurrentPosition','getCurrentPosition()')}} and {{domxref('Geolocation.watchPosition','watchPosition()')}} will cause those functions' callbacks to be invoked with a {{domxref('GeolocationPositionError')}} code of `PERMISSION_DENIED`.
 
 - {{httpheader('Permissions-Policy/gyroscope','gyroscope')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to gather information about the orientation of the device through the {{DOMxRef("Gyroscope")}} interface.
 
 - {{httpheader('Permissions-Policy/hid','hid')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the {{domxref("WebHID API", "WebHID API", "", "nocode")}} to connect to uncommon or exotic human interface devices such as alternative keyboards or gamepads.
 
 - {{httpheader('Permissions-Policy/identity-credentials-get','identity-credentials-get')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Federated Credential Management API (FedCM)](/en-US/docs/Web/API/FedCM_API), and more specifically the {{domxref("CredentialsContainer.get", "navigator.credentials.get()")}} method with an `identity` option. Where this policy forbids use of the API, the {{jsxref("Promise")}} returned by the `get()` call will reject with a `NotAllowedError` {{domxref("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/idle-detection','idle-detection')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the {{domxref("Idle Detection API", "Idle Detection API", "", "nocode")}} to detect when users are interacting with their devices, for example to report "available"/"away" status in chat applications.
 
 - {{httpheader('Permissions-Policy/local-fonts','local-fonts')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to gather data on the user's locally-installed fonts via the {{DOMxRef("Window.queryLocalFonts()")}} method (see also the {{domxref("Local Font Access API", "Local Font Access API", "", "nocode")}}).
 
 - {{httpheader('Permissions-Policy/magnetometer','magnetometer')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to gather information about the orientation of the device through the {{DOMxRef("Magnetometer")}} interface.
 
 - {{httpheader('Permissions-Policy/microphone','microphone')}}
-
   - : Controls whether the current document is allowed to use audio input devices. When this policy is disabled, the {{jsxref("Promise")}} returned by {{domxref("MediaDevices.getUserMedia()")}} will reject with a `NotAllowedError` {{domxref("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/midi', 'midi')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Web MIDI API](/en-US/docs/Web/API/Web_MIDI_API). When this policy is disabled, the {{jsxref("Promise")}} returned by {{domxref("Navigator.requestMIDIAccess()")}} will reject with a `SecurityError` {{domxref("DOMException")}}.
 
 - {{httpheader("Permissions-Policy/otp-credentials", "otp-credentials")}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [WebOTP API](/en-US/docs/Web/API/WebOTP_API) to request a one-time password (OTP) from a specially-formatted SMS message sent by the app's server, i.e., via {{domxref("CredentialsContainer.get", "navigator.credentials.get({otp: ..., ...})")}}.
 
 - {{httpheader('Permissions-Policy/payment', 'payment')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Payment Request API](/en-US/docs/Web/API/Payment_Request_API). When this policy is enabled, the {{domxref("PaymentRequest","PaymentRequest()")}} constructor will throw a `SecurityError` {{domxref("DOMException")}}.
 
 - {{httpheader('Permissions-Policy/picture-in-picture', 'picture-in-picture')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to play a video in a Picture-in-Picture mode via the corresponding API.
 
 - {{httpheader("Permissions-Policy/publickey-credentials-create", "publickey-credentials-create")}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Web Authentication API](/en-US/docs/Web/API/Web_Authentication_API) to create new asymmetric key credentials, i.e., via {{domxref("CredentialsContainer.create", "navigator.credentials.create({publicKey: ..., ...})")}}.
 
 - {{httpheader("Permissions-Policy/publickey-credentials-get", "publickey-credentials-get")}}
-
   - : Controls whether the current document is allowed to use the [Web Authentication API](/en-US/docs/Web/API/Web_Authentication_API) to retrieve already stored public-key credentials, i.e., via {{domxref("CredentialsContainer.get", "navigator.credentials.get({publicKey: ..., ...})")}}.
 
 - {{httpheader('Permissions-Policy/screen-wake-lock', 'screen-wake-lock')}}
-
   - : Controls whether the current document is allowed to use [Screen Wake Lock API](/en-US/docs/Web/API/Screen_Wake_Lock_API) to indicate that device should not turn off or dim the screen.
 
 - {{httpheader('Permissions-Policy/serial','serial')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the {{domxref("Web Serial API", "Web Serial API", "", "nocode")}} to communicate with serial devices, either directly connected via a serial port, or via USB or Bluetooth devices emulating a serial port.
 
 - {{httpheader("Permissions-Policy/speaker-selection", "speaker-selection")}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [Audio Output Devices API](/en-US/docs/Web/API/Audio_Output_Devices_API) to list and select speakers.
 
 - {{httpheader("Permissions-Policy/storage-access", "storage-access")}} {{Experimental_Inline}}
-
   - : Controls whether a document loaded in a third-party context (i.e. embedded in an {{htmlelement("iframe")}}) is allowed to use the {{domxref("Storage Access API", "Storage Access API", "", "nocode")}} to request access to unpartitioned cookies.
 
 - {{httpheader('Permissions-Policy/usb', 'usb')}} {{Experimental_Inline}}
-
   - : Controls whether the current document is allowed to use the [WebUSB API](/en-US/docs/Web/API/WebUSB_API).
 
 - {{httpheader("Permissions-Policy/web-share", "web-share")}}
-
   - : Controls whether or not the current document is allowed to use the {{domxref("Navigator.share","Navigator.share()")}} of [Web Share API](/en-US/docs/Web/API/Web_Share_API) to share text, links, images, and other content to arbitrary destinations of user's choice, e.g. mobile apps.
 
 - {{httpheader("Permissions-Policy/window-management", "window-management")}} {{experimental_inline}}
-
   - : Controls whether or not the current document is allowed to use the [Window Management API](/en-US/docs/Web/API/Window_Management_API) to manage windows on multiple displays.
 
 - {{httpheader("Permissions-Policy/xr-spatial-tracking", "xr-spatial-tracking")}} {{Experimental_Inline}}

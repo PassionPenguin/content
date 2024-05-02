@@ -61,15 +61,12 @@ Container queries are similar to dimension [media queries](/en-US/docs/Web/CSS/C
 ## Guides
 
 - [CSS container queries](/en-US/docs/Web/CSS/CSS_containment/Container_queries)
-
   - : A guide to using container queries with `@container`, including naming containment contexts.
 
 - [Using CSS containment](/en-US/docs/Web/CSS/CSS_containment/Using_CSS_containment)
-
   - : Describes the basic aims of CSS containment and how to leverage `contain` and `content-visibility` for a better user experience.
 
 - [Using container size and style queries](/en-US/docs/Web/CSS/CSS_containment/Container_size_and_style_queries)
-
   - : A guide to writing container size and style queries with `@container`, including style queries for custom properties, query syntax and names, and nesting container queries.
 
 ## Related concepts
@@ -78,17 +75,14 @@ Container queries are similar to dimension [media queries](/en-US/docs/Web/CSS/C
 - [Block formatting context](/en-US/docs/Web/CSS/CSS_display/Block_formatting_context)
 
 - [CSS media queries](/en-US/docs/Web/CSS/CSS_media_queries) module
-
   - {{cssxref("@media")}} at-rule
   - [CSS logical operators](/en-US/docs/Web/CSS/@media#logical_operators) (`not`, `or`, and `and`)
 
 - [CSS transitions](/en-US/docs/Web/CSS/CSS_transitions) module
-
   - {{cssxref("@starting-style")}} at-rule
   - {{cssxref("transition-behavior")}} property
 
 - CSS box sizing module
-
   - {{cssxref("contain-intrinsic-size")}} shorthand property
   - {{CSSxRef("contain-intrinsic-inline-size")}} property
   - {{CSSxRef("contain-intrinsic-size")}} property
@@ -96,7 +90,6 @@ Container queries are similar to dimension [media queries](/en-US/docs/Web/CSS/C
   - {{CSSxRef("contain-intrinsic-height")}} property
 
 - [CSS counter styles](/en-US/docs/Web/CSS/CSS_counter_styles) module
-
   - [Using CSS counters](/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters) guide
 
 - [CSS nesting](/en-US/docs/Web/CSS/CSS_nesting) module

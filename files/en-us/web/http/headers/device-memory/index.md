@@ -73,7 +73,6 @@ Device-Memory: 1
 - {{DOMxRef("Navigator.deviceMemory")}}
 - {{DOMxRef("WorkerNavigator.deviceMemory")}}
 - Device client hints
-
   - {{HTTPHeader("Content-DPR")}}
   - {{HTTPHeader("DPR")}}
   - {{HTTPHeader("Viewport-Width")}}

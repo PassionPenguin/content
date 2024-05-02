@@ -52,7 +52,6 @@ The `background` property is specified as one or more background layers, separat
 The syntax of each layer is as follows:
 
 - Each layer may include zero or one occurrences of any of the following values:
-
   - `<attachment>`
   - `<bg-image>`
   - `<position>`

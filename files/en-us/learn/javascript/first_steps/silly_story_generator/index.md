@@ -76,7 +76,6 @@ Placing the event handler and incomplete function:
 
 1. Now return to the raw text file.
 2. Copy the code found underneath the heading "3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION" and paste it into the bottom of your `main.js` file. This:
-
    - Adds a click event listener to the `randomize` variable so that when the button it represents is clicked, the `result()` function is run.
    - Adds a partially-completed `result()` function definition to your code. For the remainder of the assessment, you'll be filling in lines inside this function to complete it and make it work properly.
 

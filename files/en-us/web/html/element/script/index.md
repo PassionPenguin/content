@@ -14,7 +14,6 @@ The **`<script>`** [HTML](/en-US/docs/Web/HTML) element is used to embed executa
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `async`
-
   - : For classic scripts, if the `async` attribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.
 
     For [module scripts](/en-US/docs/Web/JavaScript/Guide/Modules), if the `async` attribute is present then the scripts and all their dependencies will be fetched in parallel to parsing and evaluated as soon as they are available.
@@ -26,14 +25,12 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     See [Browser compatibility](#browser_compatibility) for notes on browser support. See also [Async scripts for asm.js](/en-US/docs/Games/Techniques/Async_scripts).
 
 - `blocking` {{Experimental_Inline}}
-
   - : This attribute explicitly indicates that certain operations should be blocked on the fetching of the script. The operations that are to be blocked must be a space-separated list of blocking attributes listed below.
     - `render`: The rendering of content on the screen is blocked.
 
 - `crossorigin`
   - : Normal `script` elements pass minimal information to the {{domxref('Window.error_event', 'window.onerror')}} for scripts which do not pass the standard {{Glossary("CORS")}} checks. To allow error logging for sites which use a separate domain for static media, use this attribute. See [CORS settings attributes](/en-US/docs/Web/HTML/Attributes/crossorigin) for a more descriptive explanation of its valid arguments.
 - `defer`
-
   - : This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing {{domxref("Document/DOMContentLoaded_event", "DOMContentLoaded")}}.
 
     Scripts with the `defer` attribute will prevent the `DOMContentLoaded` event from firing until the script has loaded and finished evaluating.
@@ -47,9 +44,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     This attribute allows the elimination of **parser-blocking JavaScript** where the browser would have to load and evaluate scripts before continuing to parse. `async` has a similar effect in this case.
 
 - `fetchpriority`
-
   - : Provides a hint of the relative priority to use when fetching an external script. Allowed values:
-
     - `high`
       - : Signals a high-priority fetch relative to other external scripts.
     - `low`
@@ -64,9 +59,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `nonce`
   - : A cryptographic nonce (number used once) to allow scripts in a [script-src Content-Security-Policy](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src). The server must generate a unique nonce value each time it transmits a policy. It is critical to provide a nonce that cannot be guessed as bypassing a resource's policy is otherwise trivial.
 - `referrerpolicy`
-
   - : Indicates which [referrer](/en-US/docs/Web/API/Document/referrer) to send when fetching the script, or resources fetched by the script:
-
     - `no-referrer`: The {{HTTPHeader("Referer")}} header will not be sent.
     - `no-referrer-when-downgrade`: The {{HTTPHeader("Referer")}} header will not be sent to {{Glossary("origin")}}s without {{Glossary("TLS")}} ({{Glossary("HTTPS")}}).
     - `origin`: The sent referrer will be limited to the origin of the referring page: its [scheme](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL), {{Glossary("host")}}, and {{Glossary("port")}}.
@@ -81,10 +74,8 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `src`
   - : This attribute specifies the URI of an external script; this can be used as an alternative to embedding a script directly within a document.
 - [`type`](/en-US/docs/Web/HTML/Element/script/type)
-
   - : This attribute indicates the type of script represented.
     The value of this attribute will be one of the following:
-
     - **Attribute is not set (default), an empty string, or a JavaScript MIME type**
       - : Indicates that the script is a "classic script", containing JavaScript code.
         Authors are encouraged to omit the attribute if the script refers to JavaScript code rather than specify a MIME type.

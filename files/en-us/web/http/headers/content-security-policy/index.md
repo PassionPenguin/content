@@ -44,7 +44,6 @@ where `<policy-directive>` consists of:
 {{Glossary("Fetch directive","Fetch directives")}} control the locations from which certain resource types may be loaded.
 
 - {{CSP("child-src")}}
-
   - : Defines the valid sources for [web workers](/en-US/docs/Web/API/Web_Workers_API) and nested browsing contexts loaded using elements such as
     {{HTMLElement("frame")}} and {{HTMLElement("iframe")}}.
 
@@ -71,7 +70,6 @@ where `<policy-directive>` consists of:
   - : Specifies valid sources for loading media using the {{HTMLElement("audio")}} ,
     {{HTMLElement("video")}} and {{HTMLElement("track")}} elements.
 - {{CSP("object-src")}}
-
   - : Specifies valid sources for the {{HTMLElement("object")}} and {{HTMLElement("embed")}} elements.
 
     > **Note:** Elements controlled by `object-src` are perhaps
@@ -130,7 +128,6 @@ Reporting directives control the reporting process of CSP violations. See also t
 {{HTTPHeader("Content-Security-Policy-Report-Only")}} header.
 
 - {{CSP("report-uri")}} {{deprecated_inline}}
-
   - : Instructs the user agent to report attempts to violate the Content Security Policy.
     These violation reports consist of {{Glossary("JSON")}} documents sent via an HTTP
     `POST` request to the specified URI.
@@ -210,7 +207,6 @@ For detailed reference see [CSP Source Values](/en-US/docs/Web/HTTP/Headers/Cont
 ### Hosts values
 
 - Host
-
   - Only allow loading of resources from a specific host, with optional scheme, port, and path. For example, `example.com`, `*.example.com`, `https://*.example.com:12/path/to/file.js`.
   - Path parts in the CSP that end in `/` match any path they are a prefix of. For example, `example.com/api/` will match URLs like `example.com/api/users/new`.
   - Other path parts in the CSP are matched exactly; for example, `example.com/file.js` will match `http://example.com/file.js` and `https://example.com/file.js`, but not `https://example.com/file.js/file2.js`.

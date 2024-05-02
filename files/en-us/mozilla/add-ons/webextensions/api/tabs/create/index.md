@@ -22,9 +22,7 @@ let creating = browser.tabs.create(
 ### Parameters
 
 - `createProperties`
-
   - : `object`. Properties to give the new tab. To learn more about these properties, see the {{WebExtAPIRef("tabs.Tab")}} documentation.
-
     - `active` {{optional_inline}}
       - : `boolean`. Whether the tab should become the active tab in the window. If `false`, it has no effect. Does not affect whether the window is focused (see {{WebExtAPIRef('windows.update')}}). Defaults to `true`.
     - `cookieStoreId` {{optional_inline}}
@@ -42,21 +40,17 @@ let creating = browser.tabs.create(
     - `pinned` {{optional_inline}}
       - : `boolean`. Whether the tab should be pinned. Defaults to `false`.
     - `selected` {{optional_inline}}
-
       - : `boolean`. Whether the tab should become the selected tab in the window. Defaults to `true`.
 
         > **Warning:** This property is deprecated, and is not supported in Firefox. Use `active` instead.
-
     - `title` {{optional_inline}}
       - : `string`. The title of the tab. Allowed only if the tab is created with `discarded` set to `true`.
     - `url` {{optional_inline}}
-
       - : `string`. The URL to navigate the tab to initially. Defaults to the New Tab Page.
 
         Fully-qualified URLs must include a scheme (for example, 'http\://www\.google.com' not 'www\.google.com').
 
         For security reasons, in Firefox, this may not be a privileged URL. So passing any of the following URLs will fail:
-
         - chrome: URLs
         - javascript: URLs
         - data: URLs
@@ -65,7 +59,6 @@ let creating = browser.tabs.create(
         - The New Tab page (`about:newtab`) can be opened if no value for URL is provided.
 
         To load a page that's packaged with your extension, specify an absolute URL starting at the extension's manifest.json file. For example: '/path/to/my-page.html'. If you omit the leading '/', the URL is treated as a relative URL, and different browsers may construct different absolute URLs.
-
     - `windowId` {{optional_inline}}
       - : `integer`. The window to create the new tab in. Defaults to the current window.
 

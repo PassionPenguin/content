@@ -79,9 +79,7 @@ uniform4uiv(location, data, srcOffset, srcLength)
   - : A {{domxref("WebGLUniformLocation")}} object containing the location of the uniform
     attribute to modify.
 - `data, v0, v1, v2, v3`
-
   - : A new value to be used for the uniform variable. Possible types:
-
     - A {{jsxref("Number")}} for unsigned integer values (methods with
       `ui`), for integer values (methods with `i`), or for floats
       (methods with `f`).

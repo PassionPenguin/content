@@ -12,12 +12,10 @@ Relevant directives include the {{Glossary("fetch directive", "fetch directives"
 ## Sources
 
 - `<host-source>`
-
   - : Internet host by name or IP address. The [URL scheme](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL), port number, and path are optional.
     Wildcards (`'*'`) can be used for subdomains, host address, and port number, indicating that all legal values of each are valid.
     When matching schemes, secure upgrades are allowed (e.g. specifying `http://example.com` will match `https://example.com`).
     Examples:
-
     - `http://*.example.com`: Matches all attempts to load from any subdomain of example.com. Also matches `https` resources.
     - `mail.example.com:443`: Matches all attempts to load from port 443 on mail.example.com.
     - `https://store.example.com`: Matches all attempts to access store.example.com using `https:`.
@@ -26,12 +24,10 @@ Relevant directives include the {{Glossary("fetch directive", "fetch directives"
     - `ws://example.com`: Matches all attempts to load from example.com using `ws:`. Also matches `wss` resources.
 
 - `<scheme-source>`
-
   - : A scheme such as `http:` or `https:`.
     The colon is required.
     Unlike other values below, single quotes shouldn't be used.
     You can also specify data schemes (not recommended).
-
     - `data:` Allows [`data:` URLs](/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) to be used as a content source.
       _This is insecure; an attacker can also inject arbitrary `data:` URLs. Use this sparingly and definitely not for scripts._
     - `mediastream:` Allows [`mediastream:` URIs](/en-US/docs/Web/API/Media_Capture_and_Streams_API) to be used as a content source.
@@ -62,7 +58,6 @@ Relevant directives include the {{Glossary("fetch directive", "fetch directives"
   - : Refers to the empty set; that is, no URLs match.
     The single quotes are required.
 - `'nonce-<base64-value>'`
-
   - : An allowlist for specific inline scripts using a cryptographic nonce (number used once).
     The server must generate a unique nonce value each time it transmits a policy.
     It is critical to provide an unguessable nonce, as bypassing a resource's policy is otherwise trivial.
@@ -91,7 +86,6 @@ Relevant directives include the {{Glossary("fetch directive", "fetch directives"
 Directives for which the above sources apply include:
 
 - {{Glossary("fetch directive", "Fetch directives")}}:
-
   - {{CSP("default-src")}}
   - {{CSP("child-src")}}
   - {{CSP("connect-src")}}
@@ -111,11 +105,9 @@ Directives for which the above sources apply include:
   - {{CSP("worker-src")}}
 
 - {{Glossary("Document directive", "Document directives")}}:
-
   - {{CSP("base-uri")}}
   - {{CSP("sandbox")}}
 
 - {{Glossary("Navigation directive", "Navigation directives")}}:
-
   - {{CSP("form-action")}}
   - {{CSP("frame-ancestors")}}

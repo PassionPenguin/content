@@ -38,23 +38,18 @@ step-end
 ### Values
 
 - `linear`
-
   - : Specifies a constant rate of interpolation, with no change in the rate of progress throughout the duration (that is, no acceleration or deceleration). This keyword value is equivalent to both [`cubic-bezier(0, 0, 1, 1)`](#cubic_bézier_easing_function) and [`linear(0, 1)`](#linear_easing_function) functions.
 
 ![Graph of "Input progress" to "Output progress" showing a line extending from the origin to (1, 1).](linear.svg)
 
 - `<linear-easing-function>`
-
   - : Specifies a `linear()` function with one or more comma-separated _linear stops_, each containing up to two optional _stop lengths_, to control the progress of an animation or transition.
 
     The `linear()` function specifies a `<linear-stop-list>`, a comma-separated list of points along the animation or transition progress. Each point or `<linear-stop>` in the list is specified as a {{cssxref("&lt;number&gt;")}} between `0` and `1`. By default, each stop in the `<linear-stop-list>` is equidistant. To have more control on the progress of the animation or transition, each point can include up to two optional {{cssxref("&lt;percentage&gt;")}} `<linear-stop-length>` values.
-
     - `<number>`: Represents a point in time along the duration of the animation or transition. The value should be between `0` and `1`, where `0` represents the start of the iteration and `1` represents the end.
-
     - `<percentage>`: Indicates the position of a linear stop along the duration. It can take up to two values. If one value is specified, it defines the start of the associated linear stop. If two percentage values are specified, they define the length of the stop: the first percentage indicates the starting point and the second percentage indicates the ending point for that segment in the animation or transition. If no `<percentage>` value is specified, which is the default, the stops are spread evenly along the timeline.
 
 - `<cubic-bezier-easing-function>`
-
   - : Specifies a [Bézier curve](/en-US/docs/Glossary/Bezier_curve) to shape the progress of an animation or a transition. In CSS, Bézier curves are defined by four control points that mathematically describe the curve: a starting point, an ending point, and two control points. The cubic Bézier easing function can be defined in one of these two ways: by creating a custom curve with a four-parameter `cubic-bezier()` function call or by using one of the predefined keyword values, which map to the commonly used Bézier curve parameters. The predefined keyword values include:
 
     `ease`: This keyword represents the easing function `cubic-bezier(0.25, 0.1, 0.25, 1)`. It indicates that the interpolation starts slowly, accelerates sharply, and then slows gradually towards the end. It is similar to the `ease-in-out` keyword, though it accelerates more sharply at the beginning.
@@ -68,11 +63,9 @@ step-end
     ![Graphs of "Input progress" to "Output progress", of which "ease" shows a curved line quickly rising from the origin to (1, 1); "ease-in" shows a shallow curved line from the origin that straightens out as it approaches (1, 1); "ease-out" shows a straight diagonal line that slightly curves as it gets close to (1, 1); and "ease-in-out" shows a symmetrical, "S"-shaped line curving from the origin to (1, 1).](ease.svg)
 
     `cubic-bezier()`: This function accepts four {{cssxref("&lt;number&gt;")}} values to shape a curve.
-
     - {{cssxref("&lt;number&gt;")}}: Specifies the location of [P1 and P2 points](#cubic_bézier_easing_function) on the curve. `<x1>` and `<y1>` are the coordinates for point P1, and `<x2>` and `<y2>` are the coordinates for point P2. `<x1>` and `<x2>` values must be between `0` and `1`, otherwise the function will not work as expected.
 
 - `<step-easing-function>`
-
   - : Specifies a `steps()` function that divides the animation into a set number of equal-length intervals or "steps", causing the animation to jump from one step to the next rather than transitioning smoothly. This parameter accepts one of the following two keyword values that map to predefined `steps()` functions or a custom `steps()` function:
 
     `step-start`: This keyword represents the easing function `steps(1, jump-start)` or `steps(1, start)`. It indicates that the interpolation jumps immediately to its final state, where it stays until the end.
@@ -82,10 +75,8 @@ step-end
     ![Two graphs of "Input progress" to "Output progress". In the "step-start" graph, an unfilled circle represents the origin point (0,0), with a horizontal line extending from (0, 1) to (1, 1). In the "step-end" graph, a horizontal line extends from the origin to (1, 0), with an unfilled circle at (1,0) and a solid circle at (1, 1).](step.svg)
 
     `steps()`: This function accepts a positive {{cssxref("&lt;integer&gt;")}} and an optional `<step-position>`.
-
     - `<integer>`: Represents the number of equidistant intervals or 'steps'. It must be a positive integer greater than `0` unless the second parameter is `jump-none`, in which case, it must be a positive integer greater than `1`.
     - `<step-position>`: Specifies the [timing of the jump](#steps_easing_function) to occur either at the start, at the end, at both start and end, or at neither. The possible keyword values include:
-
       - `jump-start` denotes that the first jump occurs right at the start, essentially at the `0` point. No time is spent at the `0%` mark.
       - `jump-end` denotes that the last jump occurs right at the end, essentially at the `1` point. No time is spent at the `100%` mark. This is the default value when no `<step-position>` is specified.
       - `jump-none` denotes that no jump occurs either at the beginning or at the end, effectively removing a step during the duration. Instead, the progress holds steady at both the `0%` mark and `100%` marks. The duration of these holds is determined by dividing the total duration by the number of steps (1/n).

@@ -40,7 +40,6 @@ color: light-dark(var(--light), var(--dark));
 Functional notation: `light-dark(light-color, dark-color)`
 
 - `light-color`
-
   - : {{CSSXref("&lt;color&gt;")}} value to be set for light {{CSSXref("color-scheme")}}.
 
 - `dark-color`
@@ -86,11 +85,9 @@ We include colors for both light and dark themes. We also define `color-scheme` 
 :root {
   /* this has to be set to switch between light or dark */
   color-scheme: light dark;
-
   --light-bg: ghostwhite;
   --light-color: darkslategray;
   --light-code: tomato;
-
   --dark-bg: darkslategray;
   --dark-color: ghostwhite;
   --dark-code: gold;

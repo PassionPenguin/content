@@ -54,7 +54,6 @@ The response payload is a [`WindowRect`](/en-US/docs/Web/WebDriver/WebWindow):
 
 - WebWindow
 - Associated commands:
-
   - [Set Window Rect](/en-US/docs/Web/WebDriver/Commands/SetWindowRect)
   - [Get Window Handle](/en-US/docs/Web/WebDriver/Commands/GetWindowHandle)
   - [Get Window Handles](/en-US/docs/Web/WebDriver/Commands/GetWindowHandles)

@@ -33,7 +33,6 @@ clip: unset;
 ### Values
 
 - {{cssxref("shape")}}
-
   - : A rectangular {{cssxref("shape")}} of the form `rect(<top>, <right>, <bottom>, <left>)`. The `<top>` and `<bottom>` values are offsets from the _inside top border edge_ of the box, while `<right>` and `<left>` are offsets from the _inside left border edge_ of the box — that is, the extent of the padding box.
 
     The `<top>`, `<right>`, `<bottom>`, and `<left>` values may be either a {{cssxref("&lt;length&gt;")}} or `auto`. If any side's value is `auto`, the element is clipped to that side's _inside border edge_.

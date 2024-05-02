@@ -53,7 +53,6 @@ None ({{jsxref("undefined")}}).
 ### Exceptions
 
 - `IndexSizeError` {{domxref("DOMException")}}
-
   - : Thrown if `radius` is a negative value.
 
 ## Examples

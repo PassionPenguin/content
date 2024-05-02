@@ -44,7 +44,6 @@ The Fullscreen API adds methods to the {{DOMxRef("Document")}} and {{DOMxRef("El
 ### Obsolete properties
 
 - {{DOMxRef("Document.fullscreen")}} {{Deprecated_Inline}}
-
   - : A Boolean value which is `true` if the document has an element currently being displayed in fullscreen mode; otherwise, this returns `false`.
 
     > **Note:** Use the {{DOMxRef("Document.fullscreenElement", "fullscreenElement")}} property on the {{DOMxRef("Document")}} or {{DOMxRef("ShadowRoot")}} instead; if it's not `null`, then it's an {{DOMxRef("Element")}} currently being displayed in fullscreen mode.

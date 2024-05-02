@@ -34,9 +34,7 @@ register(scriptURL, options)
   - : The URL of the service worker script. The registered service worker file needs to
     have a valid [JavaScript MIME type](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types#textjavascript).
 - `options` {{optional_inline}}
-
   - : An object containing registration options. Currently available options are:
-
     - `scope`
       - : A string representing a URL that defines a
         service worker's registration scope; that is, what range of URLs a service worker
@@ -46,10 +44,8 @@ register(scriptURL, options)
         See the [Examples](#examples) section for more information on how it
         works.
     - `type`
-
       - : A string
         specifying the type of worker to create. Valid values are:
-
         - `'classic'`
           - : The loaded service worker is in a standard script. This is the default.
         - `'module'`
@@ -57,11 +53,8 @@ register(scriptURL, options)
             [ES module](/en-US/docs/Web/JavaScript/Guide/Modules)
             and the import statement is available on
             worker contexts. For ES module compatibility info, see the [browser compatibility data table for the `ServiceWorker` interface](/en-US/docs/Web/API/ServiceWorker#browser_compatibility).
-
     - `updateViaCache`
-
       - : A string indicating how the HTTP cache is used for service worker scripts resources during updates. Note: This only refers to the service worker script and its imports, not other resources fetched by these scripts.
-
         - `'all'`
           - : The HTTP cache will be queried for the main script, and all imported scripts. If no fresh entry is found in the HTTP cache, then the scripts are fetched from the network.
         - `'imports'`

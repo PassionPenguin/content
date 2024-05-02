@@ -69,7 +69,6 @@ The resulting object has the following properties:
     The value is only present if `style` is `"unit"`, and is otherwise `undefined`.
     This is the value specified in the [`options.unit`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#unit) argument in the constructor.
 - `unitDisplay`
-
   - : The display format to use for units in unit formatting, such as "long", "short" or "narrow".
     The value is only present if `style` is `"unit"`, and is otherwise `undefined`.
     This is the value specified in the [`options.unitDisplay`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#unitdisplay) argument in the constructor, or the default value: `short`.

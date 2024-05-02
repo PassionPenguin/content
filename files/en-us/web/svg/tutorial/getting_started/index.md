@@ -33,7 +33,6 @@ Copy the code and paste it in a file, demo1.svg. Then open the file in a browser
 The rendering process involves the following:
 
 1. We start with the {{SVGElement("svg")}} root element:
-
    - A doctype declaration as known from (X)HTML should be left off because DTD based SVG validation leads to more problems than it solves.
    - Before SVG 2, to identify the version of the SVG for other types of validation the `version` and `baseProfile` attributes should always be used instead. Both `version` and `baseProfile` attributes are deprecated in SVG 2.
    - As an XML dialect, SVG must always bind the namespaces correctly (in the xmlns attribute). See the [Namespaces Crash Course](/en-US/docs/Web/SVG/Namespaces_Crash_Course) page for more info.
@@ -46,7 +45,6 @@ The rendering process involves the following:
 
 - The first important thing to notice is the order of rendering elements. The globally valid rule for SVG files is that _later_ elements are rendered _atop previous_ elements. The further down an element is the more it will be visible.
 - SVG files on the web can be displayed directly in the browser or embedded in HTML files via several methods:
-
   - If the HTML is XHTML and is delivered as type `application/xhtml+xml`, the SVG can be directly embedded in the XML source.
   - The SVG can also be directly embedded in HTML.
   - An `img` element can be used.
@@ -55,13 +53,11 @@ The rendering process involves the following:
     ```html
     <object data="image.svg" type="image/svg+xml"></object>
     ```
-
   - Likewise an `iframe` element can be used:
 
     ```html
     <iframe src="image.svg"></iframe>
     ```
-
   - Finally, SVG can be created dynamically with JavaScript and injected into the HTML DOM.
 
 - How SVG handles sizes and units will be explained [on the next page](/en-US/docs/Web/SVG/Tutorial/Positions).

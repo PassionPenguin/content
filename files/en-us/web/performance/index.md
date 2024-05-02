@@ -114,7 +114,6 @@ HTML
 - [The `<video>` Element](/en-US/docs/Web/HTML/Element/video)
 - [The `<source>` Element](/en-US/docs/Web/HTML/Element/source)
 - [The `<img> srcset` attribute](/en-US/docs/Web/HTML/Element/img#attributes)
-
   - [Responsive images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
 - [Preloading content with `rel="preload"`](/en-US/docs/Web/HTML/Attributes/rel/preload)
@@ -148,7 +147,6 @@ APIs
 - [Resource Timing API](/en-US/docs/Web/API/Performance_API/Resource_timing)
 - [Page Visibility](/en-US/docs/Web/API/Page_Visibility_API)
 - [Cooperative Scheduling of Background Tasks API](/en-US/docs/Web/API/Background_Tasks_API)
-
   - [requestIdleCallback()](/en-US/docs/Web/API/Window/requestIdleCallback)
 
 - [Beacon API](/en-US/docs/Web/API/Beacon_API)
@@ -175,7 +173,6 @@ Best Practices
 
 - [Using Service Workers](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 - [Using Web Workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
-
   - [Web Workers API](/en-US/docs/Web/API/Web_Workers_API)
 
 - [Offline and background operation](/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation)

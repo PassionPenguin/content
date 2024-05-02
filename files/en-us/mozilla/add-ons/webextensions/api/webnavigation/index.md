@@ -16,14 +16,12 @@ Each event corresponds to a particular stage in the navigation. The sequence of 
 ![Visualization of the primary flow and additional flows described below.](we-flow.png)
 
 - The primary flow is:
-
   - `{{WebExtAPIRef("webNavigation.onBeforeNavigate", "onBeforeNavigate")}}`
   - `{{WebExtAPIRef("webNavigation.onCommitted", "onCommitted")}}`
   - `{{WebExtAPIRef("webNavigation.onDOMContentLoaded", "onDOMContentLoaded")}}`
   - `{{WebExtAPIRef("webNavigation.onCompleted", "onCompleted")}}`.
 
 - Additionally:
-
   - `{{WebExtAPIRef("webNavigation.onCreatedNavigationTarget", "onCreatedNavigationTarget")}}` is fired before `onBeforeNavigate` if the browser needed to create a new tab or window for the navigation (for example, because the user opened a link in a new tab).
   - {{WebExtAPIRef("webNavigation.onHistoryStateUpdated", "onHistoryStateUpdated")}} is fired if a page uses the [history API (2011)](http://diveintohtml5.info/history.html) to update the URL displayed in the browser's location bar.
   - {{WebExtAPIRef("webNavigation.onReferenceFragmentUpdated", "onReferenceFragmentUpdated")}} is fired if the [fragment identifier](https://en.wikipedia.org/wiki/Fragment_identifier) for a page is changed.

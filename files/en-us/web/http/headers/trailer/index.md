@@ -41,10 +41,8 @@ Trailer: header-names
 ## Directives
 
 - `header-names`
-
   - : HTTP header fields which will be present in the trailer part of chunked messages.
     These header fields are **disallowed**:
-
     - message framing headers (e.g., {{HTTPHeader("Transfer-Encoding")}} and
       {{HTTPHeader("Content-Length")}}),
     - routing headers (e.g., {{HTTPHeader("Host")}}),

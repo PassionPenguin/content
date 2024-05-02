@@ -35,18 +35,14 @@ right: unset;
 ### Values
 
 - {{cssxref("&lt;length&gt;")}}
-
   - : A negative, null, or positive {{cssxref("&lt;length&gt;")}} that represents:
-
     - for _absolutely positioned elements_, the distance to the right edge of the containing block.
     - for _relatively positioned elements_, the distance that the element is moved to the left of its normal position.
 
 - {{cssxref("&lt;percentage&gt;")}}
   - : A {{cssxref("&lt;percentage&gt;")}} of the containing block's width.
 - `auto`
-
   - : Specifies that:
-
     - for _absolutely positioned elements_, the position of the element is based on the {{Cssxref("left")}} property, while `width: auto` is treated as a width based on the content; or if `left` is also `auto`, the element is positioned where it should horizontally be positioned if it were a static element.
     - for _relatively positioned elements_, the distance of the element from its normal position is based on the {{Cssxref("left")}} property; or if `left` is also `auto`, the element is not moved horizontally at all.
 

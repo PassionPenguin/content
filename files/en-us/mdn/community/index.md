@@ -24,29 +24,23 @@ Here's a list of ways you can contribute to MDN Web Docs:
 ## Community resources
 
 - [Communication channels](/en-US/docs/MDN/Community/Communication_channels)
-
   - : This page lists communication channels used by the MDN team and our community, with hints on which might be best for you.
 
 - [Contributing](/en-US/docs/MDN/Community/Contributing)
-
   - : This section explains how you can start contributing and the type of contributions we accept.
     It covers [Getting started](/en-US/docs/MDN/Community/Contributing/Getting_started), [Our repositories](/en-US/docs/MDN/Community/Contributing/Our_repositories), [Translated content](/en-US/docs/MDN/Community/Contributing/Translated_content), and [Security vulnerability response steps](/en-US/docs/MDN/Community/Contributing/Security_vulnerability_response).
 
 - [Open source etiquette](/en-US/docs/MDN/Community/Open_source_etiquette)
-
   - : This article gives guidance on how to behave when contributing to our open source project including rules for contributing, etiquette, and how to handle conflicts.
 
 - [Issues](/en-US/docs/MDN/Community/Issues)
-
   - : Issues are used to track all bugs and work that has a clear actionable outcome.
     This article contains guidelines on opening and working on issues and also covers [Issue triage](/en-US/docs/MDN/Community/Issues) and [Content and feature suggestions](/en-US/docs/MDN/Community/Issues/Content_suggestions_feature_proposals).
 
 - [Pull requests](/en-US/docs/MDN/Community/Pull_requests)
-
   - : This section covers our guidelines for submitting pull requests and what you should expect from the review process.
 
 - [Roles and teams](/en-US/docs/MDN/Community/Roles_teams)
-
   - : This section provides an overview of the users and teams that are part of the MDN Web Docs project and details what it means to be part of a team.
 
 ## Code of conduct

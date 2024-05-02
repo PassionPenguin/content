@@ -21,9 +21,7 @@ compareBoundaryPoints(how, sourceRange)
 ### Parameters
 
 - `how`
-
   - : A constant describing the comparison method:
-
     - `Range.END_TO_END` compares the end boundary-point of
       _sourceRange_ to the end boundary-point of `Range`.
     - `Range.END_TO_START` compares the end boundary-point of

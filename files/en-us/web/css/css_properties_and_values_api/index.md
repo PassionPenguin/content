@@ -81,7 +81,6 @@ The value of `--stop-color` is set to `cornflowerblue` at first, but when you ho
 ## Guides
 
 - [Using the CSS properties and values API](/en-US/docs/Web/API/CSS_Properties_and_Values_API/guide)
-
   - : Explains how to register custom properties in CSS and JavaScript, with hints on handling undefined and invalid values, fallbacks, and inheritance.
 
 - [Houdini APIs](/en-US/docs/Web/API/Houdini_APIs)

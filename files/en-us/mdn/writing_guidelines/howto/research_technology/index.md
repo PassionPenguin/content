@@ -80,7 +80,6 @@ You can then expand on it with more details, adding each interface and it's memb
 
 - Web_Audio_API
 - AudioContext
-
   - AudioContext.currentTime
   - AudioContext.destination
   - AudioContext.listener
@@ -90,7 +89,6 @@ You can then expand on it with more details, adding each interface and it's memb
   - ...
 
 - AudioNode
-
   - AudioNode.context
   - AudioNode.numberOfInputs
   - AudioNode.numberOfOutputs
@@ -100,7 +98,6 @@ You can then expand on it with more details, adding each interface and it's memb
 
 - AudioParam
 - Events (update list)
-
   - start
   - end
   - …

@@ -65,7 +65,6 @@ Another way to achieve this is to use Python's `http.server` module.
 To do this:
 
 1. Install Python. If you are using Linux or macOS, it should be available on your system already. If you are a Windows user, you can get an installer from the Python homepage and follow the instructions to install it:
-
    - Go to [python.org](https://www.python.org/)
    - Under the Download section, click the link for Python "3.xxx".
    - At the bottom of the page, click the _Windows Installer_ link to download the installer file.

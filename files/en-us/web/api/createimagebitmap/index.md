@@ -48,9 +48,7 @@ createImageBitmap(image, sx, sy, sw, sh, options)
   - : The height of the rectangle from which the `ImageBitmap` will be
     extracted. This value can be negative.
 - `options` {{optional_inline}}
-
   - : An object that sets options for the image's extraction. The available options are:
-
     - `imageOrientation`
       - : Specifies whether the image should be presented
         as is or flipped vertically. Either `none` (default) or

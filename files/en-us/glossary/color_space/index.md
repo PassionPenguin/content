@@ -31,27 +31,21 @@ The HSV (hue, saturation, and value) color space, and its synonym HSB (hue, satu
 The `rgb()` color function is not the only color function that can represent the _sRGB_ color space. Cylindrical coordinate systems like the [`HSL`](/en-US/docs/Web/CSS/color_value/hsl) (_hue-saturation-lightness_) or [`HWB`](/en-US/docs/Web/CSS/color_value/hwb) (_hue-whiteness-blackness_) color models are also used to represent a sRGB color on the web.
 
 - `srgb` color space
-
   - : The sRGB color space, or "Standard RGB", is the standard RGB (red, green, blue) color space. It was created to be used on monitors, printers, and the Web. It is the most widely used color space and is supported by most operating systems, software programs, monitors, and printers. sRGB is based on `r`, `g`, and `b`, with in-gamut values ranging from `0` to `1`. The whitepoint is D65.
 
 - `srgb-linear` color space
-
   - : The predefined linear-light sRGB color space, `srgb-linear`, is the same as `srgb` except that the transfer function is linear-light with no gamma-encoding. The `srgb-linear` color space accepts the three `r`, `g`, and `b` values as numeric parameters, with in-gamut colors ranging from `0` to `1`. The whitepoint is D65.
 
 - `display-p3` color space
-
   - : Defined by Apple, the **Display P3** color space combines the DCI-P3 color gamut, the D65 whitepoint, and sRGB gamma curve. It is a wide gamut space typical of current wide-gamut monitors, enabling more vibrant greens and reds than the sRGB color gamut. The `display-p3` is based on `r`, `g`, and `b`, with in-gamut values ranging from `0` to `1`. The whitepoint is D65.
 
 - `a98-rgb` color space
-
   - : `a98-rgb` is the Adobe® 1998 RGB color space designed to represent all the CMYK colors as RGB. About 50% of the visible colors specified by the [CIELab color space](#cielab_color_spaces) can be achieved, encompassing more cyan-green hues than other RGB color spaces. In-gamut `r`, `g`, and `b` values range from `0` to `1`. The transfer curve is a gamma function, close to but not exactly 1/2.2. The whitepoint is D65.
 
 - `prophoto-rgb`
-
   - : Developed by Kodak, the `prophoto-rgb` color space can represent all the colors likely to occur in nature and about 90% of [CIElab colors](#cielab_color_spaces). In-gamut `r`, `g`, and `b` values range from `0` to `1`. The transfer curve is a gamma function, with a value of 1/1.8, and a small linear portion near black. The whitepoint is D50, the same one used by CIELab.
 
 - `rec2020`
-
   - : `rec2020` is a broadcast industry standard for ultra-high definition 4k and 8k televisions. The ultra-wide gamut space is capable of representing almost all visible real-world colors, beyond the capabilities of most current displays. Coverage is expected to increase over time as displays improve. In-gamut `r`, `g`, and `b` values range from `0` to `1`. The whitepoint is D65.
 
 > **Note:** Additional cylindrical RGB spaces that are not in the CSS specification include: `HSI` (hue, saturation, and intensity), `Okhsv`, `Okhsl`, `HSLuv`, `HPLuv`, and `Cubehelix`.
@@ -69,15 +63,12 @@ CIELab color functions include {{CSSXref("color_value/lab", "lab()")}} (lightnes
 CIELab color spaces, including LCH, Oklab, and Oklch, are device-independent color spaces.
 
 - `lab-d50` color space
-
   - : Expresses color as `L` in a range from `0` to `100`, and `a` and `b` with a range from `-125` to `125`. The `a` and `b` axes are not bound by these range values, which are references in defining percentage inputs and outputs in relation to the `Display P3` color space. The whitepoint is D50.
 
 - `lab-d65` color space
-
   - : This color space is the same as `lab-d50`, except that the whitepoint is D65.
 
 - `oklab` color space
-
   - : Similar to `lab-d65`, but the range for `L` is `0` to `1`, and `a` and `b` range from `-0.4` to `0.4`.
 
 ### XYZ color spaces
@@ -87,11 +78,9 @@ While combinations of red, green, and blue work well for representing colors on 
 People with normal vision have three kinds of cone cells that sense light, having peaks of spectral sensitivity in differing wavelengths. The CIE X, Y, and Z parameters correspond to levels of stimuli of the three kinds of cone cells which, in principle, describe every color. The CIEXYZ color space, with its tri-stimulus values, encompasses all visible colors.
 
 - `xyz` and `xyz-d65` color space
-
   - : The `xyz` identifier is a synonym for the `xyz-d65` color space. The axes are not limited to a `0` to `1` range as the color space is not bound to this range; these values are only used as reference points in defining percentage inputs and outputs. The whitepoint is D65.
 
 - `xyz-d50` color space
-
   - : `xyz-d50` is the same as `xyz-d65` except it uses `d50` as the whitepoint.
 
 ## See also

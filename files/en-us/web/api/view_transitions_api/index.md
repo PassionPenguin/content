@@ -80,7 +80,6 @@ Let's walk through how this works:
          ├─ ::view-transition-old(root)
          └─ ::view-transition-new(root)
    ```
-
    - {{cssxref("::view-transition")}} is the root of view transitions overlay, which contains all view transitions and sits over the top of all other page content.
    - {{cssxref("::view-transition-old")}} is the screenshot of the old page view, and {{cssxref("::view-transition-new")}} is the live representation of the new page view. Both of these render as replaced content, in the same manner as an {{htmlelement("img")}} or {{htmlelement("video")}}, meaning that they can be styled with handy properties like {{cssxref("object-fit")}} and {{cssxref("object-position")}}.
 

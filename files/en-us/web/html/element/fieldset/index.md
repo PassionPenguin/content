@@ -22,7 +22,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `form`
   - : This attribute takes the value of the [`id`](/en-US/docs/Web/HTML/Global_attributes#id) attribute of a {{HTMLElement("form")}} element you want the `<fieldset>` to be part of, even if it is not inside the form. Please note that usage of this is confusing — if you want the {{HTMLElement("input")}} elements inside the `<fieldset>` to be associated with the form, you need to use the `form` attribute directly on those elements. You can check which elements are associated with a form via JavaScript, using {{domxref("HTMLFormElement.elements")}}.
 - `name`
-
   - : The name associated with the group.
 
     > **Note:** The caption for the fieldset is given by the first {{HTMLElement("legend")}} element nested inside it.

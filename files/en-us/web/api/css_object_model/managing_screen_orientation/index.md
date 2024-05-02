@@ -46,7 +46,6 @@ body {
 
 body {
   border: 1px solid black;
-
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -63,7 +62,6 @@ ul {
   font: 1em monospace;
   margin: 0;
   padding: 0.5em;
-
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 

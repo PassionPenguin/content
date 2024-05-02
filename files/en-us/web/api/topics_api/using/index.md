@@ -60,13 +60,11 @@ The following features all serve a dual purpose — they return the user's top t
 - You can specify a `browsingTopics: true` option in the options object of a {{domxref("fetch()")}} call to the ad tech platform.
 - You could also pass `browsingTopics: true` into the options object of a {{domxref("Request.Request", "Request()")}} constructor call, and pass the resulting {{domxref("Request")}} object into the {{domxref("fetch()")}} call.
 - You can set a `browsingtopics` attribute on the `<iframe>`, at the same time or before setting the `src` attribute to load the source. This could be done:
-
   - Declaratively on the HTML:
 
   ```html
   <iframe browsingtopics src="ad-tech1.example"> ... </iframe>
   ```
-
   - Programmatically by setting the equivalent {{domxref("HTMLIFrameElement.browsingTopics")}} property to `true`:
 
   ```js

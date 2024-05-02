@@ -14,7 +14,6 @@ The **`<slot>`** [HTML](/en-US/docs/Web/HTML) element—part of the [Web Compone
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `name`
-
   - : The slot's name.
 
     A **_named slot_** is a `<slot>` element with a `name` attribute.

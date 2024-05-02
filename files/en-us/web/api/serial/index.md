@@ -16,7 +16,6 @@ The `Serial` interface of the {{domxref("Web_Serial_API", "Web Serial API")}} pr
 ## Instance methods
 
 - {{domxref("Serial.requestPort()")}} {{Experimental_Inline}}
-
   - : Returns a {{jsxref("Promise")}} that resolves with an instance of {{domxref("SerialPort")}} representing the device chosen by the user or rejects if no device was selected.
 
     This method must be called with user activation.

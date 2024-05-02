@@ -253,13 +253,11 @@ Meters and progress bars are visual representations of numeric values. Support f
 A meter bar represents a fixed value in a range delimited by [`max`](/en-US/docs/Web/HTML/Element/meter#max) and [`min`](/en-US/docs/Web/HTML/Element/meter#min) values. This value is visually rendered as a bar, and to know how this bar looks, we compare the value to some other set values:
 
 - The [`low`](/en-US/docs/Web/HTML/Element/meter#low) and [`high`](/en-US/docs/Web/HTML/Element/meter#high) values divide the range into the following three parts:
-
   - The lower part of the range is between the [`min`](/en-US/docs/Web/HTML/Element/meter#min) and [`low`](/en-US/docs/Web/HTML/Element/meter#low) values, inclusive.
   - The medium part of the range is between the [`low`](/en-US/docs/Web/HTML/Element/meter#low) and [`high`](/en-US/docs/Web/HTML/Element/meter#high) values, exclusive.
   - The higher part of the range is between the [`high`](/en-US/docs/Web/HTML/Element/meter#high) and [`max`](/en-US/docs/Web/HTML/Element/meter#max) values, inclusive.
 
 - The [`optimum`](/en-US/docs/Web/HTML/Element/meter#optimum) value defines the optimum value for the {{HTMLElement("meter")}} element. In conjunction with the [`low`](/en-US/docs/Web/HTML/Element/meter#low) and [`high`](/en-US/docs/Web/HTML/Element/meter#high) value, it defines which part of the range is preferred:
-
   - If the [`optimum`](/en-US/docs/Web/HTML/Element/meter#optimum) value is in the lower part of the range, the lower range is considered to be the preferred part, the medium range is considered to be the average part, and the higher range is considered to be the worst part.
   - If the [`optimum`](/en-US/docs/Web/HTML/Element/meter#optimum) value is in the medium part of the range, the lower range is considered to be an average part, the medium range is considered to be the preferred part, and the higher range is considered to be average as well.
   - If the [`optimum`](/en-US/docs/Web/HTML/Element/meter#optimum) value is in the higher part of the range, the lower range is considered to be the worst part, the medium range is considered to be the average part and the higher range is considered to be the preferred part.

@@ -21,7 +21,6 @@ A request to access cookies or storage was blocked because the browser identifie
 The permission can be changed or removed by:
 
 - Going to _Preferences > Privacy & Security > Enhanced Tracking Protection_ and either
-
   - adding an exception with the _Manage Exceptions_… button
   - choosing the _Custom_ Content Blocking and unchecking the _Tracker_ checkbox
 

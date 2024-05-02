@@ -23,7 +23,6 @@ Some obsolete APIs have been removed from the DOM:
 - {{ domxref("text.isElementContentWhitespace") }}
 
   `text.replaceWholeText()`
-
   - : These APIs were rendered obsolete by the DOM4 specification.
 
 - {{ domxref("Document.xmlEncoding") }}
@@ -31,7 +30,6 @@ Some obsolete APIs have been removed from the DOM:
   {{ domxref("Document.xmlStandalone") }}
 
   {{ domxref("Document.xmlVersion") }}
-
   - : All of these APIs were rendered obsolete by the DOM4 specification. They were most frequently being used to detect whether the document being displayed was HTML or XML. See the article for {{ domxref("Document.xmlVersion") }} for a recommended way to test for this going forward.
 
 ## XPCOM and interface changes

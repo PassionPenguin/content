@@ -22,19 +22,14 @@ createTexture(descriptor)
 ### Parameters
 
 - `descriptor`
-
   - : An object containing the following properties:
-
     - `dimension` {{optional_inline}}
-
       - : An enumerated value indicating the dimension level of the texture. Possible values are:
-
         - `"1d"`: The texture is one-dimensional.
         - `"2d"`: The texture is two-dimensional or an array of two-dimensional layers.
         - `"3d"`: The texture is three-dimensional.
 
         `dimension` defaults to `"2d"` if the value is omitted.
-
     - `format`
       - : An enumerated value specifying the format of the texture. See the [Texture formats](https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat) section of the specification for all the possible values.
     - `label` {{optional_inline}}
@@ -44,7 +39,6 @@ createTexture(descriptor)
     - `sampleCount` {{optional_inline}}
       - : A number specifying the texture's sample count. To be valid, the value must be 1 or 4. If omitted, this defaults to 1. A value higher than 1 indicates a multi-sampled texture.
     - `size`
-
       - : An object or array specifying the width, height, and depth/array layer count of the texture. The width value must always be specified, while the height and depth/array layer count values are optional and will default to 1 if omitted.
 
         What follows is a sample `size` array:
@@ -62,9 +56,7 @@ createTexture(descriptor)
           depthOrArrayLayers: 2
         }
         ```
-
     - `usage`
-
       - : The {{glossary("Bitwise_flags", "bitwise flags")}} representing the allowed usages for the `GPUTexture`. The possible values are in the [`GPUTexture.usage` value table](/en-US/docs/Web/API/GPUTexture/usage#value).
 
         Note that multiple possible usages can be specified by separating values with pipe symbols, for example:
@@ -72,7 +64,6 @@ createTexture(descriptor)
         ```js
         usage: GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT;
         ```
-
     - `viewFormats` {{optional_inline}}
       - : An array of enumerated values specifying other [texture formats](https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat) permitted when calling {{domxref("GPUTexture.createView()")}} on this texture, in addition to the texture format specified in its `format` value.
 

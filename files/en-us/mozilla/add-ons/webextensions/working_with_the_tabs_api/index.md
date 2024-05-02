@@ -58,7 +58,6 @@ To see how {{WebExtAPIRef("tabs.query()")}} and {{WebExtAPIRef("tabs.Tab")}} are
 ![The tabs toolbar menu showing the switch to tap area](switch_to_tab.png)
 
 - manifest.json
-
   - : Here is the [`manifest.json`](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/manifest.json):
 
     ```json
@@ -82,7 +81,6 @@ To see how {{WebExtAPIRef("tabs.query()")}} and {{WebExtAPIRef("tabs.Tab")}} are
     > - **Permissions includes tabs.** This is needed to support the tab list feature, as the extension reads the title of the tabs for display in the popup.
 
 - tabs.html
-
   - : `tabs.html` defines the content of the extension's popup:
 
     ```html
@@ -166,7 +164,6 @@ Next, we'll create the links for each tab:
 
 1. Loops through the first 5 items from the {{WebExtAPIRef("tabs.Tab")}} object.
 2. For each item, add a hyperlink to the document fragment.
-
    - The link's label—that is, its text—is set using the tab's `title` (or the `id`, if it has no `title`).
    - The link's address is set using the tab's `id`.
 
@@ -261,7 +258,6 @@ But first, here is a demonstration of the feature in action:
 - manifest.json
   - : None of the functions require a permission to operate, so there are no features in the [manifest.json](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/manifest.json) file that need to be highlighted.
 - tabs.html
-
   - : [`tabs.html`](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/tabs.html) defines the "menu" displayed in the popup, which includes the "Move active tab to the beginning of the window list" option, with a series of `<a>` tags grouped by a visual separator. Each menu item is given an `id`, which is used in `tabs.js` to determine which menu item is being requested.
 
     ```html
@@ -280,7 +276,6 @@ But first, here is a demonstration of the feature in action:
     ```
 
 - tabs.js
-
   - : To implement the "menu" defined in `tabs.html`, [`tabs.js`](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/tabs.js) includes a listener for clicks in `tabs.html`:
 
     ```js
@@ -379,7 +374,6 @@ Let's take a look at how the zoom in is implemented.
 - tabs.html
   - : We have already discussed how the [`tabs.html`](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/tabs.html) defines the options for this extension, nothing new or unique is done to provide the zoom options.
 - tabs.js
-
   - : [`tabs.js`](https://github.com/mdn/webextensions-examples/blob/main/tabs-tabs-tabs/tabs.js) starts by defining several constants used in the zoom code:
 
     ```js
@@ -429,9 +423,7 @@ The [apply-css](https://github.com/mdn/webextensions-examples/tree/main/apply-cs
 Let's walk through how it's set up.
 
 - manifest.json
-
   - : The [`manifest.json`](https://github.com/mdn/webextensions-examples/blob/main/apply-css/manifest.json) requests permissions required to use the CSS features. You need either:
-
     - `"tabs"` permission and [host permission](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#host_permissions); or,
     - `"activeTab"` permission.
 
@@ -461,12 +453,10 @@ Let's walk through how it's set up.
     You will note that `"tabs"` permission is requested in addition to `"activeTab"`. This additional permission is needed to enable the extension's script to access the tab's URL, the importance of which we'll see in a moment.
 
     The other main features in the manifest.json file are the definition of:
-
     - **a background script**, which starts running as soon as the extension is loaded.
     - **a "page action"**, which defines an icon to be added to the browser's address bar.
 
 - background.js
-
   - : On startup, [`background.js`](https://github.com/mdn/webextensions-examples/blob/main/apply-css/background.js) sets some constants to define the CSS to be applied, titles for the "page action", and a list of protocols the extension will work in:
 
     ```js
@@ -515,14 +505,10 @@ Let's walk through how it's set up.
     ```
 
     `toggleCSS()` gets the title of the `pageAction` and then takes the action described:
-
     - **For "Apply CSS":**
-
       - toggles the `pageAction` icon and title to the "remove" versions.
       - applies the CSS using {{WebExtAPIRef("tabs.insertCSS()")}}.
-
     - **For "Remove CSS":**
-
       - toggles the `pageAction` icon and title to the "apply" versions.
       - removes the CSS using {{WebExtAPIRef("tabs.removeCSS()")}}.
 

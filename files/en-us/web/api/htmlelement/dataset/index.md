@@ -37,7 +37,6 @@ attributes in our article [_Using data attributes_](/en-US/docs/Learn/HTML/Howto
 ### Name conversion
 
 - `dash-style` to `camelCase` conversion
-
   - : A custom data attribute name is transformed to a key for the
     {{domxref("DOMStringMap") }} entry by the following:
 
@@ -49,7 +48,6 @@ attributes in our article [_Using data attributes_](/en-US/docs/Learn/HTML/Howto
     4. Other characters (including other dashes) are left unchanged.
 
 - `camelCase` to `dash-style` conversion
-
   - : The opposite transformation, which maps a key to an attribute name, uses the
     following:
 

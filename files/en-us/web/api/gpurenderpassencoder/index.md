@@ -37,7 +37,6 @@ A `GPURenderPassEncoder` object instance is created via the {{domxref("GPUComman
 - {{domxref("GPURenderPassEncoder.drawIndirect", "drawIndirect()")}} {{Experimental_Inline}}
   - : Draw primitives using parameters read from a {{domxref("GPUBuffer")}}.
 - {{domxref("GPURenderPassEncoder.drawIndexedIndirect", "drawIndexedIndirect()")}} {{Experimental_Inline}}
-
   - : Draw indexed primitives using parameters read from a {{domxref("GPUBuffer")}}.
 
 - {{domxref("GPURenderPassEncoder.end", "end()")}} {{Experimental_Inline}}
@@ -55,11 +54,9 @@ A `GPURenderPassEncoder` object instance is created via the {{domxref("GPUComman
 - {{domxref("GPURenderPassEncoder.setBindGroup", "setBindGroup()")}} {{Experimental_Inline}}
   - : Sets the {{domxref("GPUBindGroup")}} to use for subsequent render commands, for a given index.
 - {{domxref("GPURenderPassEncoder.setBlendConstant", "setBlendConstant()")}} {{Experimental_Inline}}
-
   - : Sets the constant blend color and alpha values used with `"constant"` and `"one-minus-constant"` blend factors (as set in the descriptor of the {{domxref("GPUDevice.createRenderPipeline()")}} method, in the `blend` property).
 
 - {{domxref("GPURenderPassEncoder.setIndexBuffer", "setIndexBuffer()")}} {{Experimental_Inline}}
-
   - : Sets the current {{domxref("GPUBuffer")}} that will provide index data for subsequent drawing commands.
 
 - {{domxref("GPURenderPassEncoder.setPipeline", "setPipeline()")}} {{Experimental_Inline}}
@@ -67,7 +64,6 @@ A `GPURenderPassEncoder` object instance is created via the {{domxref("GPUComman
 - {{domxref("GPURenderPassEncoder.setScissorRect", "setScissorRect()")}} {{Experimental_Inline}}
   - : Sets the scissor rectangle used during the rasterization stage. After transformation into viewport coordinates any fragments that fall outside the scissor rectangle will be discarded.
 - {{domxref("GPURenderPassEncoder.setStencilReference", "setStencilReference()")}} {{Experimental_Inline}}
-
   - : Sets the stencil reference value using during stencil tests with the `"replace"` stencil operation (as set in the descriptor of the {{domxref("GPUDevice.createRenderPipeline()")}} method, in the properties defining the various stencil operations).
 
 - {{domxref("GPURenderPassEncoder.setVertexBuffer", "setVertexBuffer()")}} {{Experimental_Inline}}

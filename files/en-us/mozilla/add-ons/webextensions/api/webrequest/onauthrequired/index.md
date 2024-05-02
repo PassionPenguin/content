@@ -14,23 +14,17 @@ The listener can respond in one of four ways:
 - Take no action
   - : The listener can do nothing, just observing the request. If this happens, it does not affect the handling of the request, and the browser asks the user to log in, if appropriate.
 - Cancel the request
-
   - : The listener can cancel the request. If it does this, authentication fails, and the user is not asked to log in. Extensions can cancel requests as follows:
-
     - in addListener, pass `"blocking"` in the `extraInfoSpec` parameter
     - in the listener, return an object with a `cancel` property set to `true`
 
 - Provide credentials synchronously
-
   - : If credentials are available synchronously, the extension can supply them synchronously. If the extension does this, the browser attempts to log in with the credentials. The listener can provide credentials synchronously as follows:
-
     - in addListener, pass `"blocking"` in the `extraInfoSpec` parameter
     - in the listener, return an object with an `authCredentials` property set to the credentials to supply
 
 - Provide credentials asynchronously
-
   - : The extension might need to fetch credentials asynchronously. For example, the extension might need to fetch credentials from storage or ask the user. In this case, the listener can supply credentials asynchronously as follows:
-
     - in addListener, pass `"blocking"` in the `extraInfoSpec` parameter
     - in the listener, return a `Promise` that resolves with an object containing an `authCredentials` property, set to the credentials to supply
       > **Note:** Chrome does not support a Promise as a return value ([Chromium issue 1510405](https://crbug.com/1510405)). For alternatives, see [the return value of the `listener`](#listener).
@@ -77,14 +71,11 @@ Events have three functions:
 ### Parameters
 
 - `listener`
-
   - : The function called when this event occurs. The function is passed these arguments:
-
     - `details`
       - : `object`. Details about the request. See the [details](#details_2) section for more information.
 
     Returns: {{WebExtAPIRef('webRequest.BlockingResponse')}} or a {{jsxref("Promise")}}.
-
     - To handle the request synchronously, include `"blocking"` in the `extraInfoSpec` parameter and return a `BlockingResponse` object with its `cancel` or `authCredentials` properties set.
       This behavior is the same for Firefox and Chrome. However, synchronous handling is only appropriate for the simplest of extensions.
     - To handle the request asynchronously:
@@ -94,9 +85,7 @@ Events have three functions:
 - `filter`
   - : {{WebExtAPIRef('webRequest.RequestFilter')}}. A filter that restricts the events that are sent to this listener.
 - `extraInfoSpec` {{optional_inline}}
-
   - : `array` of `string`. Extra options for the event. You can pass any of the following values:
-
     - `"blocking"`: make the request block so you can cancel the request or supply authentication credentials. To handle the request asynchronously in Chrome, use `"asyncBlocking"` instead.
     - `"responseHeaders"`: include `responseHeaders` in the `details` object passed to the listener
 
@@ -105,9 +94,7 @@ Events have three functions:
 ### details
 
 - `challenger`
-
   - : `object`. The server requesting authentication. This is an object with the following properties:
-
     - `host`
       - : `string`. The server's [hostname](https://en.wikipedia.org/wiki/Hostname#Internet_hostnames).
     - `port`
@@ -127,24 +114,19 @@ Events have three functions:
 - `parentFrameId`
   - : `integer`. ID of the frame that contains the frame that sent the request. Set to `-1` if no parent frame exists.
 - `proxyInfo`
-
   - : `object`. This property is present only if the request is being proxied. It contains the following properties:
-
     - `host`
       - : `string`. The hostname of the proxy server.
     - `port`
       - : `integer`. The port number of the proxy server.
     - `type`
-
       - : `string`. The type of proxy server. One of:
-
         - `"http"`: HTTP proxy (or SSL CONNECT for HTTPS)
         - `"https"`: HTTP proxying over TLS connection to proxy
         - `"socks"`: SOCKS v5 proxy
         - `"socks4"`: SOCKS v4 proxy
         - `"direct"`: no proxy
         - `"unknown"`: unknown proxy
-
     - `username`
       - : `string`. Username for the proxy service.
     - `proxyDNS`
@@ -175,16 +157,13 @@ Events have three functions:
 - `url`
   - : `string`. Target of the request.
 - `urlClassification`
-
   - : `object`. The type of tracking associated with the request, if the request is classified by [Firefox Tracking Protection](https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop). This is an object with these properties:
-
     - `firstParty`
       - : `array` of `strings`. Classification flags for the request's first party.
     - `thirdParty`
       - : `array` of `strings`. Classification flags for the request or its window hierarchy's third parties.
 
     The classification flags include:
-
     - `fingerprinting` and `fingerprinting_content`: indicates the request is involved in fingerprinting ("an origin found to fingerprint").
       - `fingerprinting` indicates the domain is in the fingerprinting and tracking category. Examples of this type of domain include advertisers who want to associate a profile with the visiting user.
       - `fingerprinting_content` indicates the domain is in the fingerprinting category but not the tracking category. Examples of this type of domain include payment providers who use fingerprinting techniques to identify the visiting user for anti-fraud purposes.

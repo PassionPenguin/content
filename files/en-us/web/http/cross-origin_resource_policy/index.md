@@ -22,7 +22,6 @@ As this policy is expressed via a _[response header](/en-US/docs/Glossary/Respon
 Web applications set a Cross-Origin Resource Policy via the {{HTTPHeader("Cross-Origin-Resource-Policy")}} HTTP response header, which accepts one of three values:
 
 - `same-site`
-
   - : Only requests from the same _{{Glossary("Site")}}_ can read the resource.
 
     > **Warning:** This is less secure than an {{Glossary("origin")}}. The [algorithm for checking if two origins are same site](https://html.spec.whatwg.org/multipage/origin.html#same-site) is defined in the HTML standard and involves checking the _registrable domain_.

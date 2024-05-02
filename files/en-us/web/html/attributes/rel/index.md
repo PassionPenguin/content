@@ -54,9 +54,7 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
 ## Values
 
 - `alternate`
-
   - : Indicates an alternate representation of the current document. Valid for {{htmlelement('link')}}, {{htmlelement('a')}}, and {{htmlelement('area')}}, the meaning depends on the values of the other attributes.
-
     - With the [`stylesheet`](#stylesheet) keyword on a `<link>`, it creates an [alternate stylesheet](/en-US/docs/Web/CSS/Alternative_style_sheets).
 
       ```html
@@ -68,7 +66,6 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
         href="highcontrast.css"
         title="High contrast" />
       ```
-
     - With an [`hreflang`](/en-US/docs/Web/HTML/Element/link#hreflang) attribute that differs from the document language, it indicates a translation.
     - With the [`type`](/en-US/docs/Web/HTML/Element/link#type) attribute value of `"application/rss+xml"`or `"application/atom+xml"`, it creates a hyperlink referencing a syndication feed.
 
@@ -79,9 +76,7 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
         href="posts.xml"
         title="Blog" />
       ```
-
     - Otherwise, it creates a hyperlink referencing an alternate representation of the current document, whose nature is given by the [`hreflang`](/en-US/docs/Web/HTML/Element/link#hreflang) and [`type`](/en-US/docs/Web/HTML/Element/link#type) attributes.
-
       - If `hreflang` is given alongside `alternate`, and the value of `hreflang` is different from the current document's language, it indicates that the referenced document is a translation.
       - If `type` is given alongside `alternate`, it indicates that the referenced document is an alternative format (such as a PDF).
       - The `hreflang` and `type` attributes may both be given alongside `alternate`.
@@ -103,7 +98,6 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
       ```
 
 - `author`
-
   - : Indicates the referenced document provides further information about the author of the current document or article. Relevant for {{htmlelement('link')}}, {{htmlelement('a')}}, and {{htmlelement('area')}} elements.
 
     With {{htmlelement('a')}} and {{htmlelement('area')}}, it indicates the linked document (or `mailto:`) provides information about the author of the nearest {{htmlelement('article')}} ancestor if there is one, otherwise the entire document.
@@ -123,7 +117,6 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
 - `help`
   - : Relevant to {{htmlelement('form')}}, {{htmlelement('link')}}, {{htmlelement('a')}}, and {{htmlelement('area')}}, the `help` keyword indicates that the linked to content provides context-sensitive help, providing information for the parent of the element defining the hyperlink, and its children. When used within `<link>`, the help is for the whole document. When included with {{htmlelement('a')}} and {{htmlelement('area')}} and supported, the default {{cssxref('cursor')}} will be `help` instead of `pointer`.
 - `icon`
-
   - : Valid with {{htmlelement('link')}}, the linked resource represents the icon, a resource for representing the page in the user interface, for the current document.
 
     The most common use for the `icon` value is the favicon:
@@ -142,7 +135,6 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
     > **Note:** The `shortcut` link type is often seen before `icon`, but this link type is non-conforming, ignored and **web authors must not use it anymore**.
 
 - `license`
-
   - : Valid on the {{HTMLElement("a")}}, {{HTMLElement("area")}}, {{HTMLElement("form")}}, {{HTMLElement("link")}} elements, the `license` value indicates that the hyperlink leads to a document describing the licensing information; that the main content of the current document is covered by the copyright license described by the referenced document. If not inside the {{HTMLElement("head")}} element, the standard doesn't distinguish between a hyperlink applying to a specific part of the document or to the document as a whole. Only the data on the page can indicate this.
 
     ```html
@@ -160,7 +152,6 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
 - `nofollow`
   - : Relevant to {{htmlelement('form')}}, {{htmlelement('a')}}, and {{htmlelement('area')}}, the `nofollow` keyword tells search engine spiders to ignore the link relationship. The nofollow relationship may indicate the current document's owner does not endorse the referenced document. It is often included by Search Engine Optimizers pretending their link farms are not spam pages.
 - `noopener`
-
   - : Relevant to {{htmlelement('form')}}, {{htmlelement('a')}}, and {{htmlelement('area')}}, creates a top-level browsing context that is not an auxiliary browsing context if the hyperlink would create either of those to begin with (i.e., has an appropriate `target` attribute value). In other words, it makes the link behave as if [`window.opener`](/en-US/docs/Web/API/Window/opener) were null and `target="_parent"` were set.
 
     This is the opposite of [`opener`](#opener).
@@ -181,23 +172,19 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
 - `prerender` {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : Specifies that the user agent should preemptively fetch the target resource and process it in a way that helps deliver a faster response in the future, for example by fetching its subresources or performing some rendering.
 - `prev`
-
   - : Similar to the [`next`](#next) keyword, relevant to {{htmlelement('form')}}, {{htmlelement('link')}}, {{htmlelement('a')}}, and {{htmlelement('area')}}, the `prev` values indicates that the current document is a part of a series, and that the link references a previous document in the series is the referenced document.
 
     Note: The synonym `previous` is incorrect and should not be used.
 
 - `privacy-policy`
-
   - : Valid for {{htmlelement('a')}}, {{htmlelement('area')}}, and {{htmlelement('link')}} elements, the `privacy-policy` value indicates that the referenced document is the Privacy Policy which describes the data collection and usage practices of the current document.
 
 - `search`
-
   - : Relevant to {{htmlelement('form')}}, {{htmlelement('link')}}, {{htmlelement('a')}}, and {{htmlelement('area')}} elements, the `search` keywords indicates that the hyperlink references a document whose interface is specially designed for searching in the current document, site, and related resources, providing a link to a resource that can be used to search.
 
     If the [`type`](/en-US/docs/Web/HTML/Element/link#type) attribute is set to `application/opensearchdescription+xml` the resource is an [OpenSearch](/en-US/docs/Web/OpenSearch) plugin that can be easily added to the interface of Firefox.
 
 - `stylesheet`
-
   - : Valid for the {{htmlelement('link')}} element, it imports an external resource to be used as a stylesheet. The [`type`](/en-US/docs/Web/HTML/Element/link#type) attribute is not needed as it's a `text/css` stylesheet, as that is the default value. If it's not a stylesheet of type `text/css` it is best to declare the type.
 
     While this attribute defines the link as being a stylesheet, the interaction with other attributes and other key terms within the rel value impact whether the stylesheet is downloaded and/or used.
@@ -209,11 +196,9 @@ The `rel` attribute has no default value. If the attribute is omitted or if none
     Requires the use of the CORS protocol for cross-origin fetching.
 
 - `tag`
-
   - : Valid for the {{htmlelement('a')}}, and {{htmlelement('area')}} elements, it gives a tag (identified by the given address) that applies to the current document. The tag value denotes that the link refers to a document describing a tag applying to the document on which it is located. This link type is not meant for tags within a tag cloud, as those tags apply to a group of pages, whereas the `tag` value of the `rel` attribute is for a single document.
 
 - `terms-of-service`
-
   - : Valid for {{htmlelement('a')}}, {{htmlelement('area')}}, and {{htmlelement('link')}} elements, the `terms-of-service` value indicates that the referenced document is the Terms of Service that describes the agreements between the current document's provider and users who wish to use the document provided.
 
 ### Non-standard values

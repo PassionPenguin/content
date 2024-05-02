@@ -67,6 +67,5 @@ function reload() {
 ## See also
 
 - Related events
-
   - Window: {{domxref("Window/load_event", "load")}} event
   - Window: {{domxref("Window/error_event", "error")}} event

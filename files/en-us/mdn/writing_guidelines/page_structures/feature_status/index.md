@@ -52,12 +52,10 @@ When sidebars are rendered, the code looks for the statuses in each page's front
 The following macros are used to render the status banners in page headers:
 
 - `\{{SeeCompatTable}}`
-
   - : For `experimental` status. It generates an **Experimental status** banner:
     {{SeeCompatTable}}
 
 - `\{{Non-standard_Header}}`
-
   - : For `non-standard` status. It generates a **Non-Standard status** banner:
     {{Non-standard_Header}}
 

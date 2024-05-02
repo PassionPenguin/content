@@ -25,24 +25,19 @@ The `screenshots` member defines an array of screenshots intended to showcase th
 The `screenshots` member is an array of objects each representing a screenshot. Each screenshot object may contain the following properties:
 
 - `form_factor`
-
   - : String that represents a class of devices. This should be used only when the screenshot is only applicable for a particular form factor.
 
     This property may take one of the following values:
-
     - `"narrow"`: the screenshot is applicable only to narrow screens.
     - `"wide"`: the screenshot is applicable only to wide screens.
 
 - `label`
-
   - : String that represents the accessible name of the screenshot object. This member can serve as alternative text for the screenshot.
 
 - `platform`
-
   - : String that represents the platform to which the screenshot applies. This should be used when a screenshot is only applicable to a specific device or distribution platform. User agents should not show screenshots that contain a `platform` value that differs from the current platform (for example, Google Play should not show screenshots whose `platform` is `"ios"`).
 
     This property may take one of the following values:
-
     - Device platform identifiers:
       - `"android"`
       - `"chromeos"`

@@ -23,19 +23,14 @@ So a third-level menu will be stacked under the following second-level menus, be
 To better understand the situation, here is the stacking context hierarchy (the three dots "..." represent multiple repetition of the previous line):
 
 - Root stacking context
-
   - LEVEL #1
-
     - LEVEL #2 (`z-index`: 1)
-
       - LEVEL #3
       - …
       - LEVEL #3
-
     - LEVEL #2 (`z-index`: 1)
     - …
     - LEVEL #2 (`z-index`: 1)
-
   - LEVEL #1
   - …
   - LEVEL #1

@@ -21,9 +21,7 @@ new NDEFMessage(records)
 ### Parameters
 
 - `records`
-
   - : An array of objects with the following members:
-
     - `data` {{optional_inline}}
       - : Contains the data to be transmitted; one of a string, an {{jsxref("ArrayBuffer")}}, a {{jsxref("TypedArray")}}, a {{jsxref("DataView")}}, or an array of nested records.
     - `encoding` {{optional_inline}}
@@ -35,17 +33,13 @@ new NDEFMessage(records)
     - `mediaType` {{optional_inline}}
       - : A valid [MIME type](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
     - `recordType`
-
       - : A string indicating the type of data stored in `data`. It must be one of the following values:
-
         - `"absolute-url"`
 
           An absolute URL to the data.
 
           `"empty"`
-
           - : An empty {{domxref("NDEFRecord")}}.
-
         - `"mime"`
           - : A valid [MIME type](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
         - `"smart-poster"`

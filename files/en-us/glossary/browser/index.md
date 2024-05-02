@@ -14,7 +14,6 @@ A **Web browser** or **browser** is a program that retrieves and displays pages 
 - {{Glossary("user agent")}} (Glossary)
 - {{HTTPHeader("User-agent")}} (HTTP Header)
 - Download a browser
-
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Microsoft Edge](https://www.microsoft.com/en-us/edge)

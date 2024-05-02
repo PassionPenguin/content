@@ -28,10 +28,8 @@ getContext(contextType, contextAttributes)
 ### Parameters
 
 - `contextType`
-
   - : A string containing the context identifier defining the drawing
     context associated to the canvas. Possible values are:
-
     - `"2d"`, leading to the creation of a
       {{domxref("CanvasRenderingContext2D")}} object representing a two-dimensional
       rendering context.
@@ -56,7 +54,6 @@ getContext(contextType, contextAttributes)
     > implementations under certain [conformance rules](https://www.khronos.org/registry/webgl/sdk/tests/CONFORMANCE_RULES.txt).
 
 - `contextAttributes` {{optional_inline}}
-
   - : You can use several context attributes when creating your rendering context, for
     example:
 
@@ -68,7 +65,6 @@ getContext(contextType, contextAttributes)
     ```
 
     2d context attributes:
-
     - `alpha`
       - : A boolean value that indicates if the canvas
         contains an alpha channel. If set to `false`, the browser now knows
@@ -90,7 +86,6 @@ getContext(contextType, contextAttributes)
         frequently.
 
     WebGL context attributes:
-
     - `alpha`
       - : A boolean value that indicates if the canvas
         contains an alpha buffer.
@@ -112,11 +107,9 @@ getContext(contextType, contextAttributes)
         indicates if a context will be created if the system performance is low or if no
         hardware GPU is available.
     - `powerPreference`
-
       - : A hint to the user agent
         indicating what configuration of GPU is suitable for the WebGL context. Possible
         values are:
-
         - `"default"`
           - : Let the user agent decide which GPU configuration is
             most suitable. This is the default value.
@@ -126,7 +119,6 @@ getContext(contextType, contextAttributes)
         - `"low-power"`
           - : Prioritizes power saving over rendering
             performance.
-
     - `premultipliedAlpha`
       - : A boolean value that indicates that
         the page compositor will assume the drawing buffer contains colors with

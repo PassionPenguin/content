@@ -50,7 +50,6 @@ The CSS fonts module also supports variable fonts. Unlike regular fonts, where e
 ### At-rules and descriptors
 
 - At-rule: {{cssxref("@font-face")}}
-
   - : Descriptors:
     - {{cssxref("@font-face/ascent-override", "ascent-override")}}
     - {{cssxref("@font-face/descent-override", "descent-override")}}
@@ -67,7 +66,6 @@ The CSS fonts module also supports variable fonts. Unlike regular fonts, where e
     - {{cssxref("@font-face/unicode-range", "unicode-range")}}
 
 - At-rule: {{cssxref("@font-feature-values")}}
-
   - : Descriptor:
     - {{cssxref("@font-feature-values/font-display", "font-display")}}
 
@@ -138,23 +136,18 @@ The CSS fonts module also supports variable fonts. Unlike regular fonts, where e
 ## Guides
 
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
-
   - : This beginner's learning article covers the basic fundamentals of text and font styling. It covers how to set the font weight, family, and style by using the {{cssxref("font")}} shorthand and how to align text and manage line and letter spacing.
 
 - [Learn: Web fonts](/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
-
   - : This beginner's learning article explains how to use custom fonts on your web page to allow for more varied and custom text styling.
 
 - [OpenType font features guide](/en-US/docs/Web/CSS/CSS_fonts/OpenType_fonts_guide)
-
   - : Font features or variants refer to different glyphs or character styles contained within an OpenType font. These include things like ligatures (special glyphs that combine characters like 'fi' or 'ffl'), kerning (adjustments to the spacing between specific letterform pairings), fractions, numeral styles, and a number of others. These are all referred to as OpenType Features, and are made available to use on the web via specific properties and a low-level control property — {{cssxref("font-feature-settings")}}. This article provides you with all you need to know about using OpenType font features in CSS.
 
 - [Variable fonts guide](/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide)
-
   - : This article will help you get started with using variable fonts.
 
 - [Improving font performance](/en-US/docs/Learn/Performance/CSS#improving_font_performance)
-
   - : This article, part of the CSS performance guide, discusses font loading, loading only the required glyphs, and defining font display behavior with the `font-display` descriptor.
 
 ## Related concepts

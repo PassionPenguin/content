@@ -38,31 +38,24 @@ The frontmatter is the content between the dashes. The sidebar macro is included
 Here are a few other sidebar macros, with what they do:
 
 - `\{{CSSRef}}`
-
   - : Present on every CSS page, it generates a CSS sidebar that includes links for modules, properties, selectors, combinators, pseudo-classes, pseudo-elements, at-rules, functions, and types, with all the link lists collapsed except for the link list for the current page type.
 
 - `\{{DefaultAPISidebar("<API_Title>")}}`
-
   - : The API sidebar displayed for overview pages; the single parameter is the name of the API group in GroupData.
 
 - `\{{GlossarySidebar}}`
-
   - : Present on every glossary page, it generates the glossary sidebar that includes the list of top-level glossary terms (not the disambiguated terms) preceded by a section filter.
 
 - `\{{LearnSidebar}}`
-
   - : Present on every page within the Learn section except for common questions and how-to pages (which use the `QuickLinksWithSubpages` macro), it generates a sidebar based on the [hard-coded links](https://github.com/mdn/yari/blob/main/kumascript/macros/LearnSidebar.ejs) present in the Yari macro file. This macro is not based on file structure.
 
 - `\{{HTMLSidebar}}`
-
   - : Generates the sidebar for HTML documentation, including tutorials, references, and guides. The macro includes calls to the `\{{ ListSubpagesForSidebar}}` macro for the element and attribute reference sections, while the tutorial and guide [links are hard-coded](https://github.com/mdn/yari/blob/main/kumascript/macros/HTMLSidebar.ejs).
 
 - `\{{HTTPSidebar}}`
-
   - : Generates the sidebar for [HTTP documentation](/en-US/docs/Web/HTTP), including guides and reference docs.
 
 - `\{{PWASidebar}}`
-
   - : Generates the sidebar for progressive web app (PWA) documentation. The macro lists all the pages (it is not based on file structure).
 
 The appropriate macro to use depends on the [page type](/en-US/docs/MDN/Writing_guidelines/Page_structures/Page_types). The [template](/en-US/docs/MDN/Writing_guidelines/Page_structures/Page_types#page_templates) for each page type includes the appropriate macro for that page type.

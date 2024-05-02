@@ -48,7 +48,6 @@ Each individual animation is specified as:
 - zero, one, or two occurrences of the {{cssxref("&lt;time&gt;")}} value
 
 - zero or one occurrences of the following values:
-
   - {{cssxref("animation", "&lt;single-easing-function&gt;", "#single-easing-function")}}
   - {{cssxref("animation", "&lt;single-animation-iteration-count&gt;", "#single-animation-iteration-count")}}
   - {{cssxref("animation", "&lt;single-animation-direction&gt;", "#single-animation-direction")}}

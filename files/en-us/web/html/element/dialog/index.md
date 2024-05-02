@@ -20,7 +20,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 > **Warning:** The `tabindex` attribute must not be used on the `<dialog>` element. See [usage notes](#usage_notes).
 
 - `open`
-
   - : Indicates that the dialog box is active and is available for interaction. If the `open` attribute is not set, the dialog box will not be visible to the user.
     It is recommended to use the `.show()` or `.showModal()` method to render dialogs, rather than the `open` attribute. If a `<dialog>` is opened using the `open` attribute, it is non-modal.
 

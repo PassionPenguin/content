@@ -29,11 +29,9 @@ new RTCSessionDescription(options)
 ### Values
 
 - `options` {{optional_inline}}
-
   - : An object providing the default values for the session description; the object
     conforms to the `RTCSessionDescriptionInit` dictionary. That dictionary has
     the following properties:
-
     - `type`
       - : **Required.** A string which is used to set the `type` property of the new `RTCSessionDescription` object.
     - `sdp`

@@ -51,7 +51,6 @@ animation-timing-function: unset;
 ### Values
 
 - {{cssxref("&lt;easing-function&gt;")}}
-
   - : The easing function that corresponds to a given animation, as determined by {{cssxref("animation-name")}}.
 
     The non-step keyword values (ease, linear, ease-in-out, etc.) each represent cubic Bézier curve with fixed four point values, with the cubic-bezier() function value allowing for a non-predefined value. The step easing functions divides the input time into a specified number of intervals that are equal in length. It is defined by a number of steps and a step position.
@@ -69,9 +68,7 @@ animation-timing-function: unset;
 - `cubic-bezier(p1, p2, p3, p4)`
   - : An author defined cubic-bezier curve, where the p1 and p3 values must be in the range of 0 to 1.
 - `steps(n, <jumpterm>)`
-
   - : Displays an animation iteration along _n_ stops along the transition, displaying each stop for equal lengths of time. For example, if _n_ is 5, there are 5 steps. Whether the animation holds temporarily at 0%, 20%, 40%, 60% and 80%, on the 20%, 40%, 60%, 80% and 100%, or makes 5 stops between the 0% and 100% along the animation, or makes 5 stops including the 0% and 100% marks (on the 0%, 25%, 50%, 75%, and 100%) depends on which of the following jump terms is used:
-
     - `jump-start`
       - : Denotes a left-continuous function, so that the first jump happens when the animation begins.
     - `jump-end`

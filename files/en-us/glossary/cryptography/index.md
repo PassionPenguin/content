@@ -14,7 +14,6 @@ More than just **data confidentiality**, cryptography also tackles **identificat
 
 - [Cryptography](https://en.wikipedia.org/wiki/Cryptography) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("Block cipher mode of operation")}}
   - {{Glossary("Cipher")}}
   - {{Glossary("Ciphertext")}}

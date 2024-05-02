@@ -23,15 +23,12 @@ color-contrast(#008080 vs olive, var(--myColor), #d2691e)
 Functional notation: `color-contrast(color vs color-list)`
 
 - `color`
-
   - : Any valid {{CSSXref("&lt;color&gt;")}}.
 
 - `vs`
-
   - : A literal token as a component of the syntax.
 
 - `color-list`
-
   - : A comma-separated list of at least two color values to compare with the first value.
 
 ## Specifications

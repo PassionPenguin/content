@@ -25,9 +25,7 @@ new Sanitizer(config)
 ### Parameters
 
 - `config` {{optional_inline}}
-
   - : A sanitizer configuration object with the following options (referred to as `SanitizerConfig` in the specification):
-
     - `allowElements` {{optional_inline}}
       - : An {{jsxref('Array')}} of {{jsxref('String','strings')}} indicating elements that the sanitizer should not remove.
         All elements not in the array will be dropped.

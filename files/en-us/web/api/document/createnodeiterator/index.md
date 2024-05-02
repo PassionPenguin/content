@@ -21,11 +21,9 @@ createNodeIterator(root, whatToShow, filter)
 ### Parameters
 
 - `root`
-
   - : The root node at which to begin the {{ domxref("NodeIterator") }}'s traversal.
 
 - `whatToShow` {{optional_inline}}
-
   - : An optional `unsigned long` representing a bitmask created by
     combining the constant properties of
     [`NodeFilter`](https://www.w3.org/TR/DOM-Level-2-Traversal-Range/traversal.html#Traversal-NodeFilter).

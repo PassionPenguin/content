@@ -34,14 +34,12 @@ container-type: unset;
 ### Values
 
 - `size`
-
   - : Establishes a query container for container size queries in both the [inline and block](/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values#block_and_inline_dimensions) dimensions.
     Applies layout containment, style containment, and size containment to the container.
 
     Size containment is applied to the element in both the inline and block directions. The size of the element can be computed in isolation, ignoring the child elements.
 
 - `inline-size`
-
   - : Establishes a query container for dimensional queries on the [inline axis](/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values#block_and_inline_dimensions) of the container.
     Applies layout, style, and inline-size containment to the element.
 

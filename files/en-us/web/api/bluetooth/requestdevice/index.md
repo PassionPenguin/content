@@ -23,34 +23,26 @@ requestDevice(options)
 ### Parameters
 
 - `options` {{optional_inline}}
-
   - : An object that sets options for selecting an appropriate device.
     The available options are:
-
     - `filters` {{optional_inline}}
-
       - : An array of filter objects indicating the properties of devices that will be matched.
         To match a filter object, a device must match all the values of the filter: all its specified `services`, `name`, `namePrefix`, and so on.
 
         Each filter consists of an array of objects with the following properties:
-
         - `services` {{optional_inline}}
-
           - : An array of values indicating the Bluetooth GATT (Generic Attribute Profile) services that a Bluetooth device must support.
             Each value can be a valid name from the [GATT assigned services list](https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_services.txt), such as `'battery_service'` or `'blood_pressure'`.
             You can also pass a full service UUID such as `'0000180F-0000-1000-8000-00805f9b34fb'` or the short 16-bit (`0x180F`) or 32-bit alias.
             Note that these are the same values that can be passed to {{domxref("BluetoothUUID/getService_static","BluetoothUUID.getService()")}}.
-
         - `name` {{optional_inline}}
           - : A string containing the precise name of the device to match against.
         - `namePrefix` {{optional_inline}}
           - : A string containing the name prefix to match against.
             All devices that have a name starting with this string will be matched.
         - `manufacturerData` {{optional_inline}}
-
           - : An array of objects matching against manufacturer data in the Bluetooth Low Energy (BLE) advertising packets. <!-- BluetoothManufacturerDataFilterInit -->
             Each filter object has the following properties:
-
             - `companyIdentifier`
               - : A mandatory number identifying the manufacturer of the device.
                 Company identifiers are listed in the Bluetooth specification [Assigned numbers](https://www.bluetooth.com/specifications/assigned-numbers/), Section 7.
@@ -60,12 +52,9 @@ requestDevice(options)
                 A buffer containing values to match against the values at the start of the advertising manufacturer data.
             - `mask` {{optional_inline}}
               - : This allows you to match against bytes within the manufacturer data, by masking some bytes of the service data `dataPrefix`.
-
         - `serviceData` {{optional_inline}} <!-- BluetoothServiceDataFilterInit -->
-
           - : An array of objects matching against service data in the Bluetooth Low Energy (BLE) advertising packets.<!-- BluetoothServiceDataFilterInit -->
             Each filter object has the following properties:
-
             - `service`
               - : The GATT service name, the service UUID, or the UUID 16-bit or 32-bit form.
                 This takes the same values as the elements of the [`services`](#services) array.
@@ -74,26 +63,20 @@ requestDevice(options)
                 A buffer containing values to match against the values at the start of the advertising service data.
             - `mask` {{optional_inline}}
               - : This allows you to match against bytes within the service data, by masking some bytes of the service data `dataPrefix`.
-
     - `exclusionFilters` {{optional_inline}}
       - : An array of filter objects indicating the characteristics of devices that will be excluded from matching.
         The properties of the array elements are the same as for [`filters`](#filters).
     - `optionalServices` {{optional_inline}}
-
       - : An array of optional service identifiers.
 
         The identifiers take the same values as the elements of the [`services`](#services) array (a GATT service name, service UUID, or UUID short 16-bit or 32-bit form).
-
     - `optionalManufacturerData` {{optional_inline}}
-
       - : An optional array of integer manufacturer codes.
         This takes the same values as [`companyIdentifier`](#companyidentifier).
 
         The data is not used for filtering the devices, but advertisements that match the specified set are still delivered in `advertisementreceived` events.
         This is useful because it allows code to specify an interest in data received from Bluetooth devices without constraining the filter controlling which devices are presented to the user in the permission prompt.
-
     - `acceptAllDevices` {{optional_inline}}
-
       - : A boolean value indicating that the requesting script can accept all Bluetooth devices.
         The default is `false`.
 

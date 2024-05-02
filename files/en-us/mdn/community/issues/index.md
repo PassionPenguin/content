@@ -37,7 +37,6 @@ If you think you've found a bug with the content on MDN Web Docs or with the loo
 ### Reporting an issue
 
 - Depending on the type of problem you've discovered, report it by filing an issue on one of the followings:
-
   - [documentation](https://github.com/mdn/content/issues/new/choose)
   - [translation](https://github.com/mdn/translated-content/issues/new/choose)
   - the website's [look and feel](https://github.com/mdn/yari/issues/new/choose)
@@ -49,9 +48,7 @@ If you think you've found a bug with the content on MDN Web Docs or with the loo
 - Choose the appropriate category to report the issue. For example, to report a content bug, use the [Content issue](https://github.com/mdn/content/issues/new?assignees=&labels=needs+triage&template=content-bug.yml) template in the `mdn/content` repository.
 
 - Provide sufficient information while reporting the issue:
-
   - **Issue title** must convey succinctly the _required action_.
-
   - **Issue description** must clearly describe the bug and the action required to resolve the issue. It must also list the task or sub-tasks to be completed to resolve the issue. Some other guidelines include:
     - Use the description field to indicate the status of the task or sub-tasks by using checklists.
     - Update the status of a task in the issue description instead of commenting on the issue. Use [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) in the description if an issue has multiple parts. This helps others who may otherwise need to scroll through comments on the issue to determine the status of various tasks.
@@ -60,7 +57,6 @@ If you think you've found a bug with the content on MDN Web Docs or with the loo
 - If the information you provide in the issue is incomplete, then you might be contacted later during the [issue triaging process](#review_issue_to_determine_completeness_of_information).
 
 - If you find yourself in one of the following situations, move the conversation to [MDN's discussion on GitHub](https://github.com/orgs/mdn/discussions):
-
   - A discussion needs to take place to clarify an issue.
   - A discussion begins after opening the issue.
   - The issue has no clear consensus on its resolution.
@@ -105,7 +101,6 @@ These are the general steps for working on an issue:
 2. **Assign the issue to yourself:** After finding an issue you'd like to work on, make sure that the issue is not assigned to anybody else. Add a comment saying you would like to work on the issue, and if you are able to, [assign the issue to yourself](https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users#assigning-an-individual-issue-or-pull-request).
 
 3. **Do the research:** Most issues need some investigation before work can start.
-
    - Scope out the work that needs to be done. If you need to ask questions, ask them in the [MDN Web Docs chat rooms](/en-US/docs/MDN/Community/Communication_channels#chat_rooms).
    - If the issue is well-described, and the work is pretty obvious, go ahead and do it.
    - If the issue is not well-described, and/or you are not sure what is needed, feel free to @mention the poster and ask for more information.
@@ -186,11 +181,9 @@ If any of the above information is not present, then you should ask the author o
 For each bug, set a priority label based on the severity of the issue to help people who want to work on the most important issues or areas.
 
 - Critical issue: This type of issue needs to be fixed as soon as possible, regardless of where it appears on the site. This type of issue could damage MDN's reputation severely and/or harm users. Examples of this issue include an incorrect code snippet, which if used in production, could create a severe security problem and undesirable content such as malware, profanity, pornography, hate speech, or links to such content.
-
   - Label: `p0` (will be addressed immediately)
 
 - Major issue: This type of issue could severely affect a page's usefulness. For example, a significant amount of out-of-date information, a complex and important code example that doesn't work, a significant amount of prose that is badly written and hard to understand, or a large number of broken links.
-
   - Labels: `p1` (will be addressed soon) and `p2` (will be addressed soon, but higher priority items will take precedence)
 
 - Minor issue: This is a type of improvement issue that can make the existing content better but does not affect learning or only has a minor effect on learning. Since these types of issues are not actively planned for, help from contributors to fix these issues is welcome and much appreciated. Fixing some of these issues can also provide the necessary practice to beginner contributors who are starting to get familiar with the contribution process. Examples include typos, bad grammar, a broken link, a small amount of out-of-date information or badly-written prose, or a code snippet that doesn't work.

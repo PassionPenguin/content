@@ -84,7 +84,6 @@ Sec-Fetch-Site: cross-site
 ## See also
 
 - Related headers
-
   - {{HTTPHeader("Sec-Fetch-Mode")}}
   - {{HTTPHeader("Sec-Fetch-User")}}
   - {{HTTPHeader("Sec-Fetch-Dest")}}

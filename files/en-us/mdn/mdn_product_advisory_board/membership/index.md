@@ -12,7 +12,6 @@ The primary purpose of the PAB is to provide advice, input, and feedback on cont
 
 - Provide feedback into content strategy and prioritization of standards documentation
 - Help define product strategy, roadmap, and priorities including:
-
   - Suggest and comment on Objectives and Key Results (OKRs)
   - Suggest and comment on yearly and quarterly content roadmaps
 

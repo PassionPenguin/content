@@ -15,7 +15,6 @@ The available selector strategies are [CSS](/en-US/docs/Web/WebDriver/WebElement
 - [List of WebDriver errors](/en-US/docs/Web/WebDriver/Errors)
 - [WebElement](/en-US/docs/Web/WebDriver/WebElement)
 - Element retrieval commands:
-
   - [Find Element](/en-US/docs/Web/WebDriver/Commands/FindElement)
   - [Find Elements](/en-US/docs/Web/WebDriver/Commands/FindElements)
   - [Find Element From Element](/en-US/docs/Web/WebDriver/Commands/FindElementFromElement)

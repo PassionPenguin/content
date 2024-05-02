@@ -37,27 +37,21 @@ When the listbox role is added to an element, or such an element becomes visible
 - [`aria-activedescendant`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-activedescendant)
   - : Holds the `id` string of the currently active element within the listbox. If that's an option element, then that would be the `id` of the most recently interacted with option, regardless of whether that option has an [`aria-selected`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-selected) value of `true` or not. Takes the value of only one `id`, even in a multiselectable listbox. If the `id` does not refer to a DOM descendant of the listbox, then that `id` must be included among the IDs in the [`aria-owns`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-owns) attribute.
 - [`aria-owns`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-owns)
-
   - : This is a space-separated list of element IDs which are not DOM child elements of the listbox. IDs listed here cannot also be listed in [`aria-owns`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-owns) attributes of any other elements.
 
 - [`aria-multiselectable`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-multiselectable)
-
   - : Include and set to `true` if the user can select more than one option. If set to `true`, _every_ selectable option should have an [`aria-selected`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-selected) attribute included and set to `true` or `false`. Options which are _not_ selectable _should not_ have the [`aria-selected`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-selected) attribute. If `false` or omitted, only the currently selected option, if any option is selected, needs the [`aria-selected`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-selected) attribute, and it must be set to `true`.
 
 - [`aria-required`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-required)
-
   - : A Boolean attribute which indicates that an option with a non-empty string value must be selected.
 
 - [`aria-readonly`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-readonly)
-
   - : The user cannot change which options are selected or unselected, but the listbox is otherwise operable.
 
 - [`aria-label`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
-
   - : A human-readable string value which identifies the listbox. If there's a visible label, then [`aria-labelledby`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby) should be used instead to refer to that label.
 
 - [`aria-labelledby`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby)
-
   - : Identifies the visible element or elements in a space-separated list of element IDs which identify the listbox. If there's no visible label, then [`aria-label`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) should be used instead to include a label. (Note: "labelled", with two L's, is the correct spelling based on the accessibility API conventions.)
 
 - [`aria-roledescription`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-roledescription)
@@ -66,12 +60,10 @@ When the listbox role is added to an element, or such an element becomes visible
 ### Keyboard interactions
 
 - When a single-select listbox receives focus:
-
   - If none of the options are selected before the listbox receives focus, the first option receives focus. Optionally, the first option may be automatically selected.
   - If an option is selected before the listbox receives focus, focus is set on the selected option.
 
 - When a multi-select listbox receives focus:
-
   - If none of the options are selected before the listbox receives focus, focus is set on the first option and there is no automatic change in the selection state.
   - If one or more options are selected before the listbox receives focus, focus is set on the first option in the list that is selected.
 
@@ -92,7 +84,6 @@ When the listbox role is added to an element, or such an element becomes visible
   (Optional): Moves focus to last option. Optionally, in a single-select listbox, selection may also move with focus. Supporting this key is strongly recommended for lists with more than five options.
 
 - Type-ahead is recommended for all listboxes, especially those with more than seven options:
-
   - Type a character: focus moves to the next item with a name that starts with the typed character.
   - Type multiple characters in rapid succession: focus moves to the next item with a name that starts with the string of characters typed.
 
@@ -105,33 +96,25 @@ When the listbox role is added to an element, or such an element becomes visible
   <kbd>Control</kbd>
 
   , while navigating the list or an alternative model that does require modifier keys to be held while navigating in order to avoid losing selection states.
-
   - Recommended selection model — holding modifier keys is not necessary:
-
     - <kbd>Space</kbd>
 
       : changes the selection state of the focused option .
-
     - <kbd>Shift + Down Arrow</kbd>
 
       (Optional): Moves focus to and toggles the selected state of the next option.
-
     - <kbd>Shift + Up Arrow</kbd>
 
       (Optional): Moves focus to and toggles the selected state of the previous option.
-
     - <kbd>Shift + Space</kbd>
 
       (Optional): Selects contiguous items from the most recently selected item to the focused item.
-
     - <kbd>Control + Shift + Home</kbd>
 
       (Optional): Selects the focused option and all options up to the first option. Optionally, moves focus to the first option.
-
     - <kbd>Control + Shift + End</kbd>
 
       (Optional): Selects the focused option and all options down to the last option. Optionally, moves focus to the last option.
-
     - <kbd>Control + A</kbd>
 
       (Optional): Selects all options in the list. Optionally, if all options are selected, it may also unselect all options.

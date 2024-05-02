@@ -16,9 +16,7 @@ to determine if cross-origin requests lead to valid responses, and which propert
 ## Value
 
 - A `RequestMode` value.
-
   - : The associated _mode_, available values of which are:
-
     - `same-origin`
       - : If a request is made to another origin with this mode
         set, the result is an error. You could use this to ensure that a request is always

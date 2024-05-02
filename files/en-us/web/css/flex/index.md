@@ -56,17 +56,13 @@ flex: unset;
 The `flex` property may be specified using one, two, or three values.
 
 - **One-value syntax:** the value must be one of:
-
   - a valid value for {{cssxref("&lt;flex-grow&gt;")}}: then the shorthand expands to `flex: <flex-grow> 1 0`.
   - a valid value for {{cssxref("&lt;flex-basis&gt;")}}: then the shorthand expands to `flex: 1 1 <flex-basis>`.
   - the keyword `none` or one of the global keywords.
 
 - **Two-value syntax:**
-
   - The first value must be a valid value for {{cssxref("flex-grow")}}.
-
   - The second value must be one of:
-
     - a valid value for {{cssxref("flex-shrink")}}: then the shorthand expands to `flex: <flex-grow> <flex-shrink> 0`.
     - a valid value for {{cssxref("flex-basis")}}: then the shorthand expands to `flex: <flex-grow> 1 <flex-basis>`.
 

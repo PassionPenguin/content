@@ -25,11 +25,9 @@ revoke(descriptor)
 ### Parameters
 
 - `descriptor`
-
   - : An object based on the `PermissionDescriptor` dictionary that sets
     options for the operation consisting of a comma-separated list of name-value pairs.
     The available options are:
-
     - `name`
       - : The name of the API whose permissions you want to query.
         Valid values are `'geolocation'`, `'midi'`,

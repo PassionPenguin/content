@@ -40,7 +40,6 @@ Sec-CH-Prefers-Reduced-Motion: <preference>
 ### Directives
 
 - `<preference>`
-
   - : The user agent's preference for reduced-motion animations. This is often taken from the underlying operating system's setting. The value of this directive can be either `no-preference` or `reduce`.
 
 ## Examples

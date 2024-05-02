@@ -44,30 +44,25 @@ The CSS generated content module introduces six yet-to-be implemented CSS functi
 ## Guides
 
 - ["How to" guide for generated content](/en-US/docs/Learn/CSS/Howto/Generated_content)
-
   - : Learn how to add text or image content to a document using the {{cssxref("content")}} property.
 
 - [Create fancy boxes with generated content](/en-US/docs/Learn/CSS/Howto/Create_fancy_boxes)
-
   - : Example of styling generated content for visual effects.
 
 ## Related concepts
 
 - [CSS pseudo-elements](/en-US/docs/Web/CSS/CSS_pseudo-elements) module
-
   - {{cssxref("::before")}} pseudo-element
   - {{cssxref("::after")}} pseudo-element
   - {{cssxref("::marker")}} pseudo-element
 
 - [CSS lists and counters](/en-US/docs/Web/CSS/CSS_lists) module
-
   - {{cssxref("counter", "counter()")}} function
   - {{cssxref("counters", "counters()")}} function
   - {{cssxref("counter-increment")}} property
   - {{cssxref("counter-reset")}} property
 
 - [CSS values and units](/en-US/docs/Web/CSS/CSS_Values_and_Units) module
-
   - {{cssxref("attr", "attr()")}} function
   - {{cssxref("string")}} data type
   - {{cssxref("image")}} data type

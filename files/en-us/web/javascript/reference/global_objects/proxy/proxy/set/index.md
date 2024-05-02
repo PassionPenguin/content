@@ -32,7 +32,6 @@ is bound to the handler.
 - `value`
   - : The new value of the property to set.
 - `receiver`
-
   - : The object to which the assignment was originally directed. This is usually the
     proxy itself. But a `set()` handler can also be called indirectly, via
     the prototype chain or various other ways.

@@ -39,11 +39,9 @@ A `GPURenderBundleEncoder` object instance is created via the {{domxref("GPUDevi
 - {{domxref("GPURenderBundleEncoder.drawIndirect", "drawIndirect()")}} {{Experimental_Inline}}
   - : Draw primitives using parameters read from a {{domxref("GPUBuffer")}}.
 - {{domxref("GPURenderBundleEncoder.drawIndexedIndirect", "drawIndexedIndirect()")}} {{Experimental_Inline}}
-
   - : Draw indexed primitives using parameters read from a {{domxref("GPUBuffer")}}.
 
 - {{domxref("GPURenderBundleEncoder.finish", "finish()")}} {{Experimental_Inline}}
-
   - : Completes recording of the current render pass command sequence.
 
 - {{domxref("GPURenderBundleEncoder.insertDebugMarker", "insertDebugMarker()")}} {{Experimental_Inline}}
@@ -53,15 +51,12 @@ A `GPURenderBundleEncoder` object instance is created via the {{domxref("GPUDevi
 - {{domxref("GPURenderBundleEncoder.pushDebugGroup", "pushDebugGroup()")}} {{Experimental_Inline}}
   - : Begins a debug group, which is marked with a specified label, and will contain all subsequent encoded commands up until a {{domxref("GPURenderBundleEncoder.popDebugGroup", "popDebugGroup()")}} method is invoked.
 - {{domxref("GPURenderBundleEncoder.setBindGroup", "setBindGroup()")}} {{Experimental_Inline}}
-
   - : Sets the {{domxref("GPUBindGroup")}} to use for subsequent render bundle commands, for a given index.
 
 - {{domxref("GPURenderBundleEncoder.setIndexBuffer", "setIndexBuffer()")}} {{Experimental_Inline}}
-
   - : Sets the current {{domxref("GPUBuffer")}} that will provide index data for subsequent drawing commands.
 
 - {{domxref("GPURenderBundleEncoder.setPipeline", "setPipeline()")}} {{Experimental_Inline}}
-
   - : Sets the {{domxref("GPURenderPipeline")}} to use for this render bundle.
 
 - {{domxref("GPURenderBundleEncoder.setVertexBuffer", "setVertexBuffer()")}} {{Experimental_Inline}}

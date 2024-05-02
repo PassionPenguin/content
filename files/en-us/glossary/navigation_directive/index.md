@@ -16,7 +16,6 @@ See [Navigation directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 
 - <https://www.w3.org/TR/CSP/#directives-navigation>
 - Other kinds of directives:
-
   - {{Glossary("Fetch directive")}}
   - {{Glossary("Document directive")}}
   - {{Glossary("Reporting directive")}}

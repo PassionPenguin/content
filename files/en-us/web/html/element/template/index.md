@@ -14,15 +14,10 @@ The **`<template>`** [HTML](/en-US/docs/Web/HTML) element serves as a mechanism 
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `shadowrootmode`
-
   - : Creates a [shadow root](/en-US/docs/Glossary/Shadow_tree) for the parent element. It is a declarative version of the {{domxref("Element.attachShadow()")}} method and accepts the same {{glossary("enumerated")}} values.
-
     - `open`
-
       - : Exposes the internal shadow root DOM for JavaScript (recommended for most use cases).
-
     - `closed`
-
       - : Hides the internal shadow root DOM from JavaScript.
 
     > **Note:** This is a feature of the HTML parser that cannot be used post-parsing by setting the `shadowrootmode` attribute through JavaScript. Only allowed values will create the shadow root; any other values, including empty ones, won't trigger this behavior.

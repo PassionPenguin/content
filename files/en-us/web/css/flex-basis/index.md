@@ -51,7 +51,6 @@ The `flex-basis` property is specified as either the keyword `content` or a `<'w
 ### Values
 
 - `<'width'>`
-
   - : Any of the following units:
     - {{cssxref("&lt;length&gt;")}} sets an absolute value
     - {{cssxref("&lt;percentage&gt;")}} sets a percentage of the width or height of a containing block's content area
@@ -61,7 +60,6 @@ The `flex-basis` property is specified as either the keyword `content` or a `<'w
     - `fit-content` sets the maximum possible size of a containing block's content area, bounded by the `min-content` and `max-content` values, and calculated based on the content of the current element
 
 - `content`
-
   - : Indicates automatic sizing, based on the flex item's content.
 
     > **Note:** This value was not present in the initial release of Flexible Box Layout, and thus some older implementations will not support it. The equivalent effect can be had by using `auto` together with a main size ([width](https://drafts.csswg.org/css2/#the-width-property) or [height](https://drafts.csswg.org/css2/#the-height-property)) of `auto`.

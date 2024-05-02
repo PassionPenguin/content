@@ -65,18 +65,15 @@ If so ensure they are safe and that no better alternatives are available.
 ## URLs
 
 1. Does the application make use of untrusted data to construct URLs?
-
    - Ensure any such data is adequately sanitized and encoded prior to use.
    - Ensure any data obtained from these URLs is checked before use or storage.
 
 2. Does the application follow redirects?
-
    - Ensure security checks are performed on redirects as well as the original request URI.
 
 ## Security Controls
 
 1. Does the application implement suitable permission checks?
-
    - Ensure the correct APIs are used where available (e.g. shouldLoad, etc.)
    - Ensure the application fails securely.
 
@@ -93,7 +90,6 @@ If so ensure they are safe and that no better alternatives are available.
 
    1. Ensure the application checks that any files created are under allowed paths
    2. Are filenames generated from untrusted data?
-
       - Ensure the data is suitably encoded
 
    3. Check files are of an acceptable type
@@ -130,7 +126,6 @@ If so ensure they are safe and that no better alternatives are available.
 1. Does the application present the user with any security warnings?
 2. Are they clearly understandable and appropriate?
 3. Can untrusted data change the meaning of messages to the user?
-
    - Can user input change the meaning of messages?
    - Can user input force system messages off the visible screen?
    - Can user input include special characters that can change the meaning of messages (e.g. Unicode right-to-left override U+202E)
@@ -146,11 +141,9 @@ If so ensure they are safe and that no better alternatives are available.
 ## Front End
 
 1. Are safe mechanisms used to create XUL and HTML UI elements?
-
    - e.g. use createTextNode instead of innerHTML or similar
 
 2. Does the application create its own docshells (tabs, iframes)?
-
    - Ensure you are explicit about the type of these, e.g. iframe.setAttribute("type", "content")
 
 ## References

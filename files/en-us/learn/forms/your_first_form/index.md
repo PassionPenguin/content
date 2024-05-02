@@ -356,7 +356,6 @@ textarea {
 
   /* To give the same size to all text field */
   width: 300px;
-
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 

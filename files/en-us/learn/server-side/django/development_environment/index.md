@@ -423,14 +423,12 @@ The steps are:
 2. Once you are logged in, click the **+** link in the top toolbar and select **New repository**.
 3. Fill in all the fields on this form.
    While these are not compulsory, they are strongly recommended.
-
    - Enter a repository name: "django_local_library".
    - Enter a new repository description: "Local Library website written in Django".
    - Select "Public" for the repository (the default).
 
      > **Warning:** This will make _all_ source code visible.
      > Remember not to store credentials or other sensitive material in your repo unless it is private.
-
    - Choose **Python** in the _Add .gitignore_ selection list.
    - Choose your preferred license in the _Add license_ selection list.
      MDN uses "Creative Commons Zero v1.0 Universal" for this example.

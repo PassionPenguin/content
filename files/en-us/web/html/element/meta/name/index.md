@@ -101,7 +101,6 @@ The HTML specification defines the following set of standard metadata names:
   The browser will use this information in tandem with the user's browser or device settings to determine what colors to use for everything from background and foregrounds to form controls and scrollbars. The primary use for `<meta name="color-scheme">` is to indicate compatibility with—and order of preference for—light and dark color modes.
 
   The value of the [`content`](/en-US/docs/Web/HTML/Element/meta#content) property for `color-scheme` may be one of the following:
-
   - `normal`
     - : The document is unaware of color schemes and should be rendered using the default color palette.
   - \[`light` | `dark`]+

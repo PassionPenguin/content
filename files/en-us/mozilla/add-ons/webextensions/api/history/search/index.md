@@ -22,11 +22,8 @@ let searching = browser.history.search(
 ### Parameters
 
 - `query`
-
   - : An object which indicates what to look for in the browser's history. This object has the following fields:
-
     - `text`
-
       - : `string`. Search history items by URL and title. The string is split up into separate search terms at space boundaries. Each search term is matched case-insensitively against the history item's URL and title. The history item will be returned if all search terms match.
 
         For example, consider this item:
@@ -44,7 +41,6 @@ let searching = browser.history.search(
         ```
 
         Specify an empty string (`""`) to retrieve all {{WebExtAPIRef("history.HistoryItem")}} objects that meet all the other criteria.
-
     - `startTime` {{optional_inline}}
       - : `number` or `string` or `object`. A value indicating a date and time. This can be represented as: a [`Date`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object, an [ISO 8601 date string](https://www.iso.org/iso-8601-date-and-time-format.html), or the number of milliseconds since the epoch. If it is supplied, this option excludes results whose `lastVisitTime` is earlier than this time. If it is omitted, the search is limited to the last 24 hours.
     - `endTime` {{optional_inline}}

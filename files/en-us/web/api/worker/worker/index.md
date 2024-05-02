@@ -24,9 +24,7 @@ new Worker(aURL, options)
 - `aURL`
   - : A string representing the URL of the script the worker will execute. It must obey the same-origin policy.
 - `options` {{optional_inline}}
-
   - : An object containing option properties that can be set when creating the object instance. Available properties are as follows:
-
     - `type`
       - : A string specifying the type of worker to create. The value can be `classic` or `module`. If not specified, the default used is `classic`.
     - `credentials`

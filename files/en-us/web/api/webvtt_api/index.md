@@ -36,7 +36,6 @@ The structure of a WebVTT consists of the following components, some of them opt
 - An optional byte order mark (BOM).
 - The string "`WEBVTT`".
 - An optional text header to the right of `WEBVTT`.
-
   - There must be at least one space after `WEBVTT`.
   - You could use this to add a description to the file.
   - You may use anything in the text header except newlines or the string "`-->`".
@@ -373,9 +372,7 @@ The cue settings are added to the right of the cue timings. There must be one or
     - `lr`
       - : The writing direction is left to right
 - `line`
-
   - : If vertical is not set, specifies where the text appears vertically. If vertical is set, line specifies where text appears horizontally. Its value can be:
-
     - a line number
       - : The number is the height of the first line of the cue as it appears on the video. Positive numbers indicate top down and negative numbers indicate bottom up.
     - a percentage
@@ -389,7 +386,6 @@ The cue settings are added to the right of the cue timings. There must be one or
     | `line:100%` | bottom             | left          | right         |
 
 - `position`
-
   - : Specifies where the text will appear horizontally. If vertical is set, position specifies where the text will appear vertically. The value is a percentage, that is an integer (no decimals) between 0 and 100 inclusive followed by a percent sign (%).
 
     | Position        | `vertical` omitted | `vertical:rl` | `vertical:lr` |
@@ -398,7 +394,6 @@ The cue settings are added to the right of the cue timings. There must be one or
     | `position:100%` | right              | bottom        | bottom        |
 
 - `size`
-
   - : Specifies the width of the text area. If vertical is set, size specifies the height of the text area. The value is a percentage, that is an integer (no decimals) between 0 and 100 inclusive followed by a percent sign (%).
 
     | Size        | `vertical` omitted | `vertical:rl` | `vertical:lr` |
@@ -407,7 +402,6 @@ The cue settings are added to the right of the cue timings. There must be one or
     | `size:50%`  | half width         | half height   | half height   |
 
 - `align`
-
   - : Specifies the alignment of the text. Text is aligned within the space given by the size cue setting if it is set.
 
     | Align          | `vertical` omitted    | `vertical:rl`       | `vertical:lr`       |
@@ -449,7 +443,6 @@ In addition to the three escape sequences mentioned above, there are four others
 There are a number of tags, such as `<b>`, that can be used. However, if the WebVTT file is used in a {{HTMLElement("track")}} element where the attribute [`kind`](/en-US/docs/Web/HTML/Element/track#kind) is `chapters` then you cannot use tags.
 
 - Timestamp tag
-
   - : The timestamp must be greater that the cue's start timestamp, greater than any previous timestamp in the cue payload, and less than the cue's end timestamp. The _active text_ is the text between the timestamp and the next timestamp or to the end of the payload if there is not another timestamp in the payload. Any text before the _active text_ in the payload is _previous text_. Any text beyond the _active text_ is _future text_. This enables karaoke style captions.
 
     ```plain
@@ -469,7 +462,6 @@ There are a number of tags, such as `<b>`, that can be used. However, if the Web
 The following tags are the HTML tags allowed in a cue and require opening and closing tags (e.g., `<b>text</b>`).
 
 - Class tag (`<c></c>`)
-
   - : Style the contained text using a CSS class.
 
     ```xml
@@ -477,7 +469,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Italics tag (`<i></i>`)
-
   - : Italicize the contained text.
 
     ```xml
@@ -485,7 +476,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Bold tag (`<b></b>`)
-
   - : Bold the contained text.
 
     ```xml
@@ -493,7 +483,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Underline tag (`<u></u>`)
-
   - : Underline the contained text.
 
     ```xml
@@ -501,7 +490,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Ruby tag (`<ruby></ruby>`)
-
   - : Used with ruby text tags to display [ruby characters](https://en.wikipedia.org/wiki/Ruby_character) (i.e., small annotative characters above other characters).
 
     ```xml
@@ -509,7 +497,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Ruby text tag (`<rt></rt>`)
-
   - : Used with ruby tags to display [ruby characters](https://en.wikipedia.org/wiki/Ruby_character) (i.e., small annotative characters above other characters).
 
     ```xml
@@ -517,7 +504,6 @@ The following tags are the HTML tags allowed in a cue and require opening and cl
     ```
 
 - Voice tag (`<v></v>`)
-
   - : Similar to class tag, also used to style the contained text using CSS.
 
     ```xml

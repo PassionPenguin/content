@@ -298,7 +298,6 @@ The code also shows both ways of declaring a field:
 
 - Field _name_ and _type_ as a key-value pair (i.e. as done with fields `name`, `binary` and `living`).
 - Field _name_ followed by an object defining the `type`, and any other _options_ for the field. Options include things like:
-
   - default values.
   - built-in validators (e.g. max/min values) and custom validation functions.
   - Whether the field is required
@@ -315,7 +314,6 @@ The built-in validators include:
 - All [SchemaTypes](https://mongoosejs.com/docs/schematypes.html) have the built-in [required](https://mongoosejs.com/docs/api.html#schematype_SchemaType-required) validator. This is used to specify whether the field must be supplied in order to save a document.
 - [Numbers](https://mongoosejs.com/docs/api/schemanumber.html) have [min](<https://mongoosejs.com/docs/api/schemanumber.html#SchemaNumber.prototype.min()>) and [max](<https://mongoosejs.com/docs/api/schemanumber.html#SchemaNumber.prototype.max()>) validators.
 - [Strings](https://mongoosejs.com/docs/api/schemastring.html) have:
-
   - [enum](<https://mongoosejs.com/docs/api/schemastring.html#SchemaString.prototype.enum()>): specifies the set of allowed values for the field.
   - [match](<https://mongoosejs.com/docs/api/schemastring.html#SchemaString.prototype.match()>): specifies a regular expression that the string must match.
   - [maxLength](<https://mongoosejs.com/docs/api/schemastring.html#SchemaString.prototype.maxlength()>) and [minLength](<https://mongoosejs.com/docs/api/schemastring.html#SchemaString.prototype.minlength()>) for the string.
@@ -580,7 +578,6 @@ After logging in, you'll be taken to the [home](https://cloud.mongodb.com/v2) sc
 
 3. Scroll down the page to see the different options you can choose.
    ![Choose a cloud provider when using MongoDB Atlas.](mongodb_atlas_-_createsharedcluster.jpg)
-
    - Select any provider and region from the _Provider_ and _Region_ sections. Different regions offer different providers.
    - You can change the name of your Cluster under _Cluster Name_. We are naming it `Cluster0` for this tutorial.
    - Tags are optional. We will not use them here.
@@ -588,15 +585,12 @@ After logging in, you'll be taken to the [home](https://cloud.mongodb.com/v2) sc
 
 4. This will open the _Security Quickstart_ section.
    ![Set up the Access Rules on the Security Quickstart screen on MongoDB Atlas.](mongodb_atlas_-_securityquickstart.jpg)
-
    - Enter a username and password. Remember to copy and store the credentials safely as we will need them later on. Click the **Create User** button.
 
      > **Note:** Avoid using special characters in your MongoDB user password as mongoose may not parse the connection string properly.
-
    - Enter `0.0.0.0/0` in the IP Address field. This tells MongoDB that we want to allow access from anywhere. Click the **Add Entry** button.
 
      > **Note:** It is a best practice to limit the IP addresses that can connect to your database and other resources. Here we allow a connection from anywhere because we don't know where the request will come from after deployment.
-
    - Click the **Finish and Close** button.
 
 5. This will open the following screen. Click on the **Go to Overview** button.
@@ -611,14 +605,12 @@ After logging in, you'll be taken to the [home](https://cloud.mongodb.com/v2) sc
 8. This will open the _Create Database_ screen.
 
    ![Details during database creation on MongoDB Atlas.](mongodb_atlas_-_databasedetails.jpg)
-
    - Enter the name for the new database as `local_library`.
    - Enter the name of the collection as `Collection0`.
    - Click the **Create** button to create the database.
 
 9. You will return to the _Collections_ screen with your database created.
    ![Database creation confirmation on MongoDB Atlas.](mongodb_atlas_-_databasecreated.jpg)
-
    - Click the _Overview_ tab to return to the cluster overview.
 
 10. From the Cluster0 _Overview_ screen click the **Connect** button.
@@ -630,7 +622,6 @@ After logging in, you'll be taken to the [home](https://cloud.mongodb.com/v2) sc
 
 12. You will now be shown the _Connect_ screen.
     ![Choose the Short SRV connection when setting up a connection on MongoDB Atlas.](mongodb_atlas_-_connectforshortsrv.jpg)
-
     - Select the Node driver and version as shown.
     - **DO NOT** follow the step 2.
     - Click the **Copy** icon to copy the connection string.

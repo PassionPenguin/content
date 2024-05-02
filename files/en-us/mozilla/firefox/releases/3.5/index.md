@@ -50,7 +50,6 @@ page-type: firefox-release-notes
   `-moz-column-rule-style`
 
   `-moz-column-rule-color`
-
   - : Firefox 3.5 adds support for these Mozilla extensions to CSS.
 
 - The {{ cssxref("color_value#Mozilla_Extensions","-moz-nativehyperlinktext") }} color value
@@ -74,7 +73,6 @@ page-type: firefox-release-notes
   {{ cssxref(":last-of-type") }}
 
   {{ cssxref(":only-of-type") }}
-
   - : These selectors are all newly-supported in Firefox 3.5.
 
 #### New DOM features

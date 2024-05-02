@@ -21,24 +21,19 @@ new Request(input, options)
 ### Parameters
 
 - `input`
-
   - : Defines the resource that you wish to fetch. This can either be:
-
     - A string containing the URL of the resource you want to fetch. The URL may be relative to the base URL, which is the document's {{domxref("Node.baseURI", "baseURI")}} in a window context, or {{domxref("WorkerGlobalScope.location")}} in a worker context.
     - A {{domxref("Request")}} object, effectively creating a copy. Note the following
       behavioral updates to retain security while making the constructor less likely to
       throw exceptions:
-
       - If this object exists on another origin to the constructor call, the
         {{domxref("Request.referrer")}} is stripped out.
       - If this object has a {{domxref("Request.mode")}} of `navigate`,
         the `mode` value is converted to `same-origin`.
 
 - `options` {{optional_inline}}
-
   - : An object containing any custom settings that you want to apply to the
     request. The possible options are:
-
     - `body`
       - : Any body that you want to add to your request: this can be a
         {{domxref("Blob")}}, an {{jsxref("ArrayBuffer")}}, a {{jsxref("TypedArray")}}, a {{jsxref("DataView")}},

@@ -40,7 +40,6 @@ Sec-CH-Prefers-Reduced-Transparency: <preference>
 ### Directives
 
 - `<preference>`
-
   - : The user agent's preference for reduced transparency. This is often taken from the underlying operating system's setting. The value of this directive can be either `no-preference` or `reduce`.
 
 ## Examples

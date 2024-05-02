@@ -21,9 +21,7 @@ new MediaMetadata(metadata)
 ### Parameters
 
 - `metadata` {{optional_inline}}
-
   - : The metadata parameters are as follows:
-
     - `title` {{optional_inline}}
       - : The title of the media to be played. It defaults to the empty string (`""`).
     - `artist` {{optional_inline}}

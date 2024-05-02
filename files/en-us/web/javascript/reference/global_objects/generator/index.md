@@ -38,7 +38,6 @@ In fact, there's no JavaScript entity that corresponds to the `Generator` constr
 These properties are defined on `Generator.prototype` and shared by all `Generator` instances.
 
 - {{jsxref("Object/constructor", "Generator.prototype.constructor")}}
-
   - : The constructor function that created the instance object. For `Generator` instances, the initial value is [`GeneratorFunction.prototype`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction).
 
     > **Note:** `Generator` objects do not store a reference to the generator function that created them.

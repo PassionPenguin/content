@@ -35,15 +35,11 @@ requestVideoFrameCallback(callback)
 ### Parameters
 
 - `callback`
-
   - : The callback function that runs when a new video frame is sent to the compositor. This contains two parameters:
-
     - `now`
       - : A {{domxref("DOMHighResTimeStamp")}} representing the time when the callback was called.
     - `metadata`
-
       - : An object containing the following properties:
-
         - `expectedDisplayTime`: A {{domxref("DOMHighResTimeStamp")}} representing the time when the browser expects the frame to be visible.
         - `height`: A number, in media pixels, representing the height of the video frame (the visible decoded pixels, without aspect ratio adjustments).
         - `mediaTime`: A number, in seconds, representing the media presentation timestamp of the presented frame. This is equal to the frame's timestamp on the {{domxref("HTMLMediaElement.currentTime")}} timeline.
@@ -53,7 +49,6 @@ requestVideoFrameCallback(callback)
         - `width`: A number, in media pixels, representing the width of the video frame (the visible decoded pixels, without aspect ratio adjustments).
 
         Additional metadata properties may be available within `requestVideoFrameCallback()` callbacks used in {{domxref("WebRTC_API", "WebRTC", "", "nocode")}} applications:
-
         - `captureTime`: A {{domxref("DOMHighResTimeStamp")}} representing the time when the frame was captured. This applies to video frames coming from a local or remote source. For a remote source, the capture time is estimated using clock synchronization and RTCP sender reports to convert RTP timestamps to capture time.
         - `receiveTime`: A {{domxref("DOMHighResTimeStamp")}} representing the time when the encoded frame was received by the platform. This applies to video frames coming from a remote source. Specifically, this corresponds to the time when the last packet belonging to this frame was received over the network.
         - `rtpTimestamp`: A number representing the RTP timestamp associated with this video frame.

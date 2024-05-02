@@ -58,9 +58,7 @@ The `clip-path` property is specified as one or a combination of the values list
 - `<clip-source>`
   - : A {{cssxref("url", "url()")}} referencing an [SVG](/en-US/docs/Web/SVG) {{SVGElement("clipPath")}} element.
 - {{cssxref("&lt;basic-shape&gt;")}}
-
   - : A shape whose size and position is defined by the `<geometry-box>` value. If no geometry box is specified, the `border-box` will be used as the reference box. One of:
-
     - {{cssxref("basic-shape/inset","inset()")}}
       - : Defines an inset rectangle.
     - {{cssxref("basic-shape/circle","circle()")}}
@@ -77,9 +75,7 @@ The `clip-path` property is specified as one or a combination of the values list
       - : Defines a rectangle using the specified distances from the top and left edges of the reference box and the specified width and height of the rectangle.
 
 - `<geometry-box>`
-
   - : If specified in combination with a `<basic-shape>`, this value defines the reference box for the basic shape. If specified by itself, it causes the edges of the specified box, including any corner shaping (such as a {{cssxref("border-radius")}}), to be the clipping path. The geometry box can be one of the following values:
-
     - `margin-box`
       - : Uses the [margin box](/en-US/docs/Web/CSS/CSS_shapes/From_box_values#margin-box) as the reference box.
     - `border-box`
@@ -636,6 +632,5 @@ clipPathSelect.addEventListener("change", (evt) => {
 - CSS properties: {{cssxref("mask")}}, {{cssxref("filter")}}
 - [Applying SVG effects to HTML content](/en-US/docs/Web/SVG/Applying_SVG_effects_to_HTML_content)
 - SVG attributes:
-
   - {{SVGAttr("clip-path")}}
   - {{SVGAttr("clip-rule")}}

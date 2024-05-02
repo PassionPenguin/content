@@ -24,14 +24,10 @@ showNotification(title, options)
 - `title`
   - : The title that must be shown within the notification.
 - `options` {{optional_inline}}
-
   - : An object that allows configuring the notification. It can have the following
     properties:
-
     - `actions` {{optional_inline}} {{experimental_inline}}
-
       - : An array of actions to display in the notification. Each element in the array is an object with the following members:
-
         - `action`
           - : A string identifying a user action to be displayed on the notification.
         - `title`
@@ -41,7 +37,6 @@ showNotification(title, options)
 
         Appropriate responses are built using `event.action` within the
         {{domxref("ServiceWorkerGlobalScope.notificationclick_event", "notificationclick")}} event.
-
     - `badge` {{optional_inline}} {{experimental_inline}}
       - : A string containing the URL of an image
         to represent the notification when there is not enough space to display the

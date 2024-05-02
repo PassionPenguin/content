@@ -23,7 +23,6 @@ A stacking context is formed, anywhere in the document, by any element in the fo
 - Element with an {{cssxref("opacity")}} value less than `1` (See [the specification for opacity](https://www.w3.org/TR/css-color-3/#transparency)).
 - Element with a {{cssxref("mix-blend-mode")}} value other than `normal`.
 - Element with any of the following properties with value other than `none`:
-
   - {{cssxref("transform")}}
   - {{cssxref("filter")}}
   - {{cssxref("backdrop-filter")}}
@@ -53,11 +52,9 @@ In summary:
 In this example, every positioned element creates its own stacking context, because of their positioning and `z-index` values. The hierarchy of stacking contexts is organized as follows:
 
 - Root
-
   - DIV #1
   - DIV #2
   - DIV #3
-
     - DIV #4
     - DIV #5
     - DIV #6
@@ -75,14 +72,11 @@ An easy way to figure out the _rendering order_ of stacked elements along the z-
 In our example (sorted according to the final rendering order):
 
 - Root
-
   - DIV #2: (`z-index`: 2)
   - DIV #3: (`z-index`: 4)
-
     - DIV #5: (`z-index`: 1), stacked under an element (`z-index`: 4), which results in a rendering order of 4.1
     - DIV #6: (`z-index`: 3), stacked under an element (`z-index`: 4), which results in a rendering order of 4.3
     - DIV #4: (`z-index`: 6), stacked under an element (`z-index`: 4), which results in a rendering order of 4.6
-
   - DIV #1: (`z-index`: 5)
 
 ### HTML

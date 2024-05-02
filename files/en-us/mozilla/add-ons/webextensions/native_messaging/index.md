@@ -130,11 +130,9 @@ The browser finds the extension based on registry keys which are located in a sp
 Following with the `ping_pong` example, if using Firefox (see [this page for Chrome](https://developer.chrome.com/docs/apps/nativeMessaging/#native-messaging-host-location)), two registry entries should be created for the messaging to work:
 
 - `HKEY_CURRENT_USER\Software\Mozilla\NativeMessagingHosts\ping_pong`
-
   - The default value for this key should be the path to the _application_ manifest: ex. `C:\Users\<myusername>\webextensions-examples\native-messaging\app\ping_pong.json`
 
 - `HKEY_LOCAL_MACHINE\Software\Mozilla\NativeMessagingHosts\ping_pong`
-
   - Idem, the default value for this key should be the path to the application manifest.
 
 > **Note:** If you base your work on the example located on GitHub, please read [this part of the readme](https://github.com/SphinxKnight/webextensions-examples/tree/master/native-messaging#windows-setup) and check the output of `check_config_win.py` before installing the WebExtension on your browser.

@@ -30,7 +30,6 @@ createElementNS(namespaceURI, qualifiedName, options)
   - : A string that specifies the type of element to be created.
     The {{DOMxRef("node.nodeName", "nodeName")}} property of the created element is initialized with the value of _qualifiedName_.
 - `options` {{Optional_Inline}}
-
   - : An optional `ElementCreationOptions` object containing a single property named `is`, whose value is the tag name for a custom element previously defined using `customElements.define()`.
     For backwards compatibility with previous versions of the [Custom Elements specification](https://www.w3.org/TR/custom-elements/),
     some browsers will allow you to pass a string here instead of an object, where the string's value is the custom element's tag name.

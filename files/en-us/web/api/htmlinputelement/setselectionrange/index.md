@@ -50,10 +50,8 @@ treated as the value of `selectionEnd`.
     index greater than the length of the element's value is treated as pointing to the end
     of the value.
 - `selectionDirection` {{optional_inline}}
-
   - : A string indicating the direction in which the selection is considered to have been
     performed. Possible values:
-
     - `"forward"`
     - `"backward"`
     - `"none"` if the direction is unknown or irrelevant. Default value.

@@ -16,5 +16,4 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
 - [Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("Thread")}}

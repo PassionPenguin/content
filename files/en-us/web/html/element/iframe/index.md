@@ -20,7 +20,6 @@ Each embedded browsing context has its own [document](/en-US/docs/Web/API/Docume
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `allow`
-
   - : Specifies a [Permissions Policy](/en-US/docs/Web/HTTP/Permissions_Policy) for the `<iframe>`. The policy defines what features are available to the `<iframe>` (for example, access to the microphone, camera, battery, web-share, etc.) based on the origin of the request.
 
     See [iframes](/en-US/docs/Web/HTTP/Headers/Permissions-Policy#iframes) in the `Permissions-Policy` topic for examples.
@@ -28,39 +27,31 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     > **Note:** A Permissions Policy specified by the `allow` attribute implements a further restriction on top of the policy specified in the {{httpheader("Permissions-Policy")}} header. It doesn't replace it.
 
 - `allowfullscreen`
-
   - : Set to `true` if the `<iframe>` can activate fullscreen mode by calling the {{domxref("Element.requestFullscreen", "requestFullscreen()")}} method.
 
     > **Note:** This attribute is considered a legacy attribute and redefined as `allow="fullscreen"`.
 
 - `allowpaymentrequest` {{deprecated_inline}} {{non-standard_inline}}
-
   - : Set to `true` if a cross-origin `<iframe>` should be allowed to invoke the [Payment Request API](/en-US/docs/Web/API/Payment_Request_API).
 
     > **Note:** This attribute is considered a legacy attribute and redefined as `allow="payment"`.
 
 - `browsingtopics` {{Experimental_Inline}} {{non-standard_inline}}
-
   - : A boolean attribute that, if present, specifies that the selected topics for the current user should be sent with the request for the {{htmlelement("iframe")}}'s source. See [Using the Topics API](/en-US/docs/Web/API/Topics_API/Using) for more details.
 
 - `credentialless` {{Experimental_Inline}}
-
   - : Set to `true` to make the `<iframe>` credentialless, meaning that its content will be loaded in a new, ephemeral context. It doesn't have access to the network, cookies, and storage data associated with its origin. It uses a new context local to the top-level document lifetime. In return, the {{httpheader("Cross-Origin-Embedder-Policy")}} (COEP) embedding rules can be lifted, so documents with COEP set can embed third-party documents that do not. See [IFrame credentialless](/en-US/docs/Web/Security/IFrame_credentialless) for more details.
 
 - `csp` {{experimental_inline}}
-
   - : A [Content Security Policy](/en-US/docs/Web/HTTP/CSP) enforced for the embedded resource. See {{domxref("HTMLIFrameElement.csp")}} for details.
 
 - `height`
   - : The height of the frame in CSS pixels. Default is `150`.
 - `loading`
-
   - : Indicates when the browser should load the iframe:
-
     - `eager`
       - : Load the iframe immediately on page load (this is the default value).
     - `lazy`
-
       - : Defer loading of the iframe until it reaches a calculated distance from the {{glossary("visual viewport")}}, as defined by the browser.
         The intent is to avoid using the network and storage bandwidth required to fetch the frame until the browser is reasonably certain that it will be needed.
         This improves the performance and cost in most typical use cases, in particular by reducing initial page load times.
@@ -71,9 +62,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `name`
   - : A targetable name for the embedded browsing context. This can be used in the `target` attribute of the {{HTMLElement("a")}}, {{HTMLElement("form")}}, or {{HTMLElement("base")}} elements; the `formtarget` attribute of the {{HTMLElement("input")}} or {{HTMLElement("button")}} elements; or the `windowName` parameter in the {{domxref("Window.open()","window.open()")}} method.
 - `referrerpolicy`
-
   - : Indicates which [referrer](/en-US/docs/Web/API/Document/referrer) to send when fetching the frame's resource:
-
     - `no-referrer`
       - : The {{HTTPHeader("Referer")}} header will not be sent.
     - `no-referrer-when-downgrade`
@@ -92,9 +81,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
       - : The referrer will include the origin _and_ the path (but not the [fragment](/en-US/docs/Web/API/HTMLAnchorElement/hash), [password](/en-US/docs/Web/API/HTMLAnchorElement/password), or [username](/en-US/docs/Web/API/HTMLAnchorElement/username)). **This value is unsafe**, because it leaks origins and paths from TLS-protected resources to insecure origins.
 
 - `sandbox`
-
   - : Controls the restrictions applied to the content embedded in the `<iframe>`. The value of the attribute can either be empty to apply all restrictions, or space-separated tokens to lift particular restrictions:
-
     - `allow-downloads`
       - : Allows downloading files through an {{HTMLElement("a")}} or {{HTMLElement("area")}} element with the [download](/en-US/docs/Web/HTML/Element/a#download) attribute, as well as through the navigation that leads to a download of a file. This works regardless of whether the user clicked on the link, or JS code initiated it without user interaction.
     - `allow-downloads-without-user-activation` {{experimental_inline}}
@@ -155,9 +142,7 @@ These attributes are deprecated and may no longer be supported by all user agent
 - `marginwidth` {{deprecated_inline}}
   - : The amount of space in pixels between the frame's content and its left and right borders.
 - `scrolling` {{deprecated_inline}}
-
   - : Indicates when the browser should provide a scrollbar for the frame:
-
     - `auto`
       - : Only when the frame's content is larger than its dimensions.
     - `yes`

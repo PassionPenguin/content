@@ -23,15 +23,11 @@ beginComputePass(descriptor)
 ### Parameters
 
 - `descriptor` {{optional_inline}}
-
   - : An object containing the following properties:
-
     - `label` {{optional_inline}}
       - : A string providing a label that can be used to identify the object, for example in {{domxref("GPUError")}} messages or console warnings.
     - `timestampWrites` {{optional_inline}}
-
       - : An array of objects defining where and when timestamp query values will be written for this pass. These objects have the following properties:
-
         - `location`: An enumerated value specifying when the timestamp will be executed. Available values are:
           - `"beginning"`: The timestamp is executed along with the other encoded commands in the compute pass once the corresponding {{domxref("GPUCommandBuffer")}} is submitted.
           - `"end"`: The timestamp is executed as part of a separate list of timestamp attachments once the pass ends.

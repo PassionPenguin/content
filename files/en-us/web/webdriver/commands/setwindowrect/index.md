@@ -35,7 +35,6 @@ The Set Window Rect command is blocking.
 The input is a [`WindowRect`](/en-US/docs/Web/WebDriver/WindowRect) object:
 
 - `x`
-
   - : Horizontal position of the [`window`](/en-US/docs/Web/API/Window), which equivalent to [`Window.screenX`](/en-US/docs/Web/API/Window/screenX). Must be a number in the −(2^31) to 2^31 − 1 range, null, or undefined.
 
 - `y`
@@ -69,7 +68,6 @@ The response payload is a [`WindowRect`](/en-US/docs/Web/WebDriver/WebWindow):
 - [Unexpected alert open](/en-US/docs/Web/WebDriver/Errors/UnexpectedAlertOpen)
   - : A user prompt, such as [`window.alert`](/en-US/docs/Web/API/Window/alert), blocks execution of command until it is dealt with.
 - [Unsupported operation](/en-US/docs/Web/WebDriver/Errors/UnsupportedOperation)
-
   - : If the driver does not support altering the window's size or position. This is usually the case on mobile devices, where the browser has a set dimension and cannot be moved around on the screen.
 
     You can inspect the [`setWindowRect` capability](/en-US/docs/Web/WebDriver/Capabilities/setWindowRect) to tell if the device supports this command.
@@ -86,7 +84,6 @@ The response payload is a [`WindowRect`](/en-US/docs/Web/WebDriver/WebWindow):
 
 - [`WebWindow`](/en-US/docs/Web/WebDriver/WebWindow) object
 - Associated commands:
-
   - [Get Window Rect](/en-US/docs/Web/WebDriver/Commands/GetWindowRect)
   - [Get Window Handle](/en-US/docs/Web/WebDriver/Commands/GetWindowHandle)
   - [Get Window Handles](/en-US/docs/Web/WebDriver/Commands/GetWindowHandles)

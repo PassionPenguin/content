@@ -39,7 +39,6 @@ Critical-CH: <ch-list>
 ### Directives
 
 - `<ch-list>`
-
   - : A list of one or more comma-delimited client hint headers that the server considers to be critical client hints.
 
 ## Examples

@@ -22,17 +22,13 @@ let highlighting = browser.tabs.highlight(
 ### Parameters
 
 - `highlightInfo`
-
   - : `object`.
-
     - `windowId` {{optional_inline}}
       - : `integer`. ID of the window that contains the tabs.
     - `populate` {{optional_inline}}
-
       - : `boolean`. Defaults to `true`. If set to `false`, the {{WebExtAPIRef('windows.Window')}} object won't have a `tabs` property containing a list of {{WebExtAPIRef('tabs.Tab')}} objects representing the tabs open in the window.
 
         > **Note:** Populating the window (the default behavior) can be an expensive operation if there are lots of tabs. For better performance it's recommended to manually set `populate` to `false` if you don't need tab details.
-
     - `tabs`
       - : `array` of integer values specifying one or more tab indices to highlight. Previously highlighted tabs not included in `tabs` will stop being highlighted. The first tab in `tabs` will become active.
 

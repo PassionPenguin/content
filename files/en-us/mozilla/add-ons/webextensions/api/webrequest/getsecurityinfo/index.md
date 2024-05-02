@@ -29,9 +29,7 @@ let gettingInfo = browser.webRequest.getSecurityInfo(
 - `requestId`
   - : `string`. ID of the request for which you want security info. You can get this from the `details` object that is passed into any `webRequest` event listeners.
 - `options`
-
   - : `object`. An object which may contain any of the following properties, all optional:
-
     - `certificateChain` {{optional_inline}}
       - : `boolean`. If `true`, the {{WebExtAPIRef("webRequest.SecurityInfo", "SecurityInfo")}} object returned will include the entire certificate chain up to and including the trust root. If `false`, it will include only the server certificate. Defaults to `false`.
     - `rawDER` {{optional_inline}}

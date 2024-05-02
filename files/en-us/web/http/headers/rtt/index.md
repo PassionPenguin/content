@@ -70,7 +70,6 @@ RTT: 125
 
 - [Improving user privacy and developer experience with User-Agent Client Hints](https://developer.chrome.com/docs/privacy-security/user-agent-client-hints) (developer.chrome.com)
 - Network client hints
-
   - {{HTTPHeader("Downlink")}}
   - {{HTTPHeader("ECT")}}
   - {{HTTPHeader("Save-Data")}}

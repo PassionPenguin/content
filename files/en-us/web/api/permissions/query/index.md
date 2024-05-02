@@ -19,9 +19,7 @@ query(permissionDescriptor)
 ### Parameters
 
 - `permissionDescriptor`
-
   - : An object that sets options for the `query` operation consisting of a comma-separated list of name-value pairs. The available options are:
-
     - `name`
       - : The name of the API whose permissions you want to query. Each browser supports a different set of values. You'll find Firefox values [there](https://searchfox.org/mozilla-central/source/dom/webidl/Permissions.webidl#10), Chromium values [there](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/third_party/blink/renderer/modules/permissions/permission_descriptor.idl), and WebKit values [there](https://github.com/WebKit/WebKit/blob/main/Source/WebCore/Modules/permissions/PermissionName.idl).
     - `userVisibleOnly`

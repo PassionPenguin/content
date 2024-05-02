@@ -217,7 +217,6 @@ If a page has a CSP header and `'unsafe-eval'` isn't specified with the `script-
 - {{jsxref("Global_Objects/eval", "eval()")}}
 - {{jsxref("Function", "Function()")}}
 - When passing a string literal like to methods like: `setTimeout("alert(\"Hello World!\");", 500);`
-
   - {{domxref("setTimeout()")}}
   - {{domxref("setInterval()")}}
   - {{domxref("window.setImmediate")}}

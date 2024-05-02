@@ -36,9 +36,7 @@ user-select: unset;
 - `none`
   - : The text of the element and its sub-elements is not selectable. Note that the {{domxref("Selection")}} object can contain these elements.
 - `auto`
-
   - : The used value of `auto` is determined as follows:
-
     - On the `::before` and `::after` pseudo elements, the used value is `none`
     - If the element is an editable element, the used value is `contain`
     - Otherwise, if the used value of `user-select` on the parent of this element is `all`, the used value is `all`
@@ -50,7 +48,6 @@ user-select: unset;
 - `all`
   - : The content of the element shall be selected atomically: If a selection would contain part of the element, then the selection must contain the entire element including all its descendants. If a double-click or context-click occurred in sub-elements, the highest ancestor with this value will be selected.
 - `contain`
-
   - : Enables selection to start within the element; however, the selection will be contained by the bounds of that element.
 
     > **Note:** CSS UI 4 [renamed](https://github.com/w3c/csswg-drafts/commit/3f1d9db96fad8d9fc787d3ed66e2d5ad8cfadd05) the `element` value to `contain`.

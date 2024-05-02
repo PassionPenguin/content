@@ -67,15 +67,12 @@ The opposite also occurs. Sometimes there are no declarations defining the value
 ## Guides
 
 - [Introducing the CSS Cascade](/en-US/docs/Web/CSS/Cascade)
-
   - : Guide to the cascade algorithm that defines how user agents combine property values originating from different sources.
 
 - [Learn: Cascade, specificity, and inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-
   - : The most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
 
 - [Learn: Cascade layers](/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers)
-
   - : Introduction to [cascade layers](/en-US/docs/Web/CSS/@layer), a more advanced feature that builds on the fundamental concepts of the [CSS cascade](/en-US/docs/Web/CSS/Cascade) and [CSS specificity](/en-US/docs/Web/CSS/Specificity).
 
 - [CSS inheritance](/en-US/docs/Web/CSS/Inheritance)

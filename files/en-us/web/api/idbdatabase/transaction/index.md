@@ -24,7 +24,6 @@ transaction(storeNames, mode, options)
 ### Parameters
 
 - `storeNames`
-
   - : The names of object stores that are in the scope of the new transaction, declared as
     an array of strings. Specify only the object stores that you need to access.
     If you need to access only one object store, you can specify its name as a string.
@@ -45,7 +44,6 @@ transaction(storeNames, mode, options)
     Passing an empty array will throw an exception.
 
 - `mode` {{optional_inline}}
-
   - : The types of access that can be performed in the transaction. Transactions are
     opened in one of three modes: `readonly`, `readwrite` and
     `readwriteflush` (non-standard, Firefox-only.) `versionchange`
@@ -83,9 +81,7 @@ transaction(storeNames, mode, options)
     > `about:config`.
 
 - `options` {{optional_inline}}
-
   - : Dictionary of other options. Available options are:
-
     - `durability`
       - : `"default"`, `"strict"`, or
         `"relaxed"`. The default is `"default"`. Using

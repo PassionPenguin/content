@@ -26,7 +26,6 @@ new MutationObserver(callback)
 ### Parameters
 
 - `callback`
-
   - : A function which will be called on each DOM change that qualifies given the
     observed node or subtree and options.
 

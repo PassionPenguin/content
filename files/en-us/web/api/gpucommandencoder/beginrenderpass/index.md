@@ -22,9 +22,7 @@ beginRenderPass(descriptor)
 ### Parameters
 
 - `descriptor`
-
   - : An object containing the following properties:
-
     - `colorAttachments`
       - : An array of objects (see [Color attachment object structure](#color_attachment_object_structure)) defining the color attachments that will be output to when executing this render pass.
     - `depthStencilAttachment` {{optional_inline}}
@@ -36,9 +34,7 @@ beginRenderPass(descriptor)
     - `occlusionQuerySet` {{optional_inline}}
       - : The {{domxref("GPUQuerySet")}} that will store the occlusion query results for this pass.
     - `timestampWrites` {{optional_inline}}
-
       - : An array of objects defining where and when timestamp query values will be written for this pass. These objects have the following properties:
-
         - `location`: An enumerated value specifying when the timestamp will be executed. Available values are:
           - `"beginning"`: The timestamp is executed along with the other encoded commands in the compute pass once the corresponding {{domxref("GPUCommandBuffer")}} is submitted.
           - `"end"`: The timestamp is executed as part of a separate list of timestamp attachments once the pass ends.
@@ -52,7 +48,6 @@ beginRenderPass(descriptor)
 Color attachment objects can have the following properties:
 
 - `clearValue` {{optional_inline}}
-
   - : A color value to clear the `view` texture to, prior to executing the render pass. This value is ignored if `loadOp` is not set to `"clear"`. `clearValue` takes an array or object representing the four color components `r`, `g`, `b`, and `a` as decimals.
 
     What follows is a sample array:
@@ -75,9 +70,7 @@ Color attachment objects can have the following properties:
     If `clearValue` is omitted, it defaults to `{r: 0, g: 0, b: 0, a: 0}`.
 
 - `loadOp`
-
   - : An enumerated value indicating the load operation to perform on `view` prior to executing the render pass. Possible values are:
-
     - `"clear"`: Loads the `clearValue` for this attachment into the render pass.
     - `"load"`: Loads the existing value for this attachment into the render pass.
 
@@ -90,7 +83,6 @@ Color attachment objects can have the following properties:
 - `resolveTarget` {{optional_inline}}
   - : A {{domxref("GPUTextureView")}} object representing the texture subresource that will receive the resolved output for this color attachment if `view` is multisampled.
 - `view`
-
   - : A {{domxref("GPUTextureView")}} object representing the texture subresource that will be output to for this color attachment.
 
     > **Note:** Each color or depth/stencil attachment must be a unique texture subresource, and texture subresources used as attachments cannot be used inside the render pass.
@@ -100,15 +92,12 @@ Color attachment objects can have the following properties:
 The `depthStencilAttachment` object can have the following properties:
 
 - `depthClearValue` {{optional_inline}}
-
   - : A number indicating the value to clear `view`'s depth component prior to executing the render pass. This is ignored if `depthLoadOp` is not set to `"clear"`.
 
     The value must be between 0.0 and 1.0, inclusive.
 
 - `depthLoadOp` {{optional_inline}}
-
   - : An enumerated value indicating the load operation to perform on `view`'s depth component prior to executing the render pass. Possible values are:
-
     - `"clear"`: Loads the `clearValue` for this attachment into the render pass.
     - `"load"`: Loads the existing value for this attachment into the render pass.
 
@@ -121,15 +110,12 @@ The `depthStencilAttachment` object can have the following properties:
     - `"discard"`: Discards the resulting value of the render pass for this attachment.
     - `"store"`: Stores the resulting value of the render pass for this attachment.
 - `stencilClearValue` {{optional_inline}}
-
   - : A number indicating the value to clear `view`'s stencil component to prior to executing the render pass. This is ignored if `stencilLoadOp` is not set to `"clear"`.
 
     If `stencilClearValue` is omitted, it defaults to 0.
 
 - `stencilLoadOp` {{optional_inline}}
-
   - : An enumerated value indicating the load operation to perform on `view`'s stencil component prior to executing the render pass. Possible values are:
-
     - `"clear"`: Loads the `clearValue` for this attachment into the render pass.
     - `"load"`: Loads the existing value for this attachment into the render pass.
 

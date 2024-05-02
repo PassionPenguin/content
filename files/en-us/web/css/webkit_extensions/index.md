@@ -166,7 +166,6 @@ For each of them, use the standard equivalent provided.
 - `webkit-margin-end`
   - : Use the standard {{CSSxRef("margin-block-end")}} property instead.
 - `-webkit-margin-start`
-
   - : Use the standard {{CSSxRef("margin-block-start")}} property instead.
 
 - `-webkit-padding-after`

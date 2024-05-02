@@ -152,17 +152,13 @@ The following is a "formal" definition of the import map JSON representation.
 The import map must be a valid JSON object that can define at most two optional keys: `imports` and `scopes`. Each key's value must be an object, which may be empty.
 
 - `imports` {{optional_inline}}
-
   - : The value is a [module specifier map](#module_specifier_map), which provides the mappings between module specifier text that might appear in an `import` statement or `import()` operator, and the text that will replace it when the specifier is resolved.
 
     This is the fallback map that is searched for matching module specifiers if no `scopes` path URLs match, or if module specifier maps in matching `scopes` paths do not contain a key that matches the module specifier.
-
     - `<module specifier map>`
-
       - : A "module specifier map" is a valid JSON object where the _keys_ are text that may be present in the module specifier when importing a module, and the corresponding _values_ are the URLs or paths that will replace this text when the module specifier is resolved to an address.
 
         The module specifier map JSON object has the following requirements:
-
         - None of the keys may be empty.
         - All of the values must be strings, defining either a valid absolute URL or a valid URL string that starts with `/`, `./`, or `../`.
         - If a key ends with `/`, then the corresponding value must also end with `/`.
@@ -170,7 +166,6 @@ The import map must be a valid JSON object that can define at most two optional 
         - The object properties' ordering is irrelevant: if multiple keys can match the module specifier, the most specific key is used (in other words, a specifier "olive/branch/" would match before "olive/").
 
 - `scopes` {{optional_inline}}
-
   - : Scopes define path-specific [module specifier maps](#module_specifier_map), allowing the choice of map to depend on the path of the code importing the module.
 
     The scopes object is a valid JSON object where each property is a `<scope key>`, which is an URL path, with a corresponding value that is a `<module specifier map>`.

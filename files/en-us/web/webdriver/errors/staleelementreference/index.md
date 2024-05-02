@@ -82,7 +82,6 @@ StaleElementReferenceException: The element reference of e75a1764-ff73-40fa-93c1
 
 - [WebElement](/en-US/docs/Web/WebDriver/WebElement)
 - Associated commands:
-
   - [Find Element](/en-US/docs/Web/WebDriver/Commands/FindElement)
   - [Find Elements](/en-US/docs/Web/WebDriver/Commands/FindElements)
   - [Find Element From Element](/en-US/docs/Web/WebDriver/Commands/FindElementFromElement)

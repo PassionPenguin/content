@@ -132,7 +132,6 @@ Sec-Fetch-Site: cross-site
 ## See also
 
 - Related headers
-
   - {{HTTPHeader("Sec-Fetch-Mode")}}
   - {{HTTPHeader("Sec-Fetch-Site")}}
   - {{HTTPHeader("Sec-Fetch-User")}}

@@ -36,15 +36,11 @@ browser.menus.create(
 ### Parameters
 
 - `createProperties`
-
   - : `object`. Properties for the new menu item.
-
     - `checked` {{optional_inline}}
       - : `boolean`. The initial state of a checkbox or radio item: `true` for selected and `false` for unselected. Only one radio item can be selected at a time in a given group of radio items.
     - `command` {{optional_inline}}
-
       - : `string`. String describing an action that should be taken when the user clicks the item. The recognized values are:
-
         - `"_execute_browser_action"`: simulate a click on the extension's browser action, opening its popup if it has one (Manifest V2 only)
         - `"_execute_action"`: simulate a click on the extension's action, opening its popup if it has one (Manifest V3 only)
         - `"_execute_page_action"`: simulate a click on the extension's page action, opening its popup if it has one
@@ -53,20 +49,15 @@ browser.menus.create(
         See the documentation of special shortcuts in the manifest.json key [`commands`](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands#special_shortcuts) for details.
 
         When one of the recognized values is specified, clicking the item does not trigger the {{WebExtAPIRef("menus.onClicked")}} event; instead, the default action triggers, such as opening a pop-up. Otherwise, clicking the item triggers {{WebExtAPIRef("menus.onClicked")}} and the event can be used to implement fallback behavior.
-
     - `contexts` {{optional_inline}}
-
       - : `array` of `{{WebExtAPIRef('menus.ContextType')}}`. Array of contexts in which this menu item will appear. If this option is omitted:
-
         - if the item's parent has contexts set, then this item will inherit its parent's contexts
         - otherwise, the item is given a context array of \["page"].
-
     - `documentUrlPatterns` {{optional_inline}}
       - : `array` of `string`. Lets you restrict the item to apply only to documents whose URL matches one of the given [match patterns](/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns). This applies to frames as well.
     - `enabled` {{optional_inline}}
       - : `boolean`. Whether this menu item is enabled or disabled. Defaults to `true`.
     - `icons` {{optional_inline}}
-
       - : `object`. One or more custom icons to display next to the item. Custom icons can only be set for items appearing in submenus. This property is an object with one property for each supplied icon: the property's name should include the icon's size in pixels, and path is relative to the icon from the extension's root directory. The browser tries to choose a 16x16 pixel icon for a normal display or a 32x32 pixel icon for a high-density display. To avoid any scaling, you can specify icons like this:
 
         ```js
@@ -89,7 +80,6 @@ browser.menus.create(
         ```
 
         > **Note:** The top-level menu item uses the [icons](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) specified in the manifest rather than what is specified with this key.
-
     - `id` {{optional_inline}}
       - : `string`. The unique ID to assign to this item. Is mandatory for non-persistent [background (event) pages](/en-US/docs/Mozilla/Add-ons/WebExtensions/Background_scripts) in Manifest V2 and in Manifest V3. Cannot be the same as another ID for this extension.
     - `onclick` {{optional_inline}}
@@ -99,13 +89,11 @@ browser.menus.create(
     - `targetUrlPatterns` {{optional_inline}}
       - : `array` of `string`. Similar to `documentUrlPatterns`, but lets you filter based on the `href` of anchor tags and the `src` attribute of img/audio/video tags. This parameter supports any URL scheme, even those that are usually not allowed in a match pattern.
     - `title` {{optional_inline}}
-
       - : `string`. The text to be displayed in the item. Mandatory unless `type` is "separator".
 
         You can use "`%s`" in the string. If you do this in a menu item, and some text is selected in the page when the menu is shown, then the selected text will be interpolated into the title. For example, if `title` is "Translate '%s' to Pig Latin" and the user selects the word "cool", then activates the menu, then the menu item's title will be: "Translate 'cool' to Pig Latin".
 
         If the title contains an ampersand "&" then the next character will be used as an access key for the item, and the ampersand will not be displayed. Exceptions to this are:
-
         - If the next character is also an ampersand: then a single ampersand will be displayed and no access key will be set. In effect, "&&" is used to display a single ampersand.
         - If the next characters are the interpolation directive "%s": then the ampersand will not be displayed and no access key will be set.
         - If the ampersand is the last character in the title: then the ampersand will not be displayed and no access key will be set.
@@ -113,7 +101,6 @@ browser.menus.create(
         Only the first ampersand will be used to set an access key: subsequent ampersands will not be displayed but will not set keys. So "\&A and \&B" will be shown as "A and B" and set "A" as the access key.
 
         In some localized versions of Firefox (Japanese and Chinese), the access key is surrounded by parentheses and appended to the menu label, _unless_ the menu title itself already ends with the access key (`"toolkit(&K)"` for example). For more details, see [Firefox bug 1647373](https://bugzil.la/1647373).
-
     - `type` {{optional_inline}}
       - : `{{WebExtAPIRef('menus.ItemType')}}`. The type of menu item: "normal", "checkbox", "radio", "separator". Defaults to "normal".
     - `viewTypes` {{optional_inline}}

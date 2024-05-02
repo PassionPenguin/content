@@ -20,7 +20,6 @@ _This interface also inherits properties from its ancestors {{domxref("HTMLEleme
 - {{domxref("HTMLMediaElement.audioTracks")}}
   - : An {{domxref("AudioTrackList")}} that lists the {{domxref("AudioTrack")}} objects contained in the element.
 - {{domxref("HTMLMediaElement.autoplay")}}
-
   - : A boolean value that reflects the [`autoplay`](/en-US/docs/Web/HTML/Element/video#autoplay) HTML attribute, indicating whether playback should automatically begin as soon as enough media is available to do so without interruption.
 
     > **Note:** Automatically playing audio when the user doesn't expect or desire it is a poor user experience and should be avoided in most cases, though there are exceptions. See the [Autoplay guide for media and Web Audio APIs](/en-US/docs/Web/Media/Autoplay_guide) for more information. Keep in mind that browsers may ignore autoplay requests, so you should ensure that your code isn't dependent on autoplay working.

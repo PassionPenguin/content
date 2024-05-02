@@ -17,10 +17,8 @@ What can be considered strange is that DIV #2 (`z-index`: 2) is above DIV #4 (`z
 To better understand the situation, this is the stacking context hierarchy:
 
 - Root stacking context
-
   - DIV #2 (`z-index`: 2)
   - DIV #3 (`z-index`: 1)
-
     - DIV #4 (`z-index`: 10)
 
 > **Note:** It is worth remembering that the HTML hierarchy is different from the stacking context hierarchy. In the stacking context hierarchy, elements that do not create a stacking context are collapsed on their parent.

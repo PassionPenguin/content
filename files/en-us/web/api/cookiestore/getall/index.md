@@ -25,9 +25,7 @@ getAll(options)
 Or
 
 - `options` {{optional_inline}}
-
   - : An object containing:
-
     - `name`
       - : A string with the name of a cookie.
     - `url`
@@ -42,29 +40,22 @@ A {{jsxref("Promise")}} that resolves with an array of objects representing cook
 Each object contains the following properties:
 
 - `domain`
-
   - : A string containing the domain of the cookie.
 
 - `expires`
-
   - : A timestamp, given as [Unix time](/en-US/docs/Glossary/Unix_time) in milliseconds, containing the expiration date of the cookie.
 
 - `name`
-
   - : A string containing the name of the cookie.
 
 - `partitioned`
-
   - : A boolean indicating whether the cookie is a partitioned cookie (`true`) or not (`false`). See [Cookies Having Independent Partitioned State (CHIPS)](/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies) for more information.
 
 - `path`
-
   - : A string containing the path of the cookie.
 
 - `sameSite`
-
   - : One of the following [`SameSite`](/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value) values:
-
     - `"strict"`
       - : Cookies will only be sent in a first-party context and not be sent with requests initiated by third party websites.
     - `"lax"`
@@ -73,7 +64,6 @@ Each object contains the following properties:
       - : Cookies will be sent in all contexts.
 
 - `secure`
-
   - : A boolean value indicating whether the cookie is to be used in secure contexts only (`true`) or not (`false`).
 
 - `value`

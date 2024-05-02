@@ -37,7 +37,6 @@ The `mask-mode` property is specified as one or more of the keyword values liste
 - `luminance`
   - : This keyword indicates that the luminance values of the mask layer image should be used as the mask values.
 - `match-source`
-
   - : If the {{cssxref("mask-image")}} property is of type `<mask-source>`, the luminance values of the mask layer image should be used as the mask values.
 
     If it is of type {{cssxref("&lt;image&gt;")}}, the alpha values of the mask layer image should be used as the mask values.

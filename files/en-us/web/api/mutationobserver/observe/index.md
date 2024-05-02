@@ -27,13 +27,11 @@ observe(target, options)
   - : A DOM {{domxref("Node")}} (which may be an {{domxref("Element")}}) within the DOM
     tree to watch for changes, or to be the root of a subtree of nodes to be watched.
 - `options`
-
   - : An object providing options that describe which DOM mutations should be reported to `mutationObserver`'s `callback`.
     At a minimum, one of `childList`, `attributes`, and/or `characterData` must be `true` when you call {{domxref("MutationObserver.observe", "observe()")}}.
     Otherwise, a `TypeError` exception will be thrown.
 
     Options are as follows:
-
     - `subtree` {{optional_inline}}
       - : Set to `true` to extend monitoring to the entire subtree of nodes rooted at `target`.
         All of the other properties are then extended to all of the nodes in the subtree instead of applying solely to the `target` node. The default value is `false`.
@@ -63,9 +61,7 @@ None ({{jsxref("undefined")}}).
 ### Exceptions
 
 - {{jsxref('TypeError')}}
-
   - : Thrown in any of the following circumstances:
-
     - The `options` are configured such that nothing will actually be monitored.
       (For example, if `childList`, `attributes`, and `characterData` are all `false`.)
     - The value of `options.attributes` is `false` (indicating that attribute changes are not to be monitored), but `attributeOldValue` is `true` and/or

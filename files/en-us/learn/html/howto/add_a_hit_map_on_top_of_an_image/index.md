@@ -78,9 +78,7 @@ Inside the `<map>` element, we need {{htmlelement('area')}} elements. An `<area>
 - [`shape`](/en-US/docs/Web/HTML/Element/area#shape)
 
   [`coords`](/en-US/docs/Web/HTML/Element/area#coords)
-
   - : `shape` takes one of four values: `circle`, `rect`, `poly`, and `default`. (An `<area>` whose `shape` is `default` occupies the entire image, minus any other hotspots you've defined.) The shape you choose determines the coordinate information you'll need to provide in `coords`.
-
     - For a circle, provide the center's x and y coordinates, followed by the length of the radius.
     - For a rectangle, provide the x/y coordinates of the upper-left and bottom-right corners.
     - For a polygon, to provide the x/y coordinates of each corner (so, at least six values).
@@ -92,7 +90,6 @@ Inside the `<map>` element, we need {{htmlelement('area')}} elements. An `<area>
 - [`href`](/en-US/docs/Web/HTML/Element/area#href)
   - : The URL of the resource you're linking to. You may leave this attribute blank if you _don't_ want the current area to link anywhere (say, if you're making a hollow circle.)
 - [`alt`](/en-US/docs/Web/HTML/Element/area#alt)
-
   - : A mandatory attribute, telling people where the link goes or what it does. `alt` text only displays when the image is unavailable. Please refer to our [guidelines for writing accessible link text.](/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#writing_accessible_link_text)
 
     You may write `alt=""` if the `href` attribute is blank _and_ the entire image already has an `alt` attribute.

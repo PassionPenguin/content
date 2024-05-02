@@ -358,9 +358,7 @@ Normally, higher contrast is a good thing when it comes to accessibility. The gr
 The contrast ratio is defined in [WCAG 2.1](https://www.w3.org/TR/WCAG21/) as follows:
 
 - _contrast ratio_
-
   - : (L1 + 0.05) / (L2 + 0.05), where
-
     - L1 is the [relative luminance](https://www.w3.org/TR/WCAG21/#dfn-relative-luminance) of the lighter of the colors, and
     - L2 is the [relative luminance](https://www.w3.org/TR/WCAG21/#dfn-relative-luminance) of the darker of the colors.
 

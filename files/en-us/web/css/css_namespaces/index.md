@@ -24,7 +24,6 @@ The `@namespace` rule is used for declaring a default namespace and for binding 
 ## Guides
 
 - [Namespaces crash course](/en-US/docs/Web/SVG/Namespaces_Crash_Course)
-
   - : Deep dive into what a namespace is and how they are used in XML and XML-based markup languages.
 
 ## Related concepts

@@ -24,7 +24,6 @@ new WebSocket(url, protocols)
   - : The URL to which to connect; this should be the URL to which the WebSocket server
     will respond.
 - `protocols` {{optional_inline}}
-
   - : Either a single protocol string or an array of protocol strings. These strings are
     used to indicate sub-protocols, so that a single server can implement multiple
     WebSocket sub-protocols (for example, you might want one server to be able to handle

@@ -82,7 +82,6 @@ The `nsIAutoCompleteController` interface's `handleEnter()` method has been chan
 
 - When a `DOMParser` is instantiated, it inherits the calling code's principal and the `documentURI` and `baseURI` of the window the constructor came from.
 - If the caller has UniversalXPConnect privileges, it can pass parameters to `new DOMParser()`. If fewer than three parameters are passed, the remaining parameters will default to `null`.
-
   - The first parameter is the principal to use; this overrides the default principal normally inherited.
   - The second parameter is the `documentURI` to use.
   - The third parameter is the `baseURI` to use.

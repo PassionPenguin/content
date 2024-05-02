@@ -47,27 +47,19 @@ The source of the suggested values is generally up to the browser; typically val
 The attribute value is either the keyword `off` or `on`, or a space-separated `<token-list>` that describes the meaning of the autocompletion value.
 
 - `off`
-
   - : The browser is not permitted to automatically enter or select a value for this field. It is possible that the document or application provides its own autocomplete feature, or that security concerns require that the field's value not be automatically entered.
 
     > **Note:** In most modern browsers, setting `autocomplete` to "`off`" will not prevent a password manager from asking the user if they would like to save username and password information, or from automatically filling in those values in a site's login form. See [the autocomplete attribute and login fields](/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion#the_autocomplete_attribute_and_login_fields).
 
 - `on`
-
   - : The browser is allowed to automatically complete the input. No guidance is provided as to the type of data expected in the field, so the browser may use its own judgement.
 
 - `<token-list>`
-
   - : An ordered set of space-separated tokens consisting of autofill detail tokens. The detail tokens include:
-
     - "`section-*`"
-
       - : Defines the name for a group of form controls. A token whose first eight characters are the string "section-", case-insensitive, followed by additional characters. If present, this token must be the first token in the space-separated list of tokens. All form controls that start with the same token belong to the named group.
-
     - "`name`"
-
       - : The field expects the value to be a person's full name. Using "`name`" rather than breaking the name down into its components is generally preferred because it avoids dealing with the wide diversity of human names and how they are structured; however, you can use the following `autocomplete` values if you do need to break the name down into its components:
-
         - "`honorific-prefix`"
           - : The prefix or title, such as "Mrs.", "Mr.", "Miss", "Ms.", "Dr.", or "Mlle.".
         - "`given-name`"
@@ -80,7 +72,6 @@ The attribute value is either the keyword `off` or `on`, or a space-separated `<
           - : The suffix, such as "Jr.", "B.Sc.", "PhD.", "MBASW", or "IV".
         - "`nickname`"
           - : A nickname or handle.
-
     - "`email`"
       - : An email address.
     - "`username`"
@@ -155,9 +146,7 @@ The attribute value is either the keyword `off` or `on`, or a space-separated `<
     - "`sex`"
       - : A gender identity (such as "Female", "Fa'afafine", "Hijra", "Male", "Nonbinary"), as freeform text without newlines.
     - "`tel`"
-
       - : A full telephone number, including the country code. If you need to break the phone number up into its components, you can use these values for those fields:
-
         - "`tel-country-code`"
           - : The country code, such as "1" for the United States, Canada, and other areas in North America and parts of the Caribbean.
         - "`tel-national`"
@@ -166,7 +155,6 @@ The attribute value is either the keyword `off` or `on`, or a space-separated `<
           - : The area code, with any country-internal prefix applied if appropriate.
         - "`tel-local`"
           - : The phone number without the country or area code. This can be split further into two parts, for phone numbers which have an exchange number and then a number within the exchange. For the phone number "555-6502", use "`tel-local-prefix`" for "555" and "`tel-local-suffix`" for "6502".
-
     - "`tel-extension`"
       - : A telephone extension code within the phone number, such as a room or suite number in a hotel or an office extension in a company.
     - "`impp`"

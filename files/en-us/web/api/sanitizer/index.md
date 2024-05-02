@@ -25,7 +25,6 @@ This configuration may be customized using constructor options.
 ## Instance methods
 
 - {{domxref('Sanitizer.sanitize()')}} {{Experimental_Inline}}
-
   - : Returns a sanitized {{domxref('DocumentFragment')}} from an input {{domxref('Document')}} or {{domxref('DocumentFragment')}}
 
 ## Examples

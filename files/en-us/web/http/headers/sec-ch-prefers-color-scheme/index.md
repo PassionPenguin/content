@@ -48,7 +48,6 @@ Sec-CH-Prefers-Color-Scheme: <preference>
 ### Directives
 
 - `<preference>`
-
   - : A string indicating the user agent's preference for dark or light content: `"light"` or `"dark"`.
     The value may originate from a corresponding setting in the underlying operating system.
 

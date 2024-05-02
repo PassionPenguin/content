@@ -48,7 +48,6 @@ hsl(H S L[ / A])
 The parameters are as follows:
 
 - `H`
-
   - : A {{CSSXref("&lt;number&gt;")}}, an {{CSSXref("&lt;angle&gt;")}}, or the keyword `none` (equivalent to `0deg` in this case) representing the color's {{CSSXref("&lt;hue&gt;")}} angle.
 
     > **Note:** The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. See the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples.

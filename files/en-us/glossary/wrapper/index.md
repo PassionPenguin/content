@@ -14,7 +14,6 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 - [Wrapper function](https://en.wikipedia.org/wiki/Wrapper_function) (Wikipedia)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("API")}}
   - {{Glossary("Class")}}
   - {{Glossary("Function")}}

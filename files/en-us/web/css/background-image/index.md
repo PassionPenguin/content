@@ -117,7 +117,6 @@ div {
 - {{HTMLElement("img")}}
 - Image-related data types: {{cssxref("&lt;image&gt;")}}, {{cssxref("&lt;gradient&gt;")}}
 - Image-related functions:
-
   - {{cssxref("cross-fade", "cross-fade()")}}
   - {{cssxref("element", "element()")}}
   - {{cssxref("image/image", "image()")}}

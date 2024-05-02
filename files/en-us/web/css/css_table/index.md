@@ -26,19 +26,15 @@ The properties introduced in this module aren't limited to the `<table>` element
 ## Guides
 
 - [Learn: CSS table layout](/en-US/docs/Learn/CSS/CSS_layout/Introduction#table_layout)
-
   - : An overview of CSS layouts, including how to set table-related `display` values to enable using CSS table properties on any element.
 
 - [Learn: Styling tables](/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
-
   - : A guide to improving the appearance of HTML tables, covering table styling techniques.
 
 - [Learn: HTML table basics](/en-US/docs/Learn/HTML/Tables/Basics)
-
   - : An introduction to HTML tables, including the HTML for creating rows and cells, headings, making cells span multiple columns and rows, and grouping cells in a column for styling purposes.
 
 - [Learn: HTML table advanced features and accessibility](/en-US/docs/Learn/HTML/Tables/Advanced)
-
   - : A look at advanced HTML table features, including captions and grouping table rows into table head, body and footer sections — as well as looking at the accessibility of tables for visually impaired users.
 
 ## Related concepts
@@ -48,7 +44,6 @@ The properties introduced in this module aren't limited to the `<table>` element
 - {{cssxref("text-align")}} property
 
 - [CSS box sizing](/en-US/docs/Web/CSS/CSS_box_sizing) module
-
   - {{cssxref("box-sizing")}}
   - {{cssxref("height")}}
   - {{cssxref("max-width")}}
@@ -58,14 +53,12 @@ The properties introduced in this module aren't limited to the `<table>` element
   - {{cssxref("min-content")}} keyword
 
 - [CSS backgrounds and borders](/en-US/docs/Web/CSS/CSS_backgrounds_and_borders) module
-
   - {{cssxref("border")}} shorthand
   - {{cssxref("border-width")}}
   - {{cssxref("border-style")}}
   - {{cssxref("border-color")}}
 
 - HTML table-related elements:
-
   - {{htmlelement("table")}}
   - {{htmlelement("caption")}}
   - {{htmlelement("colgroup")}}

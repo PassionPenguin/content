@@ -80,7 +80,6 @@ if (is_safari) {
 ## See also
 
 - The pseudo-elements used by WebKit/Blink to style other parts of a {{htmlelement("meter")}} element are as follows:
-
   - {{cssxref("::-webkit-meter-inner-element")}}
   - {{cssxref("::-webkit-meter-even-less-good-value")}}
   - {{cssxref("::-webkit-meter-optimum-value")}}

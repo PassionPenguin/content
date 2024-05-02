@@ -29,9 +29,7 @@ This method requires one of the following:
 Or
 
 - `options` {{optional_inline}}
-
   - : An object containing:
-
     - `domain` {{Optional_Inline}}
       - : A string containing the domain of the cookie. Defaults to `null`.
     - `expires` {{Optional_Inline}}
@@ -43,16 +41,13 @@ Or
     - `path` {{Optional_Inline}}
       - : A string containing the path of the cookie. Defaults to `/`.
     - `sameSite` {{Optional_Inline}}
-
       - : One of the following [`SameSite`](/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value) values:
-
         - `"strict"`
           - : Cookies will only be sent in a first-party context and not be sent along with requests initiated by third party websites. This is the default.
         - `"lax"`
           - : Cookies are not sent on normal cross-site subrequests (for example to load images or frames into a third party site), but are sent when a user is navigating to the origin site (i.e. when following a link).
         - `"none"`
           - : Cookies will be sent in all contexts.
-
     - `value`
       - : A string with the value of the cookie.
 

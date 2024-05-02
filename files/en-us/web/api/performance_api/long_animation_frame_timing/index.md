@@ -84,9 +84,7 @@ Beyond the standard data returned by a {{domxref("PerformanceEntry")}} entry, th
 - {{domxref("PerformanceLongAnimationFrameTiming.styleAndLayoutStart", "styleAndLayoutStart")}}
   - : A {{domxref("DOMHighResTimeStamp")}} indicating the beginning of the time period spent in style and layout calculations for the current animation frame.
 - {{domxref("PerformanceScriptTiming")}} properties:
-
   - : Properties providing information on the script(s) that contributed to the LoAF:
-
     - {{domxref("PerformanceScriptTiming.executionStart", "script.executionStart")}}
       - : A {{domxref("DOMHighResTimeStamp")}} indicating the time when the script compilation finished and execution started.
     - {{domxref("PerformanceScriptTiming.forcedStyleAndLayoutDuration", "script.forcedStyleAndLayoutDuration")}}
@@ -96,11 +94,9 @@ Beyond the standard data returned by a {{domxref("PerformanceEntry")}} entry, th
     - {{domxref("PerformanceScriptTiming.pauseDuration", "script.pauseDuration")}}
       - : A {{domxref("DOMHighResTimeStamp")}} indicating the total time, in milliseconds, spent by the script on "pausing" synchronous operations (for example, {{domxref("Window.alert()")}} calls or synchronous {{domxref("XMLHttpRequest")}}s).
     - {{domxref("PerformanceScriptTiming.sourceCharPosition", "script.sourceCharPosition")}}, {{domxref("PerformanceScriptTiming.sourceFunctionName", "script.sourceFunctionName")}}, and {{domxref("PerformanceScriptTiming.sourceURL", "script.sourceURL")}}
-
       - : Values representing the script character position, function name, and script URL, respectively. It is important to note that the reported function name will be the "entry point" of the script (i.e. the top level of the stack), and not any specific slow sub-function.
 
         For example, if an event handler calls a top-level function, which in turn calls a slow sub-function, the `source*` fields will report the top-level function's name and location, not the slow sub-function. This is because of performance reasons — a full stack trace is costly.
-
     - {{domxref("PerformanceScriptTiming.windowAttribution", "script.windowAttribution")}} an {{domxref("PerformanceScriptTiming.window", "script.window")}}
       - : An enumerated value describing the relationship of the container (i.e. either the top-level document or and {{htmlelement("iframe")}}) this script was executed in to the top-level document, and a reference to its {{domxref("Window")}} object.
 

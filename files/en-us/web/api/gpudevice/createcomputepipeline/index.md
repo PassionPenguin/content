@@ -22,15 +22,10 @@ createComputePipeline(descriptor)
 ### Parameters
 
 - `descriptor`
-
   - : An object containing the following properties:
-
     - `compute`
-
       - : An object describing the compute shader entry point of the pipeline. This object can contain the following properties:
-
         - `constants` {{optional_inline}}
-
           - : A sequence of record types, with the structure `(id, value)`, representing override values for [WGSL constants that can be overridden in the pipeline](https://gpuweb.github.io/gpuweb/#typedefdef-gpupipelineconstantvalue). These behave like [ordered maps](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). In each case, the `id` is a key used to identify or select the record, and the `constant` is an enumerated value representing a WGSL.
 
             Depending on which constant you want to override, the `id` may take the form of the numeric ID of the constant, if one is specified, or otherwise the constant's identifier name.
@@ -50,12 +45,10 @@ createComputePipeline(descriptor)
               }
             }
             ```
-
         - `entryPoint`
           - : The name of the function in the `module` that this stage will use to perform its work. The corresponding shader function must have the `@compute` attribute to be identified as this entry point. See [Entry Point Declaration](https://gpuweb.github.io/gpuweb/wgsl/#entry-point-decl) for more information.
         - `module`
           - : A {{domxref("GPUShaderModule")}} object containing the [WGSL](https://gpuweb.github.io/gpuweb/wgsl/) code that this programmable stage will execute.
-
     - `label` {{optional_inline}}
       - : A string providing a label that can be used to identify the object, for example in {{domxref("GPUError")}} messages or console warnings.
     - `layout`

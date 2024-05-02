@@ -12,7 +12,6 @@ Firefox 3 offers improved [Scalable Vector Graphics](/en-US/docs/Web/SVG) (SVG) 
 - `pattern` element support ([spec](https://www.w3.org/TR/SVG11/pservers.html#PatternElement))
 - `mask` element support ([spec](https://www.w3.org/TR/SVG11/masking.html#MaskElement))
 - Support for all SVG 1.1 filters ([spec](https://www.w3.org/TR/SVG11/filters.html)):
-
   - `filter`
   - `feDistantLight`
   - `fePointLight`

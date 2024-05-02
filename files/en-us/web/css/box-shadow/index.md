@@ -53,7 +53,6 @@ box-shadow: unset;
 Specify a single box-shadow using:
 
 - Two, three, or four {{cssxref("length")}} values.
-
   - If only two values are given, they are interpreted as `<offset-x>` and `<offset-y>` values.
   - If a third value is given, it is interpreted as a `<blur-radius>`.
   - If a fourth value is given, it is interpreted as a `<spread-radius>`.
@@ -66,20 +65,16 @@ To specify multiple shadows, provide a comma-separated list of shadows.
 ### Values
 
 - `<color>` {{optional_inline}}
-
   - : Specifies color for the shadow. See {{cssxref("&lt;color&gt;")}} values for possible keywords and notations.
     If not specified, the value of the {{cssxref("color")}} property defined in the parent element is used.
 
 - `<length>`
-
   - : Specifies the offset length of the shadow. This parameter accepts two, three, or four values. Third and fourth values are optional. They are interpreted as follows:
-
     - If two values are specified, they are interpreted as `<offset-x>` (horizontal offset) and `<offset-y>` (vertical offset) values. Negative `<offset-x>` value places the shadow to the left of the element. Negative `<offset-y>` value places the shadow above the element.\
       If not specified, the value of `0` is used for the missing length. If both `<offset-x>` and `<offset-y>` are set to `0`, the shadow is placed behind the element (and may generate a blur effect if `<blur-radius>` and/or `<spread-radius>` is set).
     - If three values are specified, the third value is interpreted as `<blur-radius>`. The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. If not specified, it will be set to`0` (meaning that the shadow's edge will be sharp). The specification does not include an exact algorithm for how the blur radius should be calculated; however, it does elaborate as follows:
 
       > …for a long, straight shadow edge, this should create a color transition the length of the blur distance that is perpendicular to and centered on the shadow's edge, and that ranges from the full shadow color at the radius endpoint inside the shadow to fully transparent at the endpoint outside it.
-
     - If four values are specified, the fourth value is interpreted as `<spread-radius>`. Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink. If not specified, it will be set to `0` (that is, the shadow will be the same size as the element).
 
 - `inset` {{optional_inline}}

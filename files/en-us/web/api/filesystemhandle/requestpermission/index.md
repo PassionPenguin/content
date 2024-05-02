@@ -23,9 +23,7 @@ requestPermission(fileSystemHandlePermissionDescriptor)
 ### Parameters
 
 - FileSystemHandlePermissionDescriptor {{optional_inline}}
-
   - : An object which specifies the permission mode to query for. Options are as follows:
-
     - `'mode'`: Can be either `'read'` or
       `'readwrite'`.
 

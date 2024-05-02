@@ -73,10 +73,8 @@ incorrectly. You'll encounter them in the [web console](https://firefox-source-d
 - A `Large-Allocation` header was ignored due to the presence of windows
   which have a reference to this browsing context through the frame hierarchy or
   {{domxref("window.opener")}}.
-
   - : This error means that the document was not loaded at the top level of an
     user-opened or noopener-opened tab or window. It can occur in these situations:
-
     - The document with the `Large-Allocation` header was loaded in an
       {{HTMLElement("iframe")}}. Firefox cannot move an iframe into a new process
       currently, so the document must load in the current process.
@@ -96,7 +94,6 @@ incorrectly. You'll encounter them in the [web console](https://firefox-source-d
 - This page would be loaded in a new process due to a `Large-Allocation`
   header, however `Large-Allocation` process creation is disabled on
   non-Win32 platforms.
-
   - : Firefox currently only supports the `Large-Allocation` header in our
     32-bit Windows builds, as memory fragmentation is not an issue in 64-bit builds. If
     you are running a non-win32 version of Firefox, this error will appear. This check can

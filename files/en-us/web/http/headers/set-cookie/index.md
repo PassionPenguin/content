@@ -54,7 +54,6 @@ Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnl
 ## Attributes
 
 - `<cookie-name>=<cookie-value>`
-
   - : Defines the cookie name and its value.
     A cookie definition begins with a name-value pair.
 
@@ -74,7 +73,6 @@ Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnl
     > **`__Host-` prefix**: Cookies with names starting with `__Host-` must be set with the `secure` flag, must be from a secure page (HTTPS), must not have a domain specified (and therefore, are not sent to subdomains), and the path must be `/`.
 
 - `Domain=<domain-value>` {{optional_inline}}
-
   - : Defines the host to which the cookie will be sent.
 
     Only the current domain can be set as the value, or a domain of a higher order, unless it is a public suffix. Setting the domain will make the cookie available to it, as well as to all its subdomains.
@@ -86,7 +84,6 @@ Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnl
     Multiple host/domain values are _not_ allowed, but if a domain _is_ specified, then subdomains are always included.
 
 - `Expires=<date>` {{optional_inline}}
-
   - : Indicates the maximum lifetime of the cookie as an HTTP-date timestamp.
     See {{HTTPHeader("Date")}} for the required formatting.
 
@@ -99,47 +96,35 @@ Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnl
     When an `Expires` date is set, the deadline is relative to the _client_ the cookie is being set on, not the server.
 
 - `HttpOnly` {{optional_inline}}
-
   - : Forbids JavaScript from accessing the cookie, for example, through the {{domxref("Document.cookie")}} property.
     Note that a cookie that has been created with `HttpOnly` will still be sent with JavaScript-initiated requests, for example, when calling {{domxref("XMLHttpRequest.send()")}} or {{domxref("fetch()")}}.
     This mitigates attacks against cross-site scripting ({{Glossary("Cross-site_scripting", "XSS")}}).
 
 - `Max-Age=<number>` {{optional_inline}}
-
   - : Indicates the number of seconds until the cookie expires. A zero or negative number will expire the cookie immediately. If both `Expires` and `Max-Age` are set, `Max-Age` has precedence.
 
 - `Partitioned` {{optional_inline}}{{experimental_inline}}
-
   - : Indicates that the cookie should be stored using partitioned storage. See [Cookies Having Independent Partitioned State (CHIPS)](/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies) for more details.
 
 - `Path=<path-value>` {{optional_inline}}
-
   - : Indicates the path that _must_ exist in the requested URL for the browser to send the `Cookie` header.
 
     The forward slash (`/`) character is interpreted as a directory separator, and subdirectories are matched as well. For example, for `Path=/docs`,
-
     - the request paths `/docs`, `/docs/`, `/docs/Web/`, and `/docs/Web/HTTP` will all match.
     - the request paths `/`, `/docsets`, `/fr/docs` will not match.
 
 - `SameSite=<samesite-value>` {{optional_inline}}
-
   - : Controls whether or not a cookie is sent with cross-site requests,
     providing some protection against cross-site request forgery attacks ({{Glossary("CSRF")}}).
 
     The possible attribute values are:
-
     - `Strict`
-
       - : Means that the browser sends the cookie only for same-site requests, that is, requests originating from the same site that set the cookie.
         If a request originates from a different domain or scheme (even with the same domain), no cookies with the `SameSite=Strict` attribute are sent.
-
     - `Lax`
-
       - : Means that the cookie is not sent on cross-site requests, such as on requests to load images or frames, but is sent when a user is navigating to the origin site from an external site (for example, when following a link).
         This is the default behavior if the `SameSite` attribute is not specified.
-
     - `None`
-
       - : Means that the browser sends the cookie with both cross-site and same-site requests.
         The `Secure` attribute must also be set when setting this value, like so `SameSite=None; Secure`. If `Secure` is missing an error will be logged:
 
@@ -152,7 +137,6 @@ Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnl
         > **Note:** A [`Secure`](#secure) cookie is only sent to the server with an encrypted request over the HTTPS protocol. Note that insecure sites (`http:`) can't set cookies with the `Secure` directive, and therefore can't use `SameSite=None`.
 
 - `Secure` {{optional_inline}}
-
   - : Indicates that the cookie is sent to the server only when a request is made with the `https:` scheme (except on localhost), and therefore, is more resistant to [man-in-the-middle](/en-US/docs/Glossary/MitM) attacks.
 
     > **Note:** Do not assume that `Secure` prevents all access to sensitive information in cookies (session keys, login details, etc.). Cookies with this attribute can still be read/modified either with access to the client's hard disk or from JavaScript if the `HttpOnly` cookie attribute is not set.

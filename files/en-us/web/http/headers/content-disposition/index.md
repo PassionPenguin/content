@@ -56,7 +56,6 @@ Content-Disposition: form-data; name="fieldName"; filename="filename.jpg"
 ### Directives
 
 - `name`
-
   - : Is followed by a string
     containing the name of the HTML field in the form
     that the content of this subpart refers to.

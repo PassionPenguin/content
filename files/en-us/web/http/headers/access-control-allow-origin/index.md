@@ -37,7 +37,6 @@ Access-Control-Allow-Origin: null
 - `<origin>`
   - : Specifies an origin. Only a single origin can be specified. If the server supports clients from multiple origins, it must return the origin for the specific client making the request.
 - `null`
-
   - : Specifies the origin "null".
 
     > **Note:** `null` [should not be used](https://w3c.github.io/webappsec-cors-for-developers/#avoid-returning-access-control-allow-origin-null): "It may seem safe to return `Access-Control-Allow-Origin: "null"`, but the serialization of the Origin of any resource that uses a non-hierarchical scheme (such as `data:` or `file:`) and sandboxed documents is defined to be "null". Many User Agents will grant such documents access to a response with an `Access-Control-Allow-Origin: "null"` header, and any origin can create a hostile document with a "null" Origin. The "null" value for the ACAO header should therefore be avoided."

@@ -20,5 +20,4 @@ Commonly used public-key cryptosystems are RSA (for both signing and encryption)
 
 - [Web Crypto API](/en-US/docs/Web/API/Web_Crypto_API)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("Symmetric-key cryptography")}}

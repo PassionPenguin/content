@@ -20,6 +20,5 @@ All modern browsers support the TLS protocol, requiring the server to provide a 
 - [Transport Layer Security](/en-US/docs/Web/Security/Transport_Layer_Security)
 - [OWASP: Transport Layer Protection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 - [Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("HTTPS")}}
   - {{Glossary("SSL")}}

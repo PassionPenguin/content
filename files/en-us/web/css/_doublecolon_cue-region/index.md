@@ -76,7 +76,6 @@ There is no browser implementing this feature.
 ## See also
 
 - Other {{DOMxRef("WebVTT API", "WebVTT", "", 1)}} selectors:
-
   - {{CSSxRef("::cue")}}
   - {{CSSxRef(":past")}}
   - {{CSSxRef(":future")}}

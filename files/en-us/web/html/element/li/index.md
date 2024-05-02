@@ -18,9 +18,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `value`
   - : This integer attribute indicates the current ordinal value of the list item as defined by the {{HTMLElement("ol")}} element. The only allowed value for this attribute is a number, even if the list is displayed with Roman numerals or letters. List items that follow this one continue numbering from the value set. The **value** attribute has no meaning for unordered lists ({{HTMLElement("ul")}}) or for menus ({{HTMLElement("menu")}}).
 - `type` {{Deprecated_inline}} {{Non-standard_Inline}}
-
   - : This character attribute indicates the numbering type:
-
     - `a`: lowercase letters
     - `A`: uppercase letters
     - `i`: lowercase Roman numerals
@@ -157,7 +155,6 @@ For more detailed examples, see the {{htmlelement("ol")}} and {{htmlelement("ul"
 
 - Other list-related HTML Elements: {{HTMLElement("ul")}}, {{HTMLElement("ol")}}, {{HTMLElement("menu")}}, and the obsolete {{HTMLElement("dir")}};
 - CSS properties that may be specially useful to style the `<li>` element:
-
   - the {{cssxref("list-style")}} property, to choose the way the ordinal is displayed,
   - [CSS counters](/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters), to handle complex nested lists,
   - the {{cssxref("margin")}} property, to control the indent of the list item.

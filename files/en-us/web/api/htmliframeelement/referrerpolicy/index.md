@@ -42,7 +42,6 @@ resource.
     protocol security level stays the same (HTTPS→HTTPS), and send no header to a less
     secure destination (HTTPS→HTTP).
 - `unsafe-url`
-
   - : Send a full URL when performing a same-origin or cross-origin request.
 
     > **Note:** This policy will leak origins and paths from TLS-protected resources

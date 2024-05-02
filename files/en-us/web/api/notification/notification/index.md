@@ -26,10 +26,8 @@ new Notification(title, options)
   - : Defines a title for the notification, which is shown at the top of the notification
     window.
 - `options` {{optional_inline}}
-
   - : An options object containing any custom settings that you want to apply to the
     notification. The possible options are:
-
     - `dir` {{optional_inline}}
       - : The direction in which to display the notification. It
         defaults to `auto`, which just adopts the browser's language setting
@@ -72,9 +70,7 @@ new Notification(title, options)
         active until the user clicks or dismisses it, rather than closing automatically.
         The default value is `false`.
     - `actions` {{optional_inline}}
-
       - : An array of actions to display in the notification, for which the default is an empty array. Each element in the array can be an object with the following members:
-
         - `action`
           - : A string identifying a user action to be displayed on the notification.
         - `title`
@@ -84,7 +80,6 @@ new Notification(title, options)
 
         Appropriate responses are built using `event.action` within the
         {{domxref("ServiceWorkerGlobalScope.notificationclick_event", "notificationclick")}} event.
-
     - `silent` {{optional_inline}}
       - : A boolean value specifying whether the
         notification is silent (no sounds or vibrations issued), regardless of the device

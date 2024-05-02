@@ -31,11 +31,8 @@ Events have three functions:
 ### Parameters
 
 - `listener`
-
   - : The function called when this event occurs. The function is passed these arguments:
-
     - `request`
-
       - : An object containing information about the request the rule matched.
         - `documentId` {{optional_inline}}
           - : A `string`. The unique identifier for the frame's document, if this request is for a frame.
@@ -61,7 +58,6 @@ Events have three functions:
           - : {{WebExtAPIRef("declarativeNetRequest.ResourceType", "ResourceType")}}. The resource type of the request.
         - `url`
           - : A `string`. The URL of the request.
-
     - `rule`
       - : {{WebExtAPIRef("declarativeNetRequest.MatchedRule", "MatchedRule")}}. Details of a matched rule.
 

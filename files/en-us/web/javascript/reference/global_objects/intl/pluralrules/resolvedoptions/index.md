@@ -32,7 +32,6 @@ The object has the following properties:
 - `pluralCategories`
   - : An {{jsxref("Array")}} of plural categories used by the given locale, selected from the list `"zero"`, `"one"`, `"two"`, `"few"`, `"many"` and `"other"`.
 - `type`
-
   - : The type used (`cardinal` or `ordinal`).
 
 - `roundingIncrement` {{experimental_inline}}

@@ -21,9 +21,7 @@ generateKey(algorithm, extractable, keyUsages)
 ### Parameters
 
 - `algorithm`
-
   - : An object defining the type of key to generate and providing extra algorithm-specific parameters.
-
     - For [RSASSA-PKCS1-v1_5](/en-US/docs/Web/API/SubtleCrypto/sign#rsassa-pkcs1-v1_5), [RSA-PSS](/en-US/docs/Web/API/SubtleCrypto/sign#rsa-pss),
       or [RSA-OAEP](/en-US/docs/Web/API/SubtleCrypto/encrypt#rsa-oaep):
       pass an [`RsaHashedKeyGenParams`](/en-US/docs/Web/API/RsaHashedKeyGenParams) object.

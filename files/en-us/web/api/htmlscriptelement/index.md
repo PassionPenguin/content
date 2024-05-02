@@ -18,7 +18,6 @@ JavaScript files should be served with the `text/javascript` [MIME type](/en-US/
 _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 
 - {{domxref("HTMLScriptElement.async")}}, {{domxref("HTMLScriptElement.defer")}}
-
   - : The `async` and `defer` attributes are boolean attributes that control how the script should be executed. **The `defer` and `async` attributes must not be specified if the `src` attribute is absent.**
 
     There are three possible execution modes:
@@ -46,7 +45,6 @@ _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 - {{domxref("HTMLScriptElement.src")}}
   - : A string representing the URL of an external script; this can be used as an alternative to embedding a script directly within a document. It reflects the `src` attribute of the {{HTMLElement("script")}} element.
 - {{domxref("HTMLScriptElement.text")}}
-
   - : A string that joins and returns the contents of all {{domxref("Text")}} nodes inside the {{HTMLElement("script")}} element (ignoring other nodes like comments) in tree order. On setting, it acts the same way as the {{domxref("Node.textContent")}} property.
 
     > **Note:** When inserted using the {{domxref("Document.write()")}} method, {{HTMLElement("script")}} elements execute (typically synchronously), but when inserted using {{domxref("Element.innerHTML")}} or {{domxref("Element.outerHTML")}}, they do not execute at all.

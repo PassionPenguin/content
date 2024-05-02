@@ -21,12 +21,10 @@ registerProtocolHandler(scheme, url)
 ### Parameters
 
 - `scheme`
-
   - : A string containing the [permitted scheme](#permitted_schemes) for the protocol that the site wishes to handle.
     For example, you can register to handle SMS text message links by passing the `"sms"` scheme.
 
 - `url`
-
   - : A string containing the URL of the handler.
     **This URL must include `%s`**, as a placeholder that will be replaced with the [escaped](/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) URL to be handled.
 
@@ -39,10 +37,8 @@ None ({{jsxref("undefined")}}).
 ### Exceptions
 
 - `SecurityError` {{domxref("DOMException")}}
-
   - : The user agent blocked the registration.
     This might happen if:
-
     - The registered scheme (protocol) is invalid, such as a scheme the browser handles itself (`https:`, `about:`, etc.)
     - The handler URL's {{Glossary("origin")}} does not match the origin of the page calling this API.
     - The browser requires that this function is called from a secure context.

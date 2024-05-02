@@ -12,7 +12,6 @@ page-type: glossary-definition
 
 - [Official website](https://www.microsoft.com/edge)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
-
   - {{Glossary("Google Chrome")}}
   - {{Glossary("Microsoft Edge")}}
   - {{Glossary("Microsoft Internet Explorer")}}

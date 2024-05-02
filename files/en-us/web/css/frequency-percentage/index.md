@@ -70,6 +70,5 @@ Where a `<frequency-percentage>` is specified as an allowable type, this means t
 - [CSS data types](/en-US/docs/Web/CSS/CSS_Types)
 - [CSS Values and Units](/en-US/docs/Web/CSS/CSS_Values_and_Units)
 - Related CSS data types:
-
   - {{cssxref("frequency", "&lt;frequency&gt;")}}
   - {{cssxref("percentage", "&lt;percentage&gt;")}}

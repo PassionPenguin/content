@@ -32,7 +32,6 @@ setStringValue(stringType, stringValue)
 ### Parameters
 
 - `stringType`
-
   - : An `unsigned short` representing the type of the value. Possible values
     are:
 

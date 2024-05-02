@@ -11,7 +11,6 @@ This document provides a concise checklist of accessibility requirements for mob
 ## Color
 
 - Color contrast must comply with [WCAG 2.1 AA level requirements](https://www.w3.org/TR/WCAG/#contrast-minimum):
-
   - Contrast ratio of 4.5:1 for normal text (less than 18 point or 14 point bold.)
   - Contrast ratio of 3:1 for large text (at least 18 point or 14 point bold.)
 
@@ -21,14 +20,12 @@ This document provides a concise checklist of accessibility requirements for mob
 
 - Content hiding techniques such as zero opacity, z-index order and off-screen placement must not be used exclusively to handle visibility.
 - Everything other than the currently visible screen must be _truly_ invisible (especially relevant for single page apps with multiple _cards_):
-
   - Use the `hidden` attribute or `visibility` or `display` style properties.
   - Unless absolutely unavoidable, `aria-hidden` attribute should not be used.
 
 ## Focus
 
 - All activatable elements must be focusable:
-
   - Standard controls such as links, buttons, and form fields are focusable by default.
   - Non-standard controls must have an appropriate [ARIA Role](/en-US/docs/Web/Accessibility/ARIA/Roles) assigned to them, such as `button`, `link`, or `checkbox`.
 
@@ -37,7 +34,6 @@ This document provides a concise checklist of accessibility requirements for mob
 ## Text equivalents
 
 - Text equivalent must be provided for every non-strictly presentational non-text element within the app.
-
   - Use _alt_ and _title_ where appropriate (read Steve Faulkner's post about [Using the HTML title attribute](https://www.tpgi.com/using-the-html-title-attribute-updated/) for a good guide.)
   - If the above attributes are not applicable, use appropriate [ARIA States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def) such as `aria-label`, `aria-labelledby`, or `aria-describedby`.
 
@@ -52,7 +48,6 @@ This document provides a concise checklist of accessibility requirements for mob
 ## Orientation
 
 - Content should not be restricted to a single orientation, such as portrait or landscape, unless essential. [WCAG 2.1: Orientation](https://www.w3.org/WAI/WCAG21/Understanding/orientation.html)
-
   - Examples of when an orientation is essential is a piano application or a bank check.
 
 ## General guidelines
@@ -69,7 +64,6 @@ This document provides a concise checklist of accessibility requirements for mob
 
 - [ARIA Landmark Roles](https://www.washington.edu/accessibility/websites/regions/) should be used to describe an app or document structure, such as `banner`, `complementary`, `contentinfo`, `main`, `navigation`, `search`.
 - For touch events, at least one of the following must be true ([WCAG 2.1: Pointer Cancellation](https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation.html)):
-
   - The down-event should not be used to trigger any action
   - The action is triggered on the up event and an option to abort the action before its completion is available or an option to undo the action after its completion
   - The up-event will undo any action that was triggered on a down event

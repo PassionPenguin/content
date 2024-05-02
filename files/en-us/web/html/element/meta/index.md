@@ -27,27 +27,20 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `content`
   - : This attribute contains the value for the [`http-equiv`](#http-equiv) or [`name`](#name) attribute, depending on which is used.
 - `http-equiv`
-
   - : Defines a pragma directive. The attribute is named `http-equiv(alent)` because all the allowed values are names of particular HTTP headers:
-
     - `content-security-policy`
 
       Allows page authors to define a [content policy](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) for the current page. Content policies mostly specify allowed server origins and script endpoints which help guard against cross-site scripting attacks.
-
     - `content-type`
 
       Declares the [MIME type](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) and the document's character encoding. The `content` attribute must have the value `"text/html; charset=utf-8"` if specified. This is equivalent to a `<meta>` element with the [`charset`](#charset) attribute specified and carries the same restriction on placement within the document. **Note:** Can only be used in documents served with a `text/html` — not in documents served with an XML MIME type.
-
     - `default-style`
 
       Sets the name of the default [CSS style sheet](/en-US/docs/Web/CSS) set.
-
     - `x-ua-compatible`
 
       If specified, the `content` attribute must have the value `"IE=edge"`. User agents are required to ignore this pragma.
-
     - `refresh` This instruction specifies:
-
       - The number of seconds until the page should be reloaded - only if the [`content`](#content) attribute contains a non-negative integer.
       - The number of seconds until the page should redirect to another - only if the [`content`](#content) attribute contains a non-negative integer followed by the string '`;url=`', and a valid URL.
 
@@ -62,7 +55,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
       > - [Understanding Success Criterion 3.2.5 | W3C Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html)
 
 - `name`
-
   - : The `name` and `content` attributes can be used together to provide document metadata in terms of name-value pairs, with the `name` attribute giving the metadata name, and the `content` attribute giving the value.
 
     See [standard metadata names](/en-US/docs/Web/HTML/Element/meta/name) for details about the set of standard metadata names defined in the HTML specification.

@@ -20,9 +20,7 @@ of(code)
 ### Parameters
 
 - `code`
-
   - : The `code` to provide depends on the `type`:
-
     - If the type is "region", `code` should be either an [two-letter ISO 3166 region code](https://www.iso.org/iso-3166-country-codes.html), or a [three-digit UN M49 geographic region](https://unstats.un.org/unsd/methodology/m49/). It is required to follow the [`unicode_region_subtag`](https://unicode.org/reports/tr35/#unicode_region_subtag) grammar.
     - If the type is "script", `code` should be an [four-letter ISO 15924 script code](https://unicode.org/iso15924/iso15924-codes.html). It is required to follow the [`unicode_script_subtag`](https://unicode.org/reports/tr35/#unicode_script_subtag) grammar.
     - If the type is "language", `code` should be a _languageCode_ \["-" _scriptCode_] \["-" _regionCode_ ] \*("-" _variant_ ) subsequence of the [`unicode_language_id`](https://unicode.org/reports/tr35/#Unicode_language_identifier) grammar. _languageCode_ is either a two-letter ISO 639-1 language code or a three-letter ISO 639-2 language code.

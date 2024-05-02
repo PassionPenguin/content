@@ -27,21 +27,14 @@ An object indicating the current configuration of the sender. <!-- RTCRtpSendPar
 <!-- spec defines following in RTCRtpSendParameters -->
 
 - `encodings`
-
   - : An array of objects, each specifying the parameters and settings for a single codec that could be used to encode the track's media.
     The properties of the objects include:
-
     - `active`
-
       - : `true` (the default) if the encoding is being sent, `false` if it is not being sent or used.
-
     - `dtx` {{Deprecated_Inline}} {{Non-standard_Inline}}
-
       - : Only used for an {{domxref("RTCRtpSender")}} whose {{domxref("MediaStreamTrack.kind", "kind")}} is `audio`, this property indicates whether or not discontinuous transmission is being used (a feature by which a phone is turned off or the microphone muted automatically in the absence of voice activity).
         The value is taken either `enabled` or `disabled`.
-
     - `maxBitrate`
-
       - : A positive integer indicating the maximum number of bits per second that the user agent is allowed to grant to tracks encoded with this encoding.
         Other parameters may further constrain the bit rate, such as the value of `maxFramerate`, or the bandwidth available for the transport or physical network.
 
@@ -49,7 +42,6 @@ An object indicating the current configuration of the sender. <!-- RTCRtpSendPar
 
         Note that the bitrate can be achieved in a number of ways, depending on the media and encoding.
         For example, for video a low bit rate might be achieved by dropping frames (a bitrate of zero might allow just one frame to be sent), while for audio the track might have to stop playing if the bitrate is too low for it to be sent.
-
     - `maxFramerate`
       - : A value specifying the maximum number of frames per second to allow for this encoding.
     - `priority`

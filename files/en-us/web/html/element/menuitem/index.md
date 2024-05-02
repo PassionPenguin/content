@@ -32,9 +32,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 - `radiogroup` {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : This attribute specifies the name of a group of commands to be toggled as radio buttons when selected. May only be used where the `type` attribute is `radio`.
 - `type` {{Deprecated_Inline}} {{Non-standard_Inline}}
-
   - : This attribute indicates the kind of command, and can be one of three values.
-
     - `command`: A regular command with an associated action. This is the missing value default.
     - `checkbox`: Represents a command that can be toggled between two different states.
     - `radio`: Represent one selection from a group of commands that can be toggled as radio buttons.

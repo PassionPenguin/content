@@ -46,16 +46,11 @@ attachShadow(options)
 ### Parameters
 
 - `options`
-
   - : An object which contains the following fields:
-
     - `mode`
-
       - : A string specifying the _encapsulation mode_ for the shadow DOM tree.
         This can be one of:
-
         - `open`
-
           - : Elements of the shadow root are accessible from JavaScript outside the root,
             for example using {{domxref("Element.shadowRoot")}}:
 
@@ -63,9 +58,7 @@ attachShadow(options)
             element.attachShadow({ mode: "open" });
             element.shadowRoot; // Returns a ShadowRoot obj
             ```
-
         - `closed`
-
           - : Denies access to the node(s) of a closed shadow root
             from JavaScript outside it:
 
@@ -73,20 +66,13 @@ attachShadow(options)
             element.attachShadow({ mode: "closed" });
             element.shadowRoot; // Returns null
             ```
-
     - `clonable` {{Optional_Inline}}
-
       - : A boolean that specifies whether the shadow root is clonable: when set to `true`, the shadow host cloned with {{domxref("Node.cloneNode()")}} or {{domxref("Document.importNode()")}} will include shadow root in the copy. Its default value is `false`, unless the shadow root is created via declarative shadow DOM.
-
     - `delegatesFocus` {{Optional_Inline}}
-
       - : A boolean that, when set to `true`, specifies behavior that mitigates custom element issues around focusability.
         When a non-focusable part of the shadow DOM is clicked, the first focusable part is given focus, and the shadow host is given any available `:focus` styling. Its default value is `false`.
-
     - `slotAssignment` {{Optional_inline}}
-
       - : A string specifying the _slot assignment mode_ for the shadow DOM tree. This can be one of:
-
         - `named`
           - : Elements are automatically assigned to {{HTMLElement("slot")}} elements within this shadow root. Any descendants of the host with a `slot` attribute which matches the `name` attribute of a `<slot>` within this shadow root will be assigned to that slot. Any top-level children of the host with no `slot` attribute will be assigned to a `<slot>` with no `name` attribute (the "default slot") if one is present.
         - `manual`

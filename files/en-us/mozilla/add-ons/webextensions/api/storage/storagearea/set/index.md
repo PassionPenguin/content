@@ -28,7 +28,6 @@ let settingItem = browser.storage.<storageType>.set(
 ### Parameters
 
 - `keys`
-
   - : An object containing one or more key/value pairs to be stored. If an item is in storage, its value is updated.
 
     Values can be [primitive](/en-US/docs/Glossary/Primitive) (such as a number, boolean, or string), {{jsxref("Array")}}, or {{jsxref("Object")}} types.

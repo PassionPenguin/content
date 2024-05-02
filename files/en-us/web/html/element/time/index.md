@@ -45,7 +45,6 @@ The _datetime value_ (the machine-readable value of the datetime) is the value o
 - a valid week string
   - : `2011-W47`
 - a valid time string
-
   - : `14:54`
 
     `14:54:39`
@@ -53,13 +52,11 @@ The _datetime value_ (the machine-readable value of the datetime) is the value o
     `14:54:39.929`
 
 - a valid local date and time string
-
   - : `2011-11-18T14:54:39.929`
 
     `2011-11-18 14:54:39.929`
 
 - a valid global date and time string
-
   - : `2011-11-18T14:54:39.929Z`
 
     `2011-11-18T14:54:39.929-0400`

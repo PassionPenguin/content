@@ -16,7 +16,6 @@ The **`<colgroup>`** [HTML](/en-US/docs/Web/HTML) element defines a group of col
 This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 - `span`
-
   - : Specifies the number of consecutive columns the `<colgroup>` element spans. The value must be a positive integer greater than zero. If not present, its default value is `1`.
 
     > **Note:** The `span` attribute is not permitted if there are one or more {{HTMLElement("col")}} elements within the `<colgroup>`.
@@ -26,7 +25,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 The following attributes are deprecated and should not be used. They are documented below for reference when updating existing code and for historical interest only.
 
 - `align` {{deprecated_inline}}
-
   - : Specifies the horizontal alignment of each column group cell. The possible {{Glossary("enumerated")}} values are `left`, `center`, `right`, `justify`, and `char`. When supported, the `char` value aligns the textual content on the character defined in the [`char`](#char) attribute and the offset defined by the [`charoff`](#charoff) attribute. Note that the descendant {{HTMLElement("col")}} elements may override this value using their own [`align`](/en-US/docs/Web/HTML/Element/col#align) attribute. Use the {{cssxref("text-align")}} CSS property on the {{htmlelement("td")}} and {{htmlelement("th")}} elements instead, as this attribute is deprecated.
 
     > **Note:** Setting `text-align` on the `<colgroup>` element has no effect as {{HTMLElement("td")}} and {{HTMLElement("th")}} elements are not descendants of the `<colgroup>` element, and therefore they do not inherit from it.
@@ -36,19 +34,15 @@ The following attributes are deprecated and should not be used. They are documen
     > If the table does use a [`colspan`](/en-US/docs/Web/HTML/Element/td#colspan) attribute, the effect can be achieved by combining adequate CSS attribute selectors like `[colspan=n]`, though this is not trivial.
 
 - `bgcolor` {{deprecated_inline}}
-
   - : Defines the background color of each column group cell. The value is an HTML color; either a [6-digit hexadecimal RGB code](/en-US/docs/Web/CSS/hex-color), prefixed by a '`#`', or a [color keyword](/en-US/docs/Web/CSS/named-color). Other CSS {{cssxref("color_value", "&lt;color&gt")}} values are not supported. Use the {{cssxref("background-color")}} CSS property instead, as this attribute is deprecated.
 
 - `char` {{deprecated_inline}}
-
   - : Does nothing. It was originally intended to specify the alignment of the content to a character of each column group cell. Typical values for this include a period (`.`) when attempting to align numbers or monetary values. If [`align`](#align) is not set to `char`, this attribute is ignored, though it will still be used as the default value for the [`align`](/en-US/docs/Web/HTML/Element/col#align) of the {{HTMLElement("col")}} elements which are members of this column group.
 
 - `charoff` {{deprecated_inline}}
-
   - : Does nothing. It was originally intended to specify the number of characters to offset the column group cell content from the alignment character specified by the [`char`](#char) attribute.
 
 - `valign` {{deprecated_inline}}
-
   - : Specifies the vertical alignment of each column group cell. The possible {{Glossary("enumerated")}} values are `baseline`, `bottom`, `middle`, and `top`. Note that the descendant {{HTMLElement("col")}} elements may override this value using their own [`valign`](/en-US/docs/Web/HTML/Element/col#valign) attribute. Use the {{cssxref("vertical-align")}} CSS property on the {{htmlelement("td")}} and {{htmlelement("th")}} elements instead, as this attribute is deprecated.
 
     > **Note:** Setting `vertical-align` on the `<colgroup>` element has no effect as {{HTMLElement("td")}} and {{HTMLElement("th")}} elements are not descendants of the `<colgroup>` element, and therefore they do not inherit from it.
@@ -58,7 +52,6 @@ The following attributes are deprecated and should not be used. They are documen
     > If the table does use a [`colspan`](/en-US/docs/Web/HTML/Element/td#colspan) attribute, the effect can be achieved by combining adequate CSS attribute selectors like `[colspan=n]`, though this is not trivial.
 
 - `width` {{deprecated_inline}}
-
   - : Specifies a default width for each column in the current column group. In addition to the standard pixel and percentage values, this attribute can take the special form `0*`, which means that the width of each column spanned should be the minimum width necessary to hold the column's contents. Relative widths such as `5*` can also be used. Note that the descendant {{HTMLElement("col")}} elements may override this value using their own [`width`](/en-US/docs/Web/HTML/Element/col#width) attribute. Use the {{cssxref("width")}} CSS property instead, as this attribute is deprecated.
 
 ## Usage notes

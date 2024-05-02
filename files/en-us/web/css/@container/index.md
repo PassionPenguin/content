@@ -44,9 +44,7 @@ For example:
 ### Values
 
 - `<container-condition>`
-
   - : An optional `<container-name>` and a `<container-query>`. Styles defined in the `<stylesheet>` are applied if the condition is true.
-
     - `<container-name>`
       - : Optional. The name of the container that the styles will be applied to when the query evaluates to true, specified as an {{cssxref("ident")}}.
     - `<container-query>`
@@ -111,23 +109,18 @@ Details about usage and naming restrictions are described in the {{cssxref("cont
 The following descriptors can be used within the container condition:
 
 - `aspect-ratio`
-
   - : The {{cssxref("aspect-ratio")}} of the container calculated as the width to the height of the container expressed as a {{cssxref("ratio")}} value.
 
 - `block-size`
-
   - : The {{cssxref("block-size")}} of the container expressed as a {{cssxref("length")}} value.
 
 - `height`
-
   - : The height of the container expressed as a {{cssxref("length")}} value.
 
 - `inline-size`
-
   - : The {{cssxref("inline-size")}} of the container expressed as a {{cssxref("length")}} value.
 
 - `orientation`
-
   - : The [orientation](/en-US/docs/Web/CSS/@media/orientation) of the container, either `landscape` or `portrait`.
 
 - `width`

@@ -52,7 +52,6 @@ _`Element` inherits properties from its parent interface, {{DOMxRef("Node")}}, a
 - {{DOMxRef("Element.localName")}} {{ReadOnlyInline}}
   - : A string representing the local part of the qualified name of the element.
 - {{DOMxRef("Element.namespaceURI")}} {{ReadOnlyInline}}
-
   - : The namespace URI of the element, or `null` if it is no namespace.
 
     > **Note:** In Firefox 3.5 and earlier, HTML elements are in no namespace. In later versions, HTML elements are in the [`http://www.w3.org/1999/xhtml`](https://www.w3.org/1999/xhtml/) namespace in both HTML and XML trees.

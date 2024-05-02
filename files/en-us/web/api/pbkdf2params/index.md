@@ -14,9 +14,7 @@ The **`Pbkdf2Params`** dictionary of the [Web Crypto API](/en-US/docs/Web/API/We
 - `name`
   - : A string. This should be set to `PBKDF2`.
 - `hash`
-
   - : A string representing the [digest algorithm](/en-US/docs/Web/API/SubtleCrypto/digest#supported_algorithms) to use. This may be one of:
-
     - `SHA-1`
     - `SHA-256`
     - `SHA-384`

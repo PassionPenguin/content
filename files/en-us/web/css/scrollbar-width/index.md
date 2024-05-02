@@ -28,7 +28,6 @@ scrollbar-width: unset;
 ### Values
 
 - `<scrollbar-width>`
-
   - : Defines the width of the scrollbar as a keyword. It must be one of the following values:
 
     <table class="standard-table">

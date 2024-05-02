@@ -42,21 +42,17 @@ Events have three functions:
 ### Parameters
 
 - `listener`
-
   - : The function called when this event occurs. The function is passed these arguments:
-
     - `message`
       - : `object`. The message itself. This is a JSON-ifiable object.
     - `sender`
       - : A {{WebExtAPIRef('runtime.MessageSender')}} object representing the sender of the message.
     - `sendResponse`
-
       - : A function to call, at most once, to send a response to the message. The function takes a single argument, which may be any JSON-ifiable object. This argument is passed back to the message sender.
 
         If you have more than one `onMessageExternal` listener in the same document, then only one may send a response.
 
         To send a response synchronously, call `sendResponse` before the listener function returns. To send a response asynchronously, do one of these:
-
         - keep a reference to the `sendResponse` argument and return `true` from the listener function. You can then call `sendResponse` after the listener function has returned.
         - return a [`Promise`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) from the listener function and resolve the promise when the response is ready.
 

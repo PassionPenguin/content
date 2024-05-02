@@ -41,7 +41,6 @@ text-rendering: unset;
 - `optimizeLegibility`
   - : The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures.
 - `geometricPrecision`
-
   - : The browser emphasizes geometric precision over rendering speed and legibility. Certain aspects of fonts — such as kerning — don't scale linearly. So this value can make text using those fonts look good.
 
     In SVG, when text is scaled up or down, browsers calculate the final size of the text (which is determined by the specified font size and the applied scale) and request a font of that computed size from the platform's font system. But if you request a font size of, say, 9 with a scale of 140%, the resulting font size of 12.6 doesn't explicitly exist in the font system, so the browser rounds the font size to 12 instead. This results in stair-step scaling of text.
@@ -144,7 +143,6 @@ p {
 - [Drawing text in a `<canvas>`](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text)
 - [CSS Text Decoration](/en-US/docs/Web/CSS/CSS_text_decoration) CSS module
 - Related CSS properties
-
   - [`text-decoration`](/en-US/docs/Web/CSS/text-decoration) (and its longhand properties, such as [`text-decoration-line`](/en-US/docs/Web/CSS/text-decoration-line), [`text-decoration-style`](/en-US/docs/Web/CSS/text-decoration-style), and [`text-decoration-thickness`](/en-US/docs/Web/CSS/text-decoration-thickness))
   - [`text-emphasis`](/en-US/docs/Web/CSS/text-emphasis) (and its longhand properties, including [`text-emphasis-color`](/en-US/docs/Web/CSS/text-emphasis-color), [`text-emphasis-position`](/en-US/docs/Web/CSS/text-emphasis-position), and [`text-emphasis-style`](/en-US/docs/Web/CSS/text-emphasis-style))
   - [`text-shadow`](/en-US/docs/Web/CSS/text-shadow)

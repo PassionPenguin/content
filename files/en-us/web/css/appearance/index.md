@@ -42,20 +42,16 @@ For the following keywords, the user agent selects the appropriate styling based
 Some examples are provided, but the list is not exhaustive.
 
 - `none`
-
   - : Hides certain features of widgets, such as arrow displayed in select element, indicating that list can be expanded.
 
 - `auto`
-
   - : Acts as `none` on elements with no special styling.
 
 - `<compat-special>`
-
   - : One of `menulist-button` or `textfield`.
     Both of these values are equivalent to `auto` on elements with no special styling.
 
 - `<compat-auto>`
-
   - : Possible values are `button`, `checkbox`, `listbox`, `menulist`, `meter`, `progress-bar`, `push-button`, `radio`, `searchfield`, `slider-horizontal`, `square-button`, and `textarea`.
     Keywords which are the equivalent of `auto` for maintaining compatibility with older browsers.
 

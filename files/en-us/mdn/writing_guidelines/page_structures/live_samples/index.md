@@ -140,7 +140,6 @@ In many cases, you may be able to add the `EmbedLiveSample` or `LiveSampleLink` 
 - screenshot_URL
   - : The URL of a screenshot that shows what the live sample should look like. This is optional, but can be useful for new technologies that may not work in the user's browser, so they can see what the sample would look like if it were supported by their browser. If you include this parameter, the screenshot is shown next to the live sample, with appropriate headings.
 - page_slug
-
   - : The slug of the page containing the sample; this is optional, and if it's not provided, the sample is pulled from the same page on which the macro is used.
 
     > **Warning:** This parameter is deprecated. Don't use it in new examples, and remove it from existing examples if you see it. We're actively removing usages of it, and when it is no longer used we will remove support for it.

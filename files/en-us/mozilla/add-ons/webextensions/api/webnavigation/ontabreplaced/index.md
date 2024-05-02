@@ -34,9 +34,7 @@ Events have three functions:
 ### Parameters
 
 - `listener`
-
   - : The function called when this event occurs. The function is passed this argument:
-
     - `details`
       - : `object`. See the [details](#details_2) section for more information.
 

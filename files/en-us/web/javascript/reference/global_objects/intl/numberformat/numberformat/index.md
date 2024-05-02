@@ -28,18 +28,15 @@ Intl.NumberFormat(locales, options)
 ### Parameters
 
 - `locales` {{optional_inline}}
-
   - : A string with a BCP 47 language tag or an {{jsxref("Intl.Locale")}} instance, or an array of such locale identifiers. The runtime's default locale is used when `undefined` is passed or when none of the specified locale identifiers is supported. For the general form and interpretation of the `locales` argument, see [the parameter description on the `Intl` main page](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument).
 
     The following Unicode extension key is allowed:
-
     - `nu`
       - : See [`numberingSystem`](#numberingsystem).
 
     This key can also be set with `options` (as listed below). When both are set, the `options` property takes precedence.
 
 - `options` {{optional_inline}}
-
   - : An object. For ease of reading, the property list is broken into sections based on their purposes, including [locale options](#locale_options), [style options](#style_options), [digit options](#digit_options), and [other options](#other_options).
 
 #### Locale options
@@ -107,10 +104,8 @@ The following properties are also supported by {{jsxref("Intl.PluralRules")}}.
 The above properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If properties from both groups are specified, conflicts in the resulting display format are resolved based on the value of the [`roundingPriority`](#roundingpriority) property.
 
 - `roundingPriority`
-
   - : Specify how rounding conflicts will be resolved if both "FractionDigits" ([`minimumFractionDigits`](#minimumfractiondigits)/[`maximumFractionDigits`](#maximumfractiondigits)) and "SignificantDigits" ([`minimumSignificantDigits`](#minimumsignificantdigits)/[`maximumSignificantDigits`](#maximumsignificantdigits)) are specified.
     Possible values are:
-
     - `"auto"` (default)
       - : The result from the significant digits property is used.
     - `"morePrecision"`
@@ -121,13 +116,10 @@ The above properties fall into two groups: `minimumIntegerDigits`, `minimumFract
     Note that for values other than `auto` the result with more precision is calculated from the [`maximumSignificantDigits`](#minimumsignificantdigits) and [`maximumFractionDigits`](#maximumfractiondigits) (minimum fractional and significant digit settings are ignored).
 
 - `roundingIncrement`
-
   - : Indicates the increment at which rounding should take place relative to the calculated rounding magnitude. Possible values are `1`, `2`, `5`, `10`, `20`, `25`, `50`, `100`, `200`, `250`, `500`, `1000`, `2000`, `2500`, and `5000`. It cannot be mixed with significant-digits rounding or any setting of `roundingPriority` other than `auto`.
 
 - `roundingMode`
-
   - : How decimals should be rounded. Possible values are:
-
     - `"ceil"`
       - : Round toward +∞. Positive values round up. Negative values round "more positive".
     - `"floor"`
@@ -172,9 +164,7 @@ The above properties fall into two groups: `minimumIntegerDigits`, `minimumFract
 - `compactDisplay`
   - : Only used when `notation` is `"compact"`. Possible values are `"short"` and `"long"`; the default is `"short"`.
 - `useGrouping`
-
   - : Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators.
-
     - `"always"`
       - : Display grouping separators even if the locale prefers otherwise.
     - `"auto"`

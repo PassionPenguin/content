@@ -25,7 +25,6 @@ setCodecPreferences(codecs)
 ### Parameters
 
 - `codecs`
-
   - : An array of objects, each providing the parameters for one of the transceiver's supported [media codecs](/en-US/docs/Web/Media/Formats/WebRTC_codecs), ordered by preference.
     If `codecs` is empty, the codec configurations are all returned to the user agent's defaults.
 
@@ -33,7 +32,6 @@ setCodecPreferences(codecs)
     > This lets you prevent the use of codecs you don't wish to use.
 
     Each codec object in the array has the following properties:
-
     - `channels` {{optional_inline}}
       - : A positive integer value indicating the maximum number of channels supported by the codec; for example, a codec that supports only mono sound would have a value of 1; stereo codecs would have a 2, etc.
     - `clockRate`

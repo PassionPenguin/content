@@ -37,9 +37,7 @@ Proxy-Authorization: <type> <credentials>
   - : [Authentication type](/en-US/docs/Web/HTTP/Authentication#authentication_schemes). A common type is ["Basic"](/en-US/docs/Web/HTTP/Authentication#basic_authentication_scheme).
     See also the [IANA registry of Authentication schemes](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml).
 - \<credentials>
-
   - : The credentials are constructed like this:
-
     - The username and the password are combined with a colon
       (`aladdin:opensesame`).
     - The resulting string is [base64](/en-US/docs/Glossary/Base64)

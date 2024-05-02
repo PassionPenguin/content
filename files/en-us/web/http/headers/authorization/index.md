@@ -62,7 +62,6 @@ Authorization: Digest username=<username>,
 ## Directives
 
 - `<auth-scheme>`
-
   - : The [Authentication scheme](/en-US/docs/Web/HTTP/Authentication#authentication_schemes) that defines how the credentials are encoded.
     Some of the more common types are (case-insensitive): [`Basic`](/en-US/docs/Web/HTTP/Authentication#basic_authentication_scheme), `Digest`, `Negotiate` and `AWS4-HMAC-SHA256`.
 
@@ -74,7 +73,6 @@ Generally you will need to check the relevant specifications for these (keys for
 ### Basic
 
 - \<credentials>
-
   - : The credentials, encoded according to the specified scheme.
 
     > **Note:** For information about the encoding algorithm, see the examples: below, in {{HTTPHeader("WWW-Authenticate")}}, in [HTTP Authentication](/en-US/docs/Web/HTTP/Authentication), and in the relevant specifications.

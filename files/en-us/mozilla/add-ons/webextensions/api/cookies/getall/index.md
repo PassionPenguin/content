@@ -22,32 +22,24 @@ let getting = browser.cookies.getAll(
 ### Parameters
 
 - `details`
-
   - : An `object` containing details that can be used to match cookies to be retrieved. Included properties are as follows (see [Cookie type](/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/Cookie#type) for more information on these):
-
     - `domain` {{optional_inline}}
       - : A `string` representing a domain that cookies must be associated with (they can be associated either with this exact domain or one of its subdomains).
     - `firstPartyDomain` {{optional_inline}}
-
       - : A `string` representing the first-party domain with which the cookie to retrieve is associated.
 
         This property must be supplied if the browser has first-party isolation enabled. You can however pass `null` in this situation. If you do this, then cookies with any value for `firstPartyDomain`, as well as cookies which do not have `firstPartyDomain` set at all, will be included in the results. See [First-party isolation](/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies#first-party_isolation).
-
     - `name` {{optional_inline}}
       - : A `string` representing a name that the cookies should have.
     - `partitionKey` {{optional_inline}}
-
       - : An `object` defining which [storage partitions](/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies#storage_partitioning) to return cookies from:
-
         - if omitted, returns only cookies from unpartitioned storage.
         - if included without `topLevelSite`, returns all cookies from partitioned and unpartitioned storage.
         - if included with `topLevelSite` specified, returns cookies from the specified partition storage.
 
         This object contains:
-
         - `topLevelSite` {{optional_inline}}
           - : A `string` representing the first-party URL of the top-level site storage partition containing the cookies.
-
     - `path` {{optional_inline}}
       - : A `string` representing a path — the cookies' path must be identical to this one.
     - `secure` {{optional_inline}}

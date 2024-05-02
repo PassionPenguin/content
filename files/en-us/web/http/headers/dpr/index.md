@@ -80,7 +80,6 @@ Content-DPR: 2.0
 
 - [Improving user privacy and developer experience with User-Agent Client Hints](https://developer.chrome.com/docs/privacy-security/user-agent-client-hints) (developer.chrome.com)
 - Device client hints
-
   - {{HTTPHeader("Content-DPR")}}
   - {{HTTPHeader("Device-Memory")}}
   - {{HTTPHeader("Viewport-Width")}}

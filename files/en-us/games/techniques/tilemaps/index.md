@@ -123,12 +123,10 @@ In fast games that might still not be enough. An alternative method would be to 
 ## See also
 
 - Related articles on the MDN:
-
   - [Static square tile maps implementation with Canvas API](/en-US/docs/Games/Techniques/Tilemaps/Square_tilemaps_implementation:_Static_maps)
   - [Scrolling square tile maps implementation with Canvas API](/en-US/docs/Games/Techniques/Tilemaps/Square_tilemaps_implementation:_Scrolling_maps)
 
 - External resources:
-
   - [Demos and source code](https://mozdevs.github.io/gamedev-js-tiles/)
   - [Amit's thoughts on grids](http://www-cs-students.stanford.edu/~amitp/game-programming/grids/)
   - [Isometric graphics in videogames](https://en.wikipedia.org/wiki/Isometric_graphics_in_video_games_and_pixel_art) (Wikipedia)

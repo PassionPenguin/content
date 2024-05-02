@@ -30,11 +30,8 @@ let settingIcon = browser.action.setIcon(
 ### Parameters
 
 - `details`
-
   - : `object`. An object containing either `imageData` or `path` properties, and optionally a `tabId` property.
-
     - `imageData` {{optional_inline}}
-
       - : `{{WebExtAPIRef('action.ImageDataType')}}` or `object`. This is either a single `ImageData` object or a dictionary object.
 
         Use a dictionary object to specify multiple `ImageData` objects in different sizes, so the icon does not have to be scaled for a device with a different pixel density. If `imageData` is a dictionary, the value of each property is an `ImageData` object, and its name is its size, like this:
@@ -49,9 +46,7 @@ let settingIcon = browser.action.setIcon(
         ```
 
         The browser will choose the image to use depending on the screen's pixel density. See [Choosing icon sizes](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#choosing_icon_sizes) for more information on this.
-
     - `path` {{optional_inline}}
-
       - : `string` or `object`. This is either a relative path to an icon file or it is a dictionary object.
 
         Use a dictionary object to specify multiple icon files in different sizes, so the icon does not have to be scaled for a device with a different pixel density. If `path` is a dictionary, the value of each property is a relative path, and its name is its size, like this:
@@ -66,7 +61,6 @@ let settingIcon = browser.action.setIcon(
         ```
 
         The browser will choose the image to use depending on the screen's pixel density. See [Choosing icon sizes](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#choosing_icon_sizes) for more information on this.
-
     - `tabId` {{optional_inline}}
       - : `integer`. Sets the icon only for the given tab. The icon is reset when the user navigates this tab to a new page.
     - `windowId` {{optional_inline}}

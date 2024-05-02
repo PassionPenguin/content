@@ -58,7 +58,6 @@ Earlier on in the course we got you to type some simple JavaScript commands into
    Uncaught TypeError: guessSubmit.addeventListener is not a function
    number-game-errors.html:86:15
    ```
-
    - The first part, `Uncaught TypeError: guessSubmit.addeventListener is not a function`, is telling us something about what went wrong.
    - The second part, `number-game-errors.html:86:15`, is telling us where in the code the error came from: line 86, character 15 of the file "number-game-errors.html".
 

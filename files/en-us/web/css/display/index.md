@@ -62,9 +62,7 @@ The keyword values can be grouped into six value categories.
 ### Outside
 
 - {{CSSxRef("&lt;display-outside&gt;")}}
-
   - : These keywords specify the element's outer display type, which is essentially its role in flow layout:
-
     - `block`
       - : The element generates a block box, generating line breaks both before and after the element when in the normal flow.
     - `inline`
@@ -86,17 +84,13 @@ The keyword values can be grouped into six value categories.
 ### Inside
 
 - {{CSSxRef("&lt;display-inside&gt;")}}
-
   - : These keywords specify the element's inner display type, which defines the type of formatting context that its contents are laid out in (assuming it is a non-replaced element):
-
     - `flow`
-
       - : The element lays out its contents using flow layout (block-and-inline layout).
 
         If its outer display type is `inline` or `run-in`, and it is participating in a block or inline formatting context, then it generates an inline box. Otherwise it generates a block container box.
 
         Depending on the value of other properties (such as {{CSSxRef("position")}}, {{CSSxRef("float")}}, or {{CSSxRef("overflow")}}) and whether it is itself participating in a block or inline formatting context, it either establishes a new [block formatting context](/en-US/docs/Web/CSS/CSS_display/Block_formatting_context) (BFC) for its contents or integrates its contents into its parent formatting context.
-
     - `flow-root`
       - : The element generates a block box that establishes a new [block formatting context](/en-US/docs/Web/CSS/CSS_display/Block_formatting_context), defining where the formatting root lies.
     - `table`
@@ -126,10 +120,8 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 ### Internal
 
 - {{CSSxRef("&lt;display-internal&gt;")}}
-
   - : Some layout models such as `table` and `ruby` have a complex internal structure, with several different roles that their children and descendants can fill.
     This section defines those "internal" display values, which only have meaning within that particular layout mode.
-
     - `table-row-group`
       - : These elements behave like {{HTMLElement("tbody")}} HTML elements.
     - `table-header-group`
@@ -158,13 +150,9 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 ### Box
 
 - {{CSSxRef("&lt;display-box&gt;")}}
-
   - : These values define whether an element generates display boxes at all.
-
     - `contents`
-
       - : These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes. Please note that the CSS Display Level 3 spec defines how the `contents` value should affect "unusual elements" — elements that aren't rendered purely by CSS box concepts such as replaced elements. See [Appendix B: Effects of display: contents on Unusual Elements](https://drafts.csswg.org/css-display/#unbox) for more details.
-
     - `none`
       - : Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
         To have an element take up the space that it would normally take, but without actually rendering anything, use the {{CSSxRef("visibility")}} property instead.
@@ -172,29 +160,20 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 ### Precomposed
 
 - {{CSSxRef("&lt;display-legacy&gt;")}}
-
   - : CSS 2 used a single-keyword, precomposed syntax for the `display` property, requiring separate keywords for block-level and inline-level variants of the same layout mode.
-
     - `inline-block`
-
       - : The element generates a block box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
 
         It is equivalent to `inline flow-root`.
-
     - `inline-table`
-
       - : The `inline-table` value does not have a direct mapping in HTML. It behaves like an HTML {{HTMLElement("table")}} element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context.
 
         It is equivalent to `inline table`.
-
     - `inline-flex`
-
       - : The element behaves like an inline-level element and lays out its content according to the flexbox model.
 
         It is equivalent to `inline flex`.
-
     - `inline-grid`
-
       - : The element behaves like an inline-level element and lays out its content according to the grid model.
 
         It is equivalent to `inline grid`.

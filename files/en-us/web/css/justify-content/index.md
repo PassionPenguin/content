@@ -85,7 +85,6 @@ justify-content: unset;
 - `space-evenly`
   - : The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
 - `stretch`
-
   - : If the combined size of the items along the main axis is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by {{cssxref("max-height")}}/{{cssxref("max-width")}} (or equivalent functionality), so that the combined size exactly fills the alignment container along the main axis.
 
     > **Note:** For [flexboxes](/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox), the `stretch` value behaves as `flex-start` or `start`. This is because, in flexboxes, stretching is controlled using the {{CSSXref("flex-grow")}} property.

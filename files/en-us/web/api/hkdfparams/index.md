@@ -14,9 +14,7 @@ The **`HkdfParams`** dictionary of the [Web Crypto API](/en-US/docs/Web/API/Web_
 - `name`
   - : A string. This should be set to `HKDF`.
 - `hash`
-
   - : A string representing the [digest algorithm](/en-US/docs/Web/API/SubtleCrypto/digest#supported_algorithms) to use. This may be one of:
-
     - `SHA-1`
     - `SHA-256`
     - `SHA-384`

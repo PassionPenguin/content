@@ -24,7 +24,6 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/multipage/ecmasc
 - [How whitespace is handled by HTML, CSS, and in the DOM](/en-US/docs/Web/API/Document_Object_Model/Whitespace)
 - {{cssxref("white-space")}}
 - Specifications
-
   - [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
   - [ECMAScript Language Specification](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-white-space)
 

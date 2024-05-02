@@ -74,7 +74,6 @@ const FileSystemEntry = window.FileSystemEntry || window.Entry;
 Next, let's look at limitations of the Firefox implementation of the API. In broad strokes, those limitations can be summarized as follows:
 
 - Content scripts can't create file systems or initiate access to a file system. There are only two ways to get access to file system entries at this time:
-
   - The {{HTMLElement("input")}} element, using the {{domxref("HTMLInputElement.webkitEntries")}} property to access an array of {{domxref("FileSystemEntry")}} objects describing file system entries you can then read.
   - Using drag and drop by calling the {{domxref("DataTransferItem.webkitGetAsEntry")}} method, which lets you get a {{domxref("FileSystemFileEntry")}} or {{domxref("FileSystemDirectoryEntry")}} for files dropped on a drop zone.
 
